@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb9c12a8c6c949f7af83a3d238359d0, type: 3}
+  m_Name: vFolders Data
+  m_EditorClassIdentifier: 
+  folderDatas_byGuid:
+    keys:
+    - 5bd8878b8f3e63040849fc65c7568f46
+    - a9372e8897621ee47866e6d729012402
+    - 6c8564c9ba754b04fa7c36dfe64c97af
+    - 65c18d699fcadad459bc3e16558c2bd2
+    - 709f11a7f3c4041caa4ef136ea32d874
+    - ca246fdd4a94c6e47b6e874298d21af8
+    - 0ed95e6e2f35f6d468147e94df091e46
+    - c7dca8ae168f8ba41873023d2bbcfdb6
+    - dd2b9e231b0ec4a9f97e258072ae2b33
+    - cc967410528b597408414be0df5c6204
+    - 74612554f72e2cf46a60080abb1073dd
+    - 33446511f37d29346b9cd46d4ce80a70
+    - f49fb50bec67ad8488426e13ad72acb0
+    - 5f19625fe504f1640bf28c63a11a7f29
+    - aebf5bd7733957d47b2f2e07bf08030a
+    - 3bd87d10de8b479448bd1a76c2fa5924
+    - 66b169a52aee39b4494ae04ff40592b1
+    - 5908eafbda7bd6b4eaceacf2a8f0d832
+    - 7db84c72b2408b24da5a225550b562ff
+    - c828383db5fc7744892c63e7534ecf46
+    - 3ca0de9c7531af340a4cb48ccaf2d5d7
+    - a80c970bf058a344b9feab2aa1abcd71
+    - e00fcc8c71e797d40bd9f664ce423927
+    - b22d0050b63e1504dbc0dbca3195b111
+    values:
+    - colorIndex: 1
+      iconNameOrGuid: AssemblyDefinitionAsset Icon
+    - colorIndex: 4
+      iconNameOrGuid: TextAsset Icon
+    - colorIndex: 4
+      iconNameOrGuid: TerrainCollider Icon
+    - colorIndex: 6
+      iconNameOrGuid: Cubemap Icon
+    - colorIndex: 7
+      iconNameOrGuid: Settings Icon
+    - colorIndex: 7
+      iconNameOrGuid: Mesh Icon
+    - colorIndex: 0
+      iconNameOrGuid: SceneAsset Icon
+    - colorIndex: 0
+      iconNameOrGuid: SceneAsset Icon
+    - colorIndex: 0
+      iconNameOrGuid: SceneAsset Icon
+    - colorIndex: 0
+      iconNameOrGuid: MeshCollider Icon
+    - colorIndex: 0
+      iconNameOrGuid: Terrain Icon
+    - colorIndex: 0
+      iconNameOrGuid: MeshCollider Icon
+    - colorIndex: 0
+      iconNameOrGuid: MeshCollider Icon
+    - colorIndex: 0
+      iconNameOrGuid: AnimationClip Icon
+    - colorIndex: 0
+      iconNameOrGuid: Material Icon
+    - colorIndex: 0
+      iconNameOrGuid: Prefab Icon
+    - colorIndex: 0
+      iconNameOrGuid: SceneAsset Icon
+    - colorIndex: 0
+      iconNameOrGuid: cs Script Icon
+    - colorIndex: 0
+      iconNameOrGuid: Settings Icon
+    - colorIndex: 0
+      iconNameOrGuid: SceneAsset Icon
+    - colorIndex: 3
+      iconNameOrGuid: ScriptableObject Icon
+    - colorIndex: 0
+      iconNameOrGuid: LightProbes Icon
+    - colorIndex: 0
+      iconNameOrGuid: RawImage Icon
+    - colorIndex: 0
+      iconNameOrGuid: TerrainData Icon

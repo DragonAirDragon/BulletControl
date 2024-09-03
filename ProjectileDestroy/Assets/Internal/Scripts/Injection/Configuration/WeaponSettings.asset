@@ -1,0 +1,3462 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf33fd275f5743b47a03d0cd4ba9d37d, type: 3}
+  m_Name: WeaponSettings
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8313290017084211050, guid: 0d61571c240b1594f86968cc5c405891, type: 3}
+    - {fileID: 973192145558365908, guid: e68bb04873062d44db350c647dbb8563, type: 3}
+    - {fileID: 3993939213888332519, guid: 8048d385ef0de844bb303a7ef235a948, type: 3}
+    - {fileID: 5392245789004380301, guid: 99f18a1bb1b92e94e88b43558fbbdb63, type: 3}
+    - {fileID: 1074479373351434086, guid: 7f180a7b4f2c8494aa2042a862cbcd5e, type: 3}
+    - {fileID: 365249330618089006, guid: 4c31973d3618d5a45ad05103d3cddff9, type: 3}
+    - {fileID: 8781111716916587698, guid: 08a0b0a22ab6f4f48b8834af726e283c, type: 3}
+    - {fileID: 6776401172311910207, guid: 77e062e5785c2f841864f3b3ec9bdb27, type: 3}
+    - {fileID: 470167723438365464, guid: a8021ef0435748e47be38b861fa577e8, type: 3}
+    - {fileID: 2090601283137144320, guid: 790adc80b4adcb446ad801d91eab12df, type: 3}
+    - {fileID: 8294148423230653061, guid: f4120bed47d358948a7b590e408de077, type: 3}
+    - {fileID: 5530294939962659768, guid: a732426c8587cde44b9765a82823e971, type: 3}
+    - {fileID: 1282529501860125840, guid: 050c1ca6491f9864ca4edd6d36eb7efc, type: 3}
+    - {fileID: 8179541766510824940, guid: 8ccb1f31d8597aa44aad9c7f14579723, type: 3}
+    - {fileID: 3068876137589533678, guid: 27ee26679cad8f6478378c45d7b91253, type: 3}
+    - {fileID: 3966032580623526714, guid: c8ff688bbe6ca394db76e420e2b97499, type: 3}
+    - {fileID: 526109814910757136, guid: 5c2573bf145e08c4b85228cf8dc9f6d4, type: 3}
+    - {fileID: 3504736276507680977, guid: c16abf8c95bc7b742826af8e7ce36255, type: 3}
+    - {fileID: 2139710771222900130, guid: 8cfcffb81128ed446be760ea1c4c6488, type: 3}
+    - {fileID: 7067030856800241091, guid: 41374cfd385060445843039f94d5c78b, type: 3}
+    - {fileID: 2213210936488910700, guid: c491de271ab0cd2489decea1a0ea4ca6, type: 3}
+    - {fileID: 8186237933032479576, guid: 49551356a12bcbd4b87b94b3b1b09ab8, type: 3}
+    - {fileID: 7242629979498147317, guid: febdd94b52418724db02b7713a7be9e9, type: 3}
+    - {fileID: 7698027085419352248, guid: 4350ff00b60928d4ea1e489fe91e9dce, type: 3}
+    - {fileID: 6541641904531435025, guid: 1cb39970eafe2e24089810604940c32c, type: 3}
+    - {fileID: 6541641904531435025, guid: 463841d6f81f8da4e9415f2ba6227e8b, type: 3}
+    - {fileID: 6541641904531435025, guid: 36dc26c7aa73da54d8eeab17d37ee0c7, type: 3}
+    - {fileID: 6541641904531435025, guid: dde8d80e7c02a2542bfeec9aafa66ca6, type: 3}
+    - {fileID: 6541641904531435025, guid: 97373480fd7915b44a7b29503d28efc9, type: 3}
+    - {fileID: 6541641904531435025, guid: 6dc714ba5c7fcc6469c2e3f5f41df36b, type: 3}
+    - {fileID: 6541641904531435025, guid: d3665de1c81977743ade7c248aa79c03, type: 3}
+    - {fileID: 6541641904531435025, guid: 53cf4c7a20f079a4392238bcc2992eef, type: 3}
+    - {fileID: 6541641904531435025, guid: 137603294a11498409bfef52c6415bb4, type: 3}
+    - {fileID: 6541641904531435025, guid: 483c93762562cd5438c435ca9cc5cd2a, type: 3}
+    - {fileID: 6541641904531435025, guid: fcf35ed5df4f1aa4ab6334aab072dabe, type: 3}
+    - {fileID: 6541641904531435025, guid: 7a45baf2a19ad2f4ebd4881ef55af8a1, type: 3}
+    - {fileID: 6541641904531435025, guid: 522b58f125121ec4292f65f753e22e8b, type: 3}
+    - {fileID: 6541641904531435025, guid: e576d63b79bfff2459e6e41aef41817d, type: 3}
+    - {fileID: 6541641904531435025, guid: 08530b4f5dd3b6b4caa595c9864ec9da, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: weaponAndWeaponSettings
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[Weapon, Assembly-CSharp],[WeaponSettings,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[Weapon, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 24
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 2|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 3|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.147
+    - Name: 
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.23
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.05
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -15
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 12
+    - Name: $v
+      Entry: 7
+      Data: 4|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 5|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.162
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.23
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -3
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -15
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 7
+      Data: 6|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 7|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.202
+    - Name: 
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.28
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -15
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 8|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 9|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.13
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -15
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 10|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 11|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.14
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.05
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -10
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 12|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 13|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.172
+    - Name: 
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.25
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -0.1
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -15
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 14|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 15|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.184
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.25
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -15
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 13
+    - Name: $v
+      Entry: 7
+      Data: 16|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 17|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.257
+    - Name: 
+      Entry: 4
+      Data: 0.25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.271
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -3
+    - Name: 
+      Entry: 4
+      Data: -6
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.08
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -10
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 14
+    - Name: $v
+      Entry: 7
+      Data: 18|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 19|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.22
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -3
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -10
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 15
+    - Name: $v
+      Entry: 7
+      Data: 20|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 21|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2225
+    - Name: 
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.25
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 16
+    - Name: $v
+      Entry: 7
+      Data: 22|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 23|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.241
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.25
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -10
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 17
+    - Name: $v
+      Entry: 7
+      Data: 24|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 25|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.278
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.3
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2.5
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -10
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 11
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 10
+    - Name: $v
+      Entry: 7
+      Data: 26|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 27|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.202
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.25
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -3
+    - Name: 
+      Entry: 4
+      Data: -6
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -15
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 7
+      Data: 28|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 29|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.141
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.19
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -3
+    - Name: 
+      Entry: 4
+      Data: -7
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -10
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 13
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 7
+    - Name: $v
+      Entry: 7
+      Data: 30|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 31|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.22
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.24
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -3
+    - Name: 
+      Entry: 4
+      Data: -6
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.15
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 14
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 8
+    - Name: $v
+      Entry: 7
+      Data: 32|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 33|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.19
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.22
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 15
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 9
+    - Name: $v
+      Entry: 7
+      Data: 34|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 35|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.31
+    - Name: 
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.23
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -4
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 16
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 11
+    - Name: $v
+      Entry: 7
+      Data: 36|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 37|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.197
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.24
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -4
+    - Name: 
+      Entry: 4
+      Data: -7
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -10
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 17
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 22
+    - Name: $v
+      Entry: 7
+      Data: 38|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 39|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.0999
+    - Name: 
+      Entry: 4
+      Data: 0.25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.23
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2.5
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 18
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 23
+    - Name: $v
+      Entry: 7
+      Data: 40|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 41|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.1975
+    - Name: 
+      Entry: 4
+      Data: 0.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.24
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -3
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.05
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 19
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 20
+    - Name: $v
+      Entry: 7
+      Data: 42|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 43|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.1515
+    - Name: 
+      Entry: 4
+      Data: 0.25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.271
+    - Name: 
+      Entry: 4
+      Data: 0.393
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2
+    - Name: 
+      Entry: 4
+      Data: -3
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -15
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 20
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 19
+    - Name: $v
+      Entry: 7
+      Data: 44|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 45|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.21
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.271
+    - Name: 
+      Entry: 4
+      Data: 0.45
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -3
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.15
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -8
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 21
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 11
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 21
+    - Name: $v
+      Entry: 7
+      Data: 46|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 47|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2795
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.271
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2
+    - Name: 
+      Entry: 4
+      Data: -6
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -15
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 22
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 14
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 18
+    - Name: $v
+      Entry: 7
+      Data: 48|WeaponSettings, Assembly-CSharp
+    - Name: weaponAnimationSettings
+      Entry: 7
+      Data: 49|WeaponAnimationSettings, Assembly-CSharp
+    - Name: timeIdleAnimation
+      Entry: 4
+      Data: 3
+    - Name: yDifferent
+      Entry: 4
+      Data: 0.02
+    - Name: aimPosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.2425
+    - Name: 
+      Entry: 4
+      Data: 0.35
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idlePosition
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.277
+    - Name: 
+      Entry: 4
+      Data: -0.271
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: idleRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -2.5
+    - Name: 
+      Entry: 4
+      Data: -5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: aimTransitionTime
+      Entry: 4
+      Data: 0.2
+    - Name: recoilOffset
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilRotation
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: -20
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: recoilDuration
+      Entry: 4
+      Data: 0.1
+    - Name: returnDuration
+      Entry: 4
+      Data: 0.5
+    - Name: weaponPrefab
+      Entry: 10
+      Data: 23
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: "bullet\u0421aliber"
+      Entry: 3
+      Data: 13
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: bulletCaliberAndBullet
+      Entry: 7
+      Data: "50|System.Collections.Generic.Dictionary`2[[Bullet\u0421aliber, Assembly-CSharp],[Bullet,
+        Assembly-CSharp]], mscorlib"
+    - Name: comparer
+      Entry: 7
+      Data: "51|System.Collections.Generic.EnumEqualityComparer`1[[Bullet\u0421aliber,
+        Assembly-CSharp]], mscorlib"
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 15
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 8
+    - Name: $v
+      Entry: 10
+      Data: 24
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 0
+    - Name: $v
+      Entry: 10
+      Data: 25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 10
+      Data: 26
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 10
+      Data: 27
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 10
+      Data: 28
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 7
+    - Name: $v
+      Entry: 10
+      Data: 29
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 9
+    - Name: $v
+      Entry: 10
+      Data: 30
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 10
+      Data: 31
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 10
+      Data: 32
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 10
+      Data: 33
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 12
+    - Name: $v
+      Entry: 10
+      Data: 34
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 10
+    - Name: $v
+      Entry: 10
+      Data: 35
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 11
+    - Name: $v
+      Entry: 10
+      Data: 36
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 13
+    - Name: $v
+      Entry: 10
+      Data: 37
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 14
+    - Name: $v
+      Entry: 10
+      Data: 38
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
