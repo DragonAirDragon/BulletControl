@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using DinoFracture;
+using Unity.VisualScripting;
 using UnityEngine;
 using VContainer.Unity;
 
@@ -104,6 +105,15 @@ public class LevelService
     {
         OnUnpaused?.Invoke();
     }
+
+
+    public (int currentOptional, int maxOptional) GetOptionalObjectCounts()
+    {
+        return (currentOptional: currentOptionalObject, maxOptional: maxOptionalObject);
+    }
+
+
+
 
 
 }
