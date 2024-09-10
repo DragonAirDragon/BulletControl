@@ -12,6 +12,8 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float maneuverability = 1f;
     [SerializeField] private int countRicochet = 3;
     [SerializeField] private float distanceRayForContact = 1f;
+    public int bulletCost = 20;
+
 
 
     [Title("Cashed Variables (Кешированные переменные)")]
@@ -20,8 +22,8 @@ public class Bullet : MonoBehaviour
     [ShowInInspector] private float rotationY;
     [ShowInInspector] private Vector3 direction;
     [SerializeField] private Transform bulletTransform;
-
     [SerializeField] private bool bulletPaused = false;
+
 
     [Title("Ref Services (Ссылки на сервисы)")]
     [Space]

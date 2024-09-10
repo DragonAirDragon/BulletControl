@@ -3047,8 +3047,18 @@ PrefabInstance:
       objectReference: {fileID: 1565246463}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
+      propertyPath: levelEconomyData.bestTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
       propertyPath: triggerObjects.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.worstTime
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
@@ -3067,6 +3077,11 @@ PrefabInstance:
       objectReference: {fileID: 1996439298}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
+      propertyPath: levelEconomyData.bestTimeCost
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
       propertyPath: optionalObjects.Array.data[0]
       value: 
       objectReference: {fileID: 1996439298}
@@ -3077,8 +3092,18 @@ PrefabInstance:
       objectReference: {fileID: 1996439298}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
+      propertyPath: levelEconomyData.baseLevelCost
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
       propertyPath: autoInjectGameObjects.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.bestOptionalCost
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}

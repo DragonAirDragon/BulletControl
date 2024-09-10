@@ -1,12 +1,10 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using DG.Tweening;
-using Unity.VisualScripting;
+using Cysharp.Threading.Tasks;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using VContainer.Unity;
 
-public class LevelScoreService : ITickable
+public class LevelScoreService : IStartable
 {
     private LevelEconomyData levelEconomyData;
     private LevelService levelService;
@@ -19,56 +17,116 @@ public class LevelScoreService : ITickable
         this.levelEconomyData = levelEconomyData;
         this.levelService = levelService;
         this.bulletFactory = bulletFactory;
-        Initialize();
+        levelService.OnRequiredObjectsDestroyed += Pause;
+        levelService.OnRequiredObjectsDestroyed += () => CalculateScore(true);
     }
 
-    void ITickable.Tick()
+    void IStartable.Start()
     {
-        if (_timerOn)
-        {
-            _time += Time.deltaTime;
-        }
+        Initialize();
     }
     private void Initialize()
     {
         _time = 0f;
         _timerOn = true;
+        Debug.Log("Timer started.");
+        UpdateTimer().Forget();
+    }
+
+    private async UniTaskVoid UpdateTimer()
+    {
+        while (_timerOn)
+        {
+            await UniTask.Delay(TimeSpan.FromSeconds(1));
+            Debug.Log("Time: " + _time);
+            _time += 1f;
+        }
     }
 
     private void Pause()
     {
         _timerOn = false;
     }
-    private void Continue()
-    {
-        _timerOn = true;
-    }
-    private void ResetTimer()
-    {
-        _time = 0f;
-        _timerOn = false;
-    }
     public void CalculateScore(bool winOrLose)
     {
         bool resultLevel = winOrLose;
         var optionalObject = levelService.GetOptionalObjectCounts();
-        var bulletCount = bulletFactory.GetCountUsedBullets();
-        var optional_cost = Mathf.Lerp(levelEconomyData.optionalObjectsCostRange.WorstCost, levelEconomyData.optionalObjectsCostRange.BestCost, optionalObject.currentOptional / optionalObject.maxOptional);
-        var time_cost = Mathf.Lerp(levelEconomyData.timeCostRange.WorstCost, levelEconomyData.timeCostRange.BestCost, 1 - (Mathf.Clamp(_time, levelEconomyData.timeRange.BestTime, levelEconomyData.timeRange.WorstTime) / levelEconomyData.timeRange.WorstTime));
-        //var bullet_cost -=  
+        var bullet_cost = bulletFactory.GetCostForAllUsedBullets();
 
+        float optionalRatio = (optionalObject.maxOptional != 0) ?
+            (float)optionalObject.currentOptional / optionalObject.maxOptional : 0f;
+
+        float optional_cost = Mathf.Lerp(levelEconomyData.OptionalObjectsCostRange.WorstCost,
+            levelEconomyData.OptionalObjectsCostRange.BestCost, optionalRatio);
+
+        float time_cost = Mathf.Lerp(levelEconomyData.TimeCostRange.WorstCost, levelEconomyData.TimeCostRange.BestCost,
+                1 - (Mathf.Clamp(_time, levelEconomyData.TimeRange.BestTime, levelEconomyData.TimeRange.WorstTime) / levelEconomyData.TimeRange.WorstTime));
+
+        float result = levelEconomyData.baseLevelCost + optional_cost + time_cost - bullet_cost;
+
+        Debug.Log($"Победа: {resultLevel} \n" +
+                  $"Основная награда за уровень {levelEconomyData.baseLevelCost}$ \n" +
+                  $"Деньги за опциональные объекты {optional_cost}$ \n" +
+                  $"Деньги за время {time_cost}$ \n" +
+                  $"Траты на пули {bullet_cost}$ \n" +
+                  $"Результат {result}$ \n");
     }
+
+
 }
 
 
 [Serializable]
 public class LevelEconomyData
 {
+    [SerializeField, BoxGroup("Base Cost")]
     public int baseLevelCost = 0;
-    public (int BestTime, int WorstTime) timeRange { get; set; }
-    public (int BestCost, int WorstCost) timeCostRange { get; set; }
-    public (int BestCost, int WorstCost) bulletsSpentCostRange { get; set; }
-    public (int BestCost, int WorstCost) optionalObjectsCostRange { get; set; }
 
+    [SerializeField, BoxGroup("Time Range")]
+    private int bestTime;
+    [SerializeField, BoxGroup("Time Range")]
+    private int worstTime;
 
+    [SerializeField, BoxGroup("Time Cost Range")]
+    private int bestTimeCost;
+    [SerializeField, BoxGroup("Time Cost Range")]
+    private int worstTimeCost;
+
+    [SerializeField, BoxGroup("Optional Objects Cost Range")]
+    private int bestOptionalCost;
+    [SerializeField, BoxGroup("Optional Objects Cost Range")]
+    private int worstOptionalCost;
+
+    [ShowInInspector, BoxGroup("Time Range")]
+    public (int BestTime, int WorstTime) TimeRange
+    {
+        get => (bestTime, worstTime);
+        set
+        {
+            bestTime = value.BestTime;
+            worstTime = value.WorstTime;
+        }
+    }
+
+    [ShowInInspector, BoxGroup("Time Cost Range")]
+    public (int BestCost, int WorstCost) TimeCostRange
+    {
+        get => (bestTimeCost, worstTimeCost);
+        set
+        {
+            bestTimeCost = value.BestCost;
+            worstTimeCost = value.WorstCost;
+        }
+    }
+
+    [ShowInInspector, BoxGroup("Optional Objects Cost Range")]
+    public (int BestCost, int WorstCost) OptionalObjectsCostRange
+    {
+        get => (bestOptionalCost, worstOptionalCost);
+        set
+        {
+            bestOptionalCost = value.BestCost;
+            worstOptionalCost = value.WorstCost;
+        }
+    }
 }

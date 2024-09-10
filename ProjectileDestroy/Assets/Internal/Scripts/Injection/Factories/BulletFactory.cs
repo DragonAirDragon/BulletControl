@@ -13,7 +13,7 @@ public class BulletFactory
     public event Action<Bullet> OnBulletCreated;
     public event Action OnBulletDestroyed;
 
-    private int usedBulletCount = 0;
+    private int usedBulletCost = 0;
     // Текущая пуля
     private Bullet currentBullet = null;
 
@@ -33,7 +33,7 @@ public class BulletFactory
         }
 
         currentBullet = container.Instantiate(prefab);
-        usedBulletCount++;
+        usedBulletCost += currentBullet.bulletCost;
         currentBullet.transform.position = position;
         currentBullet.transform.rotation = rotation;
         // Вызываем событие создания пули
@@ -47,9 +47,10 @@ public class BulletFactory
         OnBulletDestroyed.Invoke();
     }
 
-    public int GetCountUsedBullets()
+
+    public int GetCostForAllUsedBullets()
     {
-        return usedBulletCount;
+        return usedBulletCost;
     }
 
 

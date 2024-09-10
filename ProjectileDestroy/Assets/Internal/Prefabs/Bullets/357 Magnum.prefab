@@ -134,6 +134,7 @@ MonoBehaviour:
   maneuverability: 1
   countRicochet: 3
   distanceRayForContact: 1
+  bulletCost: 20
   bulletTransform: {fileID: 5999926167965988092}
   bulletPaused: 0
   target: {fileID: 575272986867790062}

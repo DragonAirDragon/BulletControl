@@ -14,6 +14,7 @@ public class GamePlayTimeScope : LifetimeScope
     [SerializeField] private WeaponAndBulletSettings weaponAndBulletSettings;
     [SerializeField] private LevelObjects levelObjects;
 
+    [SerializeField] private LevelEconomyData levelEconomyData;
 
     [Title("List To Inject (Список к инъекции)")]
     [Space]
@@ -49,6 +50,11 @@ public class GamePlayTimeScope : LifetimeScope
 
         builder.RegisterComponent(player);
         builder.RegisterComponent(cameraFollow);
+
+
+
+        builder.RegisterInstance(levelEconomyData);
+        builder.RegisterEntryPoint<LevelScoreService>();
     }
 
     private void BindBulletFactory(IContainerBuilder builder, WeaponAndBulletSettings weaponAndBulletSettings)
@@ -69,6 +75,8 @@ public class GamePlayTimeScope : LifetimeScope
         builder.RegisterInstance(levelObjects);
         builder.Register<LevelService>(Lifetime.Singleton);
         builder.RegisterEntryPoint<PauseService>();
+
+
     }
 
     private void InjectAllTriggeredObjectControllers(IContainerBuilder builder)
