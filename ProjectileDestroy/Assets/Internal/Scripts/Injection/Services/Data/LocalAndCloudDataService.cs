@@ -1,28 +1,28 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LocalAndCloudDataService
 {
     // ChangedData
     private int moneyCount = 0;
-    private List<Weapon> purchasedWeapons = new List<Weapon>();
+    private List<Weapon> purchasedWeapons = new List<Weapon>() { Weapon.ColtPython };
     private bool showAd = false;
     private int currentLevel = 0;
     private Weapon currentWeapon;
 
     // PermanentData
-    private Dictionary<Weapon, WeaponInfo> weaponAndWeaponsInfo = new Dictionary<Weapon, WeaponInfo>();
+    public Dictionary<Weapon, WeaponSettings> weaponAndWeaponSettings;
+    private Dictionary<BulletСaliber, Bullet> bulletCaliberAndBullet;
+
+
+
+
 
     private Dictionary<int, LevelInfo> numberAndLevelInfo = new Dictionary<int, LevelInfo>();
 
 
-
-
-
-
-    public LocalAndCloudDataService()
+    public LocalAndCloudDataService(Dictionary<Weapon, WeaponSettings> weaponAndWeaponSettings, Dictionary<BulletСaliber, Bullet> bulletCaliberAndBullet)
     {
 
     }
@@ -30,13 +30,18 @@ public class LocalAndCloudDataService
     public void SaveOnCloudData()
     {
         //
+
+
     }
     public void LoadFromCloudData()
     {
         //
+
+
     }
 
-    // Money
+
+    #region Money
     public int GetCurrentMoney()
     {
         return moneyCount;
@@ -48,10 +53,34 @@ public class LocalAndCloudDataService
         SaveOnCloudData();
     }
 
-    // Weapon
-    public Dictionary<Weapon, WeaponInfo> GetWeaponDictionary()
+    #endregion
+
+
+    #region Weapon
+    public WeaponInfo GetWeaponParam(Weapon weapon)
     {
-        return weaponAndWeaponsInfo;
+        return weaponAndWeaponSettings[weapon].weaponInfo;
+    }
+    public Bullet GetBulletParam(Weapon weapon)
+    {
+        BulletСaliber currentCalliber = weaponAndWeaponSettings[weapon].bulletСaliber;
+        return bulletCaliberAndBullet[currentCalliber];
+    }
+
+    public bool CheckPurchasedWeapon(Weapon weapon)
+    {
+        if (purchasedWeapons.Contains(weapon))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public List<Weapon> GetAllWeapons()
+    {
+        return weaponAndWeaponSettings.Keys.ToList();
     }
 
     public void SetWeaponPurchasedStatus(Weapon weapon)
@@ -62,6 +91,20 @@ public class LocalAndCloudDataService
         }
         SaveOnCloudData();
     }
+    
+    #endregion
+
+
+
+
+
+
+
+
+
+
+
+    #region Ad
     // Ad
     public void SetAdActivity(bool value)
     {
@@ -72,23 +115,23 @@ public class LocalAndCloudDataService
     {
         return showAd;
     }
+    #endregion
+
+
+    #region Level
     // Change Current Level
     public void ChangeCurrentLevel(int value)
     {
         currentLevel = Mathf.Clamp(value, 0, 50);
     }
+    #endregion
+
+
 
 
 
 }
 
-[Serializable]
-public class WeaponInfo
-{
-    public string weaponCost;
-    public Sprite weaponIcon;
-    public Sprite weaponMainIcon;
-}
 
 public class LevelInfo
 {

@@ -34,19 +34,6 @@ public enum Weapon
     Winchester,
     VSSVintorez
 }
-
-public enum Optic
-{
-    OneX,
-    TwoX,
-    ThreeX,
-    FourX,
-    SixX,
-    EightX,
-    CollimatorShort,
-    Medium
-}
-
 public enum BulletСaliber
 {
     _9x19mmParabellum,
@@ -67,13 +54,21 @@ public enum BulletСaliber
 }
 
 
-
+[Serializable]
+public class WeaponInfo
+{
+    public string weaponName;
+    public string weaponCost;
+    public Sprite weaponIcon;
+    public Sprite weaponMainIcon;
+}
 [Serializable]
 public class WeaponSettings
 {
 
     public WeaponAnimationSettings weaponAnimationSettings;
-    [Title("BulletCaliber (Пуля которая подходит для оружия)")][Space] public BulletСaliber bulletСaliber;
+    [Title("BulletCaliber (Пуля которая подходит для оружия)")][Space] public BulletСaliber bulletСaliber; //+
+    public WeaponInfo weaponInfo;
 }
 [Serializable]
 public class WeaponAnimationSettings
@@ -108,3 +103,6 @@ public class WeaponAndBulletSettings : SerializedScriptableObject
     public Dictionary<Weapon, WeaponSettings> weaponAndWeaponSettings = new Dictionary<Weapon, WeaponSettings>();
     public Dictionary<BulletСaliber, Bullet> bulletCaliberAndBullet = new Dictionary<BulletСaliber, Bullet>();
 }
+
+
+
