@@ -14,15 +14,9 @@ public class LocalAndCloudDataService
     // PermanentData
     public Dictionary<Weapon, WeaponSettings> weaponAndWeaponSettings;
     private Dictionary<BulletСaliber, Bullet> bulletCaliberAndBullet;
-
-
-
-
-
     private Dictionary<int, LevelInfo> numberAndLevelInfo = new Dictionary<int, LevelInfo>();
 
-
-    public LocalAndCloudDataService(Dictionary<Weapon, WeaponSettings> weaponAndWeaponSettings, Dictionary<BulletСaliber, Bullet> bulletCaliberAndBullet)
+    public LocalAndCloudDataService(Dictionary<Weapon, WeaponSettings> weaponAndWeaponSettings, Dictionary<BulletСaliber, Bullet> bulletCaliberAndBullet, Dictionary<int, LevelInfo> numberAndLevelInfo)
     {
 
     }
@@ -54,7 +48,6 @@ public class LocalAndCloudDataService
     }
 
     #endregion
-
 
     #region Weapon
     public WeaponInfo GetWeaponParam(Weapon weapon)
@@ -91,18 +84,8 @@ public class LocalAndCloudDataService
         }
         SaveOnCloudData();
     }
-    
+
     #endregion
-
-
-
-
-
-
-
-
-
-
 
     #region Ad
     // Ad
@@ -133,9 +116,3 @@ public class LocalAndCloudDataService
 }
 
 
-public class LevelInfo
-{
-    public string description;
-    public string sceneName;
-    public Sprite levelSplashImage;
-}
