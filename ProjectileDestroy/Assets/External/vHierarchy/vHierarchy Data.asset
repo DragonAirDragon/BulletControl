@@ -15,6 +15,7 @@ MonoBehaviour:
   sceneDatas_byGuid:
     keys:
     - 99c9720ab356a0642a771bea13969a05
+    - 8c3edf071c8d0d240a22ac061109a79f
     values:
     - goDatas_byGlobalId:
         keys:
@@ -43,3 +44,9 @@ MonoBehaviour:
           iconNameOrGuid: PreMatCube
         - colorIndex: 5
           iconNameOrGuid: Canvas Icon
+    - goDatas_byGlobalId:
+        keys:
+        - globalObjectIdString: GlobalObjectId_V1-2-8c3edf071c8d0d240a22ac061109a79f-1296660938-0
+        values:
+        - colorIndex: 0
+          iconNameOrGuid: af012732869cd324885ecf5ff0afa0bf

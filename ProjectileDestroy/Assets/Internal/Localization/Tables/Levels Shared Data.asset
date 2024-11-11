@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Levels Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Levels
+  m_TableCollectionNameGuidString: 1e234897af348884489c28578e7b44ae
+  m_Entries:
+  - m_Id: 17581465600
+    m_Key: Level1Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 85617270784
+    m_Key: Level1Description
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346788192256
+    m_Key: Level1Req
+    m_Metadata:
+      m_Items: []
+  - m_Id: 607317385216
+    m_Key: Level1Opt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 655321194496
+    m_Key: Level1Trigger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837999910912
+    m_Key: Level2Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 867154518016
+    m_Key: Level2Description
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5875489046608740397
+  references:
+    version: 2
+    RefIds:
+    - rid: 5875489046608740397
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1731002331463

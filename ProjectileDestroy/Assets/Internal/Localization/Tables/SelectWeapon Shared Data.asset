@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: SelectWeapon Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: SelectWeapon
+  m_TableCollectionNameGuidString: bb8e1e7c998980c4883b74e46f8669b5
+  m_Entries:
+  - m_Id: 13835952128
+    m_Key: titleSelectWeapon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7786200031232
+    m_Key: selectWeaponRicochet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8473621291008
+    m_Key: selectWeaponManeuverability
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8648385355776
+    m_Key: selectWeaponSpeed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9134106730496
+    m_Key: selectWeaponCostBullet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12214294536192
+    m_Key: selectWeaponPlay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12472521056256
+    m_Key: selectWeaponBuy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13193614188544
+    m_Key: selectWeaponEquip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13259087273984
+    m_Key: selectWeaponEquipped
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5875489046608740380
+  references:
+    version: 2
+    RefIds:
+    - rid: 5875489046608740380
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1730997142424

@@ -2,23 +2,48 @@ using System;
 using Cysharp.Threading.Tasks;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using VContainer.Unity;
 
-public class LevelScoreService : IStartable
+public class LevelScoreService : IStartable,IDisposable
 {
     private LevelEconomyData levelEconomyData;
     private LevelService levelService;
     private BulletFactory bulletFactory;
+    private LocalAndCloudDataService localAndCloudDataService;
+    
     private float _time = 0f;
     private bool _timerOn = false;
-
-    public LevelScoreService(LevelEconomyData levelEconomyData, LevelService levelService, BulletFactory bulletFactory)
+    private GameSessionView gameSessionView;
+    private int result;
+    
+    public LevelScoreService(LevelEconomyData levelEconomyData, LevelService levelService, BulletFactory bulletFactory,  GameSessionView gameSessionView,LocalAndCloudDataService localAndCloudDataService)
     {
         this.levelEconomyData = levelEconomyData;
         this.levelService = levelService;
         this.bulletFactory = bulletFactory;
-        levelService.OnRequiredObjectsDestroyed += Pause;
-        levelService.OnRequiredObjectsDestroyed += () => CalculateScore(true);
+        this.gameSessionView = gameSessionView;
+        this.localAndCloudDataService = localAndCloudDataService;
+        
+        this.levelService.OnRequiredObjectsDestroyed += Pause;
+        this.levelService.OnPaused += Pause;
+        this.levelService.OnUnpaused += Continue;
+        this.levelService.OnRequiredObjectsDestroyed += CalculateScore;
+        this.levelService.OnRequiredObjectsDestroyed += () =>
+        {
+            this.gameSessionView.allMainTargetsCompleted = true;
+            this.gameSessionView.UpdateLevelInfo(levelEconomyData.nameLevel,levelEconomyData.requiredObjectString,levelEconomyData.optionalObjectString,levelEconomyData.triggerObjectString);
+        };
+        this.levelService.OnOptionalObjectsDestroyed += (() =>
+        {
+            this.gameSessionView.allOptionalTargetsCompleted = true;
+            this.gameSessionView.UpdateLevelInfo(levelEconomyData.nameLevel,levelEconomyData.requiredObjectString,levelEconomyData.optionalObjectString,levelEconomyData.triggerObjectString);
+        });
+        this.levelService.OnTriggerObjectsDestroyed += () =>
+        {
+            this.gameSessionView.allTriggerTargetsCompleted = true;
+            this.gameSessionView.UpdateLevelInfo(levelEconomyData.nameLevel,levelEconomyData.requiredObjectString,levelEconomyData.optionalObjectString,levelEconomyData.triggerObjectString);
+        };
     }
 
     void IStartable.Start()
@@ -29,16 +54,29 @@ public class LevelScoreService : IStartable
     {
         _time = 0f;
         _timerOn = true;
-        Debug.Log("Timer started.");
+        //Debug.Log("Timer started.");
         UpdateTimer().Forget();
+        gameSessionView.UpdateLevelInfo(levelEconomyData.nameLevel,levelEconomyData.requiredObjectString,levelEconomyData.optionalObjectString,levelEconomyData.triggerObjectString);
+        LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
     }
+    void OnLocaleChanged(UnityEngine.Localization.Locale locale)
+    {
+        gameSessionView.UpdateLevelInfo(levelEconomyData.nameLevel,levelEconomyData.requiredObjectString,levelEconomyData.optionalObjectString,levelEconomyData.triggerObjectString);
+        gameSessionView.UpdateWinUI(levelEconomyData.nameLevel, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
+    }
+
+    public void Dispose()
+    {
+        LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+        
+    }
+
 
     private async UniTaskVoid UpdateTimer()
     {
         while (_timerOn)
         {
             await UniTask.Delay(TimeSpan.FromSeconds(1));
-            Debug.Log("Time: " + _time);
             _time += 1f;
         }
     }
@@ -47,9 +85,13 @@ public class LevelScoreService : IStartable
     {
         _timerOn = false;
     }
-    public void CalculateScore(bool winOrLose)
+    private void Continue()
     {
-        bool resultLevel = winOrLose;
+        _timerOn = true;
+        UpdateTimer().Forget();
+    }
+    public void CalculateScore()
+    {
         var optionalObject = levelService.GetOptionalObjectCounts();
         var bullet_cost = bulletFactory.GetCostForAllUsedBullets();
 
@@ -62,23 +104,35 @@ public class LevelScoreService : IStartable
         float time_cost = Mathf.Lerp(levelEconomyData.TimeCostRange.WorstCost, levelEconomyData.TimeCostRange.BestCost,
                 1 - (Mathf.Clamp(_time, levelEconomyData.TimeRange.BestTime, levelEconomyData.TimeRange.WorstTime) / levelEconomyData.TimeRange.WorstTime));
 
-        float result = levelEconomyData.baseLevelCost + optional_cost + time_cost - bullet_cost;
-
-        Debug.Log($"Победа: {resultLevel} \n" +
+        result = (int)(levelEconomyData.baseLevelCost + optional_cost + time_cost - bullet_cost);
+        gameSessionView.SetGameStageWin();
+        gameSessionView.UpdateWinUI(levelEconomyData.nameLevel, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
+        
+        Cursor.lockState = CursorLockMode.None;
+        localAndCloudDataService.ChangeCurrentLevel(1);
+        gameSessionView.ReturnToMenuBind(result,localAndCloudDataService);
+        /*Debug.Log($"Победа\n" +
                   $"Основная награда за уровень {levelEconomyData.baseLevelCost}$ \n" +
                   $"Деньги за опциональные объекты {optional_cost}$ \n" +
                   $"Деньги за время {time_cost}$ \n" +
                   $"Траты на пули {bullet_cost}$ \n" +
                   $"Результат {result}$ \n");
+        */
     }
-
-
+    
 }
 
 
 [Serializable]
 public class LevelEconomyData
 {
+    public string nameLevel;
+
+    public string requiredObjectString;
+    public string optionalObjectString;
+    public string triggerObjectString;
+    
+    
     [SerializeField, BoxGroup("Base Cost")]
     public int baseLevelCost = 0;
 

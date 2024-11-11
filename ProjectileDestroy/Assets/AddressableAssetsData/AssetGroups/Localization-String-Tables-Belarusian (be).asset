@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Localization-String-Tables-Belarusian (be)
+  m_EditorClassIdentifier: 
+  m_GroupName: Localization-String-Tables-Belarusian (be)
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 221dde9a8fc37dc4286b09c3fe808b10
+  m_SerializeEntries:
+  - m_GUID: 229623551d577e04280612eba9da2a64
+    m_Address: SelectWeapon_be
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-be
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 48f3ecb76d898964c872c2ac06d736d2
+    m_Address: Donat_be
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-be
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 568597d00739e814396c38f375db2397
+    m_Address: Settings_be
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-be
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 97bcc86c69434ce48a3954bf43b1bf68
+    m_Address: Levels_be
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-be
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff920907696cd1f45af420bb8320056e
+    m_Address: GameSession_be
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-be
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 1
+  m_Settings: {fileID: 11400000, guid: c265262668103ff449646941816b6785, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 8e0f751102bff744c8c2ad3a2ac79660, type: 2}
+    - {fileID: 11400000, guid: cd035517c28ff5f459f30d1082337e6a, type: 2}

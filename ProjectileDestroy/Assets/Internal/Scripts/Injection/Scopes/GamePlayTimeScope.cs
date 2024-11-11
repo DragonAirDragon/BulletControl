@@ -12,26 +12,30 @@ public class GamePlayTimeScope : LifetimeScope
     [Space]
     [SerializeField] private GameSettings settings;
     [SerializeField] private WeaponAndBulletSettings weaponAndBulletSettings;
+    
+    
     [SerializeField] private LevelObjects levelObjects;
-
     [SerializeField] private LevelEconomyData levelEconomyData;
-
     [Title("List To Inject (Список к инъекции)")]
     [Space]
     [SerializeField] private Player player;
     [SerializeField] private SmoothFollowAndRotate cameraFollow;
     [SerializeField] private List<TriggeredObjectController> triggeredObjectControllers = new List<TriggeredObjectController>();
-
-    [Title("Temporary Setting (Временная настройка)")]
-    [Space]
-    public Weapon weapon;
-
-
+    [SerializeField] private GameSessionView gameSessionView;
+    
     protected override void Configure(IContainerBuilder builder)
     {
-
+        
+        
+        
+      
         // Настройка ввода
         BindInput(builder, settings);
+        
+        
+        //Регистрация UI
+        builder.RegisterComponent(gameSessionView);
+        
         // Создание сервиса уровня
         BindLevel(builder);
         // Иньъекция в триггерные объекты
@@ -44,10 +48,7 @@ public class GamePlayTimeScope : LifetimeScope
 
         // Создание фэктори для пуль
         BindBulletFactory(builder, weaponAndBulletSettings);
-
-        // Конфиг оружия
-        builder.RegisterInstance(weaponAndBulletSettings.weaponAndWeaponSettings[weapon]);
-
+        
         builder.RegisterComponent(player);
         builder.RegisterComponent(cameraFollow);
 

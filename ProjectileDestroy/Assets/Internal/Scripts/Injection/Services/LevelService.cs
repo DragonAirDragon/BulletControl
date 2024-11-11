@@ -29,6 +29,15 @@ public class LevelService
     // Refs destroyable objects
     private LevelObjects levelObjects;
 
+
+    public (int currentOptionalObject, int maxOptionalObject) GetOptionalCount()
+    {
+        return (currentOptionalObject, maxOptionalObject);
+    }
+    
+    
+    
+
     public LevelService(LevelObjects levelObjects)
     {
         this.levelObjects = levelObjects;

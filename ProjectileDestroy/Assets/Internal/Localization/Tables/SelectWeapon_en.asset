@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SelectWeapon_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: bb8e1e7c998980c4883b74e46f8669b5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 13835952128
+    m_Localized: choose a weapon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7786200031232
+    m_Localized: Ricochets
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8473621291008
+    m_Localized: Maneuverability
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8648385355776
+    m_Localized: Speed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9134106730496
+    m_Localized: Price Of Bullet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12214294536192
+    m_Localized: play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12472521056256
+    m_Localized: buy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13193614188544
+    m_Localized: equip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13259087273984
+    m_Localized: equipped
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

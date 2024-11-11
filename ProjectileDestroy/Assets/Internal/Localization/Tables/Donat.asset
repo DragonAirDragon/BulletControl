@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Donat
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 77aabc707b6554d4aa33ca67ff3989c7, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 48f3ecb76d898964c872c2ac06d736d2, type: 2}
+  - {fileID: 11400000, guid: 9ed82e3e5f60bc048a8381b1de79ce39, type: 2}
+  - {fileID: 11400000, guid: 9f35c4f608645074faf4dd807a96de31, type: 2}
+  - {fileID: 11400000, guid: 96c4f943c73a9bf4ab09df7942b18379, type: 2}
+  - {fileID: 11400000, guid: edac871075087b04ebcfeaf2b13203fb, type: 2}
+  - {fileID: 11400000, guid: c29009831e05fbb4fa37a2c3140f80c8, type: 2}
+  - {fileID: 11400000, guid: 9b487f0fa36274a4cbb2aa77d04d3f65, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds: []

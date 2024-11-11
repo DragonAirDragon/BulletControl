@@ -58,16 +58,17 @@ public enum BulletСaliber
 public class WeaponInfo
 {
     public string weaponName;
-    public string weaponCost;
+    public int weaponCost;
     public Sprite weaponIcon;
     public Sprite weaponMainIcon;
+    public int unlockLevel;
 }
 [Serializable]
 public class WeaponSettings
 {
 
     public WeaponAnimationSettings weaponAnimationSettings;
-    [Title("BulletCaliber (Пуля которая подходит для оружия)")][Space] public BulletСaliber bulletСaliber; //+
+    [Title("BulletCaliber (Пуля которая подходит для оружия)")][Space] public BulletСaliber bulletСaliber; 
     public WeaponInfo weaponInfo;
 }
 [Serializable]
@@ -100,8 +101,11 @@ public class WeaponAnimationSettings
 [CreateAssetMenu(fileName = "WeaponSettings", menuName = "MyGame/WeaponSettings")]
 public class WeaponAndBulletSettings : SerializedScriptableObject
 {
+    
+    public List<Weapon> weaponsListOrder = new List<Weapon>();
     public Dictionary<Weapon, WeaponSettings> weaponAndWeaponSettings = new Dictionary<Weapon, WeaponSettings>();
     public Dictionary<BulletСaliber, Bullet> bulletCaliberAndBullet = new Dictionary<BulletСaliber, Bullet>();
+   
 }
 
 

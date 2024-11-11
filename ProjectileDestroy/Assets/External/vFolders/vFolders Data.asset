@@ -38,6 +38,7 @@ MonoBehaviour:
     - a80c970bf058a344b9feab2aa1abcd71
     - e00fcc8c71e797d40bd9f664ce423927
     - b22d0050b63e1504dbc0dbca3195b111
+    - f253843c9cf43614bad79d77b00e1953
     values:
     - colorIndex: 1
       iconNameOrGuid: AssemblyDefinitionAsset Icon
@@ -87,3 +88,5 @@ MonoBehaviour:
       iconNameOrGuid: RawImage Icon
     - colorIndex: 0
       iconNameOrGuid: TerrainData Icon
+    - colorIndex: 8
+      iconNameOrGuid: af012732869cd324885ecf5ff0afa0bf

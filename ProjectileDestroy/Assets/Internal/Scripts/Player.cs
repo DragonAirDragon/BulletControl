@@ -21,29 +21,38 @@ public class Player : MonoBehaviour
     bool playerActive = true;
     bool pausePlayer = false;
 
+    
+    private WeaponSettings weaponSettings;
+    
     [Title("Ref and services")]
     [Space]
     [SerializeField] private RightHandAnimator rightHandAnimator;
-    [ShowInInspector] private WeaponSettings weaponSettings;
+    private LocalAndCloudDataService localAndCloudDataService;
     [ShowInInspector] private TimeSettings timeSettings;
 
     private BulletFactory bulletFactory;
     private IInputService inputService;
     private LevelService levelService;
     private PostProcessingEffectService postProcessingEffectService;
+    private GameSessionView gameSessionView;
+    
 
-
+    private int numberOfBulletsUsed = 0;
     [Inject]
-    public void Construct(BulletFactory bulletFactory, IInputService inputService, WeaponSettings weaponSettings, TimeSettings timeSettings, PostProcessingEffectService postProcessingEffectService, LevelService levelService)
+    public void Construct(BulletFactory bulletFactory, IInputService inputService, TimeSettings timeSettings, PostProcessingEffectService postProcessingEffectService, LevelService levelService,  GameSessionView gameSessionView,LocalAndCloudDataService localAndCloudDataService)
     {
         this.bulletFactory = bulletFactory;
         this.inputService = inputService;
-        this.weaponSettings = weaponSettings;
+        
         this.timeSettings = timeSettings;
         this.levelService = levelService;
         this.postProcessingEffectService = postProcessingEffectService;
-        rightHandAnimator.weaponAnimationSettings = this.weaponSettings.weaponAnimationSettings;
+        this.gameSessionView = gameSessionView;
+        this.localAndCloudDataService = localAndCloudDataService;
+        weaponSettings = this.localAndCloudDataService.GetCurrentWeaponSettings();
+        rightHandAnimator.weaponAnimationSettings = weaponSettings.weaponAnimationSettings;
         rightHandAnimator.timeSettings = this.timeSettings;
+       
     }
 
     void Start()
@@ -55,6 +64,11 @@ public class Player : MonoBehaviour
             () =>
             {
                 ControlActivityPlayerAndCamera(true).Forget();
+                // Change Used Bullets
+                // Show bullets used
+                gameSessionView.SetGameStagePlayer();
+                gameSessionView.UpdateBulletsUI(numberOfBulletsUsed);
+                
             };
 
         levelService.OnRequiredObjectsDestroyed +=
@@ -79,6 +93,7 @@ public class Player : MonoBehaviour
     private void Shoot(BulletСaliber bulletCaliber)
     {
         bulletFactory.Create(bulletCaliber, rightHandAnimator.firePoint.position, RayCastAndCalculateAngle());
+        numberOfBulletsUsed++;
     }
 
     private Quaternion RayCastAndCalculateAngle()
@@ -100,13 +115,13 @@ public class Player : MonoBehaviour
         {
             // Вычисляем направление от объекта к точке попадания
             Vector3 direction = (hit.point - rightHandAnimator.firePoint.position).normalized;
-            Debug.Log("попадание");
+            //Debug.Log("попадание");
             // Поворачиваем объект в сторону точки попадания
             return Quaternion.LookRotation(direction);
         }
         else
         {
-            Debug.Log("непопадание");
+            //Debug.Log("непопадание");
             // Если луч не попадает, вычисляем точку на расстоянии maxDistance по направлению луча
             Vector3 endPoint = ray.origin + ray.direction * 10f;
             Vector3 direction = (endPoint - rightHandAnimator.firePoint.position).normalized;
@@ -128,6 +143,7 @@ public class Player : MonoBehaviour
         if (inputService.GetShoot())
         {
             Shoot(weaponSettings.bulletСaliber);
+            
             ControlActivityPlayerAndCamera(false).Forget();
         }
     }

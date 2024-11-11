@@ -18,7 +18,7 @@ public class DesktopInputService : IInputService
         // inputVector.y = Input.GetAxis("Mouse X");
         inputVector.x = Input.GetAxis("Vertical");
         inputVector.y = Input.GetAxis("Horizontal");
-        inputVector = inputVector * inputSettings.defaultBulletManeuverability;
+        inputVector *=  inputSettings.defaultBulletManeuverability;
         return inputVector;
     }
 

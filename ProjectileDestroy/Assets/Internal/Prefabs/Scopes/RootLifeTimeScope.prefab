@@ -48,5 +48,12 @@ MonoBehaviour:
     TypeName: 
   autoRun: 1
   autoInjectGameObjects: []
+  _weaponAndBulletSettings: {fileID: 11400000, guid: d1da9b1a211a0c24b85aeeb5270a6ed4,
+    type: 2}
+  _levelSettings: {fileID: 11400000, guid: ec27f43f5711dc14c8ce646f092a7b5b, type: 2}
+  _settingsViewPrefab: {fileID: 1697787040620341244, guid: afd10d928a9270d498c0bee5a07c145a,
+    type: 3}
+  _mixer: {fileID: 24100000, guid: cd205eea89153e046becd6e161f1a96d, type: 2}
+  _yandex: {fileID: 3489777198682709122, guid: a534f6fe574ce214cbaaf0dde74ecbd2, type: 3}
   playTimeScopePrefab: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
     type: 3}

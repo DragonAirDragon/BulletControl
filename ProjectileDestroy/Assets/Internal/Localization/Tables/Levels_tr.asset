@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Levels_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: 1e234897af348884489c28578e7b44ae, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 85617270784
+    m_Localized: "Kur\u015Funu kontrol etmeyi \xF6\u011Frenin ve yok edilebilecek
+      ana nesne t\xFCrleriyle tan\u0131\u015F\u0131n. Basit bir \xE7evre ve ipu\xE7lar\u0131,
+      temel mekanikleri \xF6\u011Frenmenize ve bu nesnelerin her biriyle nas\u0131l
+      etkile\u015Fime ge\xE7ece\u011Finizi \xF6\u011Fretir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17581465600
+    m_Localized: "\xF6\u011Fretici"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 837999910912
+    m_Localized: Seviye 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 867154518016
+    m_Localized: N
+    m_Metadata:
+      m_Items: []
+  - m_Id: 655321194496
+    m_Localized: "Kap\u0131y\u0131 a\xE7mak i\xE7in \u015Fi\u015Feyi yok et"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 346788192256
+    m_Localized: "\u015Ei\u015Feyi yok et"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

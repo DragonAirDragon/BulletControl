@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: SelectWeapon_uk
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: uk
+  m_SharedData: {fileID: 11400000, guid: bb8e1e7c998980c4883b74e46f8669b5, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 13835952128
+    m_Localized: "\u0432\u0438\u0431\u0435\u0440\u0456\u0442\u044C \u0437\u0431\u0440\u043E\u044E"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7786200031232
+    m_Localized: "\u0420\u0438\u043A\u043E\u0448\u0435\u0442\u0438"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8473621291008
+    m_Localized: "\u041C\u0430\u043D\u0435\u0432\u0440\u0435\u043D\u0456\u0441\u0442\u044C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8648385355776
+    m_Localized: "\u0428\u0432\u0438\u0434\u043A\u0456\u0441\u0442\u044C"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9134106730496
+    m_Localized: "\u0426\u0456\u043D\u0430 \u041A\u0443\u043B\u0456"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12214294536192
+    m_Localized: "\u0433\u0440\u0430\u0442\u0438"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12472521056256
+    m_Localized: "\u043A\u0443\u043F\u0438\u0442\u0438"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13193614188544
+    m_Localized: "\u0441\u043F\u043E\u0440\u044F\u0434\u0438\u0442\u0438"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13259087273984
+    m_Localized: "\u0441\u043F\u043E\u0440\u044F\u0434\u0436\u0435\u043D\u043E"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

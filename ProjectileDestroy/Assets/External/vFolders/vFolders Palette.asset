@@ -76,5 +76,13 @@ MonoBehaviour:
     customIcons: []
     enabled: 1
   - builtinIcons: []
+    customIcons:
+    - af012732869cd324885ecf5ff0afa0bf
+    enabled: 1
+  - builtinIcons: []
+    customIcons:
+    - 
+    enabled: 0
+  - builtinIcons: []
     customIcons: []
     enabled: 0

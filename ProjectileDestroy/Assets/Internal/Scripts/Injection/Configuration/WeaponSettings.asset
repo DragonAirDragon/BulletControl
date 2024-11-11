@@ -17,29 +17,53 @@ MonoBehaviour:
     SerializedBytes: 
     ReferencedUnityObjects:
     - {fileID: 8313290017084211050, guid: 0d61571c240b1594f86968cc5c405891, type: 3}
+    - {fileID: 21300000, guid: ddafd9b435aea9446a884b29b5fe2550, type: 3}
     - {fileID: 973192145558365908, guid: e68bb04873062d44db350c647dbb8563, type: 3}
+    - {fileID: 21300000, guid: 4580ac5e11bc22e4db710819fb1b5383, type: 3}
     - {fileID: 3993939213888332519, guid: 8048d385ef0de844bb303a7ef235a948, type: 3}
+    - {fileID: 21300000, guid: fbc3c1ba22b968c4ab7dc687284a101d, type: 3}
     - {fileID: 5392245789004380301, guid: 99f18a1bb1b92e94e88b43558fbbdb63, type: 3}
+    - {fileID: 21300000, guid: 9dd127924dae1394ba7d40aaf8b27bf9, type: 3}
     - {fileID: 1074479373351434086, guid: 7f180a7b4f2c8494aa2042a862cbcd5e, type: 3}
+    - {fileID: 21300000, guid: baf933c10e2bb0d44b840247640e8508, type: 3}
     - {fileID: 365249330618089006, guid: 4c31973d3618d5a45ad05103d3cddff9, type: 3}
+    - {fileID: 21300000, guid: 2c4f565b33d98714e8d84c87d49c7279, type: 3}
     - {fileID: 8781111716916587698, guid: 08a0b0a22ab6f4f48b8834af726e283c, type: 3}
+    - {fileID: 21300000, guid: d5adf546001fc0941b9419370b1b632c, type: 3}
     - {fileID: 6776401172311910207, guid: 77e062e5785c2f841864f3b3ec9bdb27, type: 3}
+    - {fileID: 21300000, guid: 70c47ad7bd390104da342afb66eb1206, type: 3}
     - {fileID: 470167723438365464, guid: a8021ef0435748e47be38b861fa577e8, type: 3}
+    - {fileID: 21300000, guid: 1387d1be6a992c2409105ce61616ad61, type: 3}
     - {fileID: 2090601283137144320, guid: 790adc80b4adcb446ad801d91eab12df, type: 3}
+    - {fileID: 21300000, guid: b22f1b84e84b2f941a2d0ebc3070bfa5, type: 3}
     - {fileID: 8294148423230653061, guid: f4120bed47d358948a7b590e408de077, type: 3}
+    - {fileID: 21300000, guid: 417dd68d5a1669e42af1b8b6cfd5f705, type: 3}
     - {fileID: 5530294939962659768, guid: a732426c8587cde44b9765a82823e971, type: 3}
+    - {fileID: 21300000, guid: edfe51e91803ccf45a2366c5f7e23b60, type: 3}
     - {fileID: 1282529501860125840, guid: 050c1ca6491f9864ca4edd6d36eb7efc, type: 3}
+    - {fileID: 21300000, guid: ff1e6619b71970943b0deb5a4c86fd3f, type: 3}
     - {fileID: 8179541766510824940, guid: 8ccb1f31d8597aa44aad9c7f14579723, type: 3}
+    - {fileID: 21300000, guid: 8161e4822d3519d4ea843911598aa572, type: 3}
     - {fileID: 3068876137589533678, guid: 27ee26679cad8f6478378c45d7b91253, type: 3}
+    - {fileID: 21300000, guid: 6e2a886c831c90142a3fa8fa5b8f0975, type: 3}
     - {fileID: 3966032580623526714, guid: c8ff688bbe6ca394db76e420e2b97499, type: 3}
+    - {fileID: 21300000, guid: 6bef51530e4413145b6f98c3e0597ae1, type: 3}
     - {fileID: 526109814910757136, guid: 5c2573bf145e08c4b85228cf8dc9f6d4, type: 3}
+    - {fileID: 21300000, guid: c8861593d2a049644a52038f1d30bf74, type: 3}
     - {fileID: 3504736276507680977, guid: c16abf8c95bc7b742826af8e7ce36255, type: 3}
+    - {fileID: 21300000, guid: 4da96171523d6794b9885c27d5ac2c24, type: 3}
     - {fileID: 2139710771222900130, guid: 8cfcffb81128ed446be760ea1c4c6488, type: 3}
+    - {fileID: 21300000, guid: 17ddb52df563031428686272611ae9db, type: 3}
     - {fileID: 7067030856800241091, guid: 41374cfd385060445843039f94d5c78b, type: 3}
+    - {fileID: 21300000, guid: 65770d4fb49e8e343bde07294b14336f, type: 3}
     - {fileID: 2213210936488910700, guid: c491de271ab0cd2489decea1a0ea4ca6, type: 3}
+    - {fileID: 21300000, guid: 7b898f004c933e545874d344618a66c5, type: 3}
     - {fileID: 8186237933032479576, guid: 49551356a12bcbd4b87b94b3b1b09ab8, type: 3}
+    - {fileID: 21300000, guid: d787e78634cc68a4481010ac7a33cb06, type: 3}
     - {fileID: 7242629979498147317, guid: febdd94b52418724db02b7713a7be9e9, type: 3}
+    - {fileID: 21300000, guid: d080efe35e36f6a41af8c06b01ddd04f, type: 3}
     - {fileID: 7698027085419352248, guid: 4350ff00b60928d4ea1e489fe91e9dce, type: 3}
+    - {fileID: 21300000, guid: d81a13d5ac08f274ea08f4318cd6640d, type: 3}
     - {fileID: 6541641904531435025, guid: 1cb39970eafe2e24089810604940c32c, type: 3}
     - {fileID: 6541641904531435025, guid: 463841d6f81f8da4e9415f2ba6227e8b, type: 3}
     - {fileID: 6541641904531435025, guid: 36dc26c7aa73da54d8eeab17d37ee0c7, type: 3}
@@ -206,6 +230,27 @@ MonoBehaviour:
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 0
+    - Name: weaponInfo
+      Entry: 7
+      Data: 4|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: Berreta
+    - Name: weaponCost
+      Entry: 3
+      Data: 600
+    - Name: weaponIcon
+      Entry: 10
+      Data: 1
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 1
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -220,10 +265,10 @@ MonoBehaviour:
       Data: 12
     - Name: $v
       Entry: 7
-      Data: 4|WeaponSettings, Assembly-CSharp
+      Data: 5|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 5|WeaponAnimationSettings, Assembly-CSharp
+      Data: 6|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -331,13 +376,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 8
+    - Name: weaponInfo
+      Entry: 7
+      Data: 7|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: AK 47
+    - Name: weaponCost
+      Entry: 3
+      Data: 1300
+    - Name: weaponIcon
+      Entry: 10
+      Data: 3
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 3
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -352,10 +418,10 @@ MonoBehaviour:
       Data: 0
     - Name: $v
       Entry: 7
-      Data: 6|WeaponSettings, Assembly-CSharp
+      Data: 8|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 7|WeaponAnimationSettings, Assembly-CSharp
+      Data: 9|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -463,13 +529,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 2
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 2
+    - Name: weaponInfo
+      Entry: 7
+      Data: 10|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: Colt Python
+    - Name: weaponCost
+      Entry: 3
+      Data: 100
+    - Name: weaponIcon
+      Entry: 10
+      Data: 5
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 5
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -484,10 +571,10 @@ MonoBehaviour:
       Data: 4
     - Name: $v
       Entry: 7
-      Data: 8|WeaponSettings, Assembly-CSharp
+      Data: 11|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 9|WeaponAnimationSettings, Assembly-CSharp
+      Data: 12|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -595,13 +682,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 3
+      Data: 6
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 1
+    - Name: weaponInfo
+      Entry: 7
+      Data: 13|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: Colt1911
+    - Name: weaponCost
+      Entry: 3
+      Data: 500
+    - Name: weaponIcon
+      Entry: 10
+      Data: 7
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 7
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -616,10 +724,10 @@ MonoBehaviour:
       Data: 1
     - Name: $v
       Entry: 7
-      Data: 10|WeaponSettings, Assembly-CSharp
+      Data: 14|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 11|WeaponAnimationSettings, Assembly-CSharp
+      Data: 15|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -727,13 +835,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 4
+      Data: 8
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 1
+    - Name: weaponInfo
+      Entry: 7
+      Data: 16|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: Glock
+    - Name: weaponCost
+      Entry: 3
+      Data: 200
+    - Name: weaponIcon
+      Entry: 10
+      Data: 9
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 9
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -748,10 +877,10 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 12|WeaponSettings, Assembly-CSharp
+      Data: 17|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 13|WeaponAnimationSettings, Assembly-CSharp
+      Data: 18|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -859,13 +988,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 5
+      Data: 10
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 0
+    - Name: weaponInfo
+      Entry: 7
+      Data: 19|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: Tec9
+    - Name: weaponCost
+      Entry: 3
+      Data: 300
+    - Name: weaponIcon
+      Entry: 10
+      Data: 11
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 11
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -880,10 +1030,10 @@ MonoBehaviour:
       Data: 3
     - Name: $v
       Entry: 7
-      Data: 14|WeaponSettings, Assembly-CSharp
+      Data: 20|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 15|WeaponAnimationSettings, Assembly-CSharp
+      Data: 21|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -991,13 +1141,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 6
+      Data: 12
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 3
+    - Name: weaponInfo
+      Entry: 7
+      Data: 22|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: DE
+    - Name: weaponCost
+      Entry: 3
+      Data: 400
+    - Name: weaponIcon
+      Entry: 10
+      Data: 13
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 13
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1012,10 +1183,10 @@ MonoBehaviour:
       Data: 13
     - Name: $v
       Entry: 7
-      Data: 16|WeaponSettings, Assembly-CSharp
+      Data: 23|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 17|WeaponAnimationSettings, Assembly-CSharp
+      Data: 24|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -1123,13 +1294,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 7
+      Data: 14
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 7
+    - Name: weaponInfo
+      Entry: 7
+      Data: 25|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: AUG
+    - Name: weaponCost
+      Entry: 3
+      Data: 1400
+    - Name: weaponIcon
+      Entry: 10
+      Data: 15
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 15
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1144,10 +1336,10 @@ MonoBehaviour:
       Data: 14
     - Name: $v
       Entry: 7
-      Data: 18|WeaponSettings, Assembly-CSharp
+      Data: 26|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 19|WeaponAnimationSettings, Assembly-CSharp
+      Data: 27|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -1255,13 +1447,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 8
+      Data: 16
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 7
+    - Name: weaponInfo
+      Entry: 7
+      Data: 28|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: G36 C
+    - Name: weaponCost
+      Entry: 3
+      Data: 1500
+    - Name: weaponIcon
+      Entry: 10
+      Data: 17
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 17
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1276,10 +1489,10 @@ MonoBehaviour:
       Data: 15
     - Name: $v
       Entry: 7
-      Data: 20|WeaponSettings, Assembly-CSharp
+      Data: 29|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 21|WeaponAnimationSettings, Assembly-CSharp
+      Data: 30|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -1387,13 +1600,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 9
+      Data: 18
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 7
+    - Name: weaponInfo
+      Entry: 7
+      Data: 31|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: M4 A4
+    - Name: weaponCost
+      Entry: 3
+      Data: 1600
+    - Name: weaponIcon
+      Entry: 10
+      Data: 19
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 19
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1408,10 +1642,10 @@ MonoBehaviour:
       Data: 16
     - Name: $v
       Entry: 7
-      Data: 22|WeaponSettings, Assembly-CSharp
+      Data: 32|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 23|WeaponAnimationSettings, Assembly-CSharp
+      Data: 33|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -1519,13 +1753,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 10
+      Data: 20
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 7
+    - Name: weaponInfo
+      Entry: 7
+      Data: 34|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: M16
+    - Name: weaponCost
+      Entry: 3
+      Data: 1700
+    - Name: weaponIcon
+      Entry: 10
+      Data: 21
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 21
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1540,10 +1795,10 @@ MonoBehaviour:
       Data: 17
     - Name: $v
       Entry: 7
-      Data: 24|WeaponSettings, Assembly-CSharp
+      Data: 35|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 25|WeaponAnimationSettings, Assembly-CSharp
+      Data: 36|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -1651,13 +1906,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 11
+      Data: 22
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 9
+    - Name: weaponInfo
+      Entry: 7
+      Data: 37|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: SCAR
+    - Name: weaponCost
+      Entry: 3
+      Data: 1800
+    - Name: weaponIcon
+      Entry: 10
+      Data: 23
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 23
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1672,10 +1948,10 @@ MonoBehaviour:
       Data: 10
     - Name: $v
       Entry: 7
-      Data: 26|WeaponSettings, Assembly-CSharp
+      Data: 38|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 27|WeaponAnimationSettings, Assembly-CSharp
+      Data: 39|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -1783,13 +2059,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 12
+      Data: 24
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 4
+    - Name: weaponInfo
+      Entry: 7
+      Data: 40|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: Bizon
+    - Name: weaponCost
+      Entry: 3
+      Data: 1100
+    - Name: weaponIcon
+      Entry: 10
+      Data: 25
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 25
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1804,10 +2101,10 @@ MonoBehaviour:
       Data: 6
     - Name: $v
       Entry: 7
-      Data: 28|WeaponSettings, Assembly-CSharp
+      Data: 41|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 29|WeaponAnimationSettings, Assembly-CSharp
+      Data: 42|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -1915,13 +2212,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 13
+      Data: 26
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 0
+    - Name: weaponInfo
+      Entry: 7
+      Data: 43|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: Micro Uzi
+    - Name: weaponCost
+      Entry: 3
+      Data: 700
+    - Name: weaponIcon
+      Entry: 10
+      Data: 27
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 27
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1936,10 +2254,10 @@ MonoBehaviour:
       Data: 7
     - Name: $v
       Entry: 7
-      Data: 30|WeaponSettings, Assembly-CSharp
+      Data: 44|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 31|WeaponAnimationSettings, Assembly-CSharp
+      Data: 45|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -2047,13 +2365,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 14
+      Data: 28
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 0
+    - Name: weaponInfo
+      Entry: 7
+      Data: 46|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: MP5
+    - Name: weaponCost
+      Entry: 3
+      Data: 800
+    - Name: weaponIcon
+      Entry: 10
+      Data: 29
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 29
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2068,10 +2407,10 @@ MonoBehaviour:
       Data: 8
     - Name: $v
       Entry: 7
-      Data: 32|WeaponSettings, Assembly-CSharp
+      Data: 47|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 33|WeaponAnimationSettings, Assembly-CSharp
+      Data: 48|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -2179,13 +2518,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 15
+      Data: 30
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 6
+    - Name: weaponInfo
+      Entry: 7
+      Data: 49|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: MP7
+    - Name: weaponCost
+      Entry: 3
+      Data: 900
+    - Name: weaponIcon
+      Entry: 10
+      Data: 31
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 31
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2200,10 +2560,10 @@ MonoBehaviour:
       Data: 9
     - Name: $v
       Entry: 7
-      Data: 34|WeaponSettings, Assembly-CSharp
+      Data: 50|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 35|WeaponAnimationSettings, Assembly-CSharp
+      Data: 51|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -2311,13 +2671,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 16
+      Data: 32
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 5
+    - Name: weaponInfo
+      Entry: 7
+      Data: 52|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: P90
+    - Name: weaponCost
+      Entry: 3
+      Data: 1000
+    - Name: weaponIcon
+      Entry: 10
+      Data: 33
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 33
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2332,10 +2713,10 @@ MonoBehaviour:
       Data: 11
     - Name: $v
       Entry: 7
-      Data: 36|WeaponSettings, Assembly-CSharp
+      Data: 53|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 37|WeaponAnimationSettings, Assembly-CSharp
+      Data: 54|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -2443,13 +2824,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 17
+      Data: 34
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 1
+    - Name: weaponInfo
+      Entry: 7
+      Data: 55|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: UMP
+    - Name: weaponCost
+      Entry: 3
+      Data: 1200
+    - Name: weaponIcon
+      Entry: 10
+      Data: 35
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 35
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2464,10 +2866,10 @@ MonoBehaviour:
       Data: 22
     - Name: $v
       Entry: 7
-      Data: 38|WeaponSettings, Assembly-CSharp
+      Data: 56|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 39|WeaponAnimationSettings, Assembly-CSharp
+      Data: 57|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -2575,13 +2977,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 18
+      Data: 36
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 12
+    - Name: weaponInfo
+      Entry: 7
+      Data: 58|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: Winchester
+    - Name: weaponCost
+      Entry: 3
+      Data: 2300
+    - Name: weaponIcon
+      Entry: 10
+      Data: 37
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 37
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2596,10 +3019,10 @@ MonoBehaviour:
       Data: 23
     - Name: $v
       Entry: 7
-      Data: 40|WeaponSettings, Assembly-CSharp
+      Data: 59|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 41|WeaponAnimationSettings, Assembly-CSharp
+      Data: 60|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -2707,13 +3130,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 19
+      Data: 38
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 10
+    - Name: weaponInfo
+      Entry: 7
+      Data: 61|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: VSSVintorez
+    - Name: weaponCost
+      Entry: 3
+      Data: 2400
+    - Name: weaponIcon
+      Entry: 10
+      Data: 39
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 39
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2728,10 +3172,10 @@ MonoBehaviour:
       Data: 20
     - Name: $v
       Entry: 7
-      Data: 42|WeaponSettings, Assembly-CSharp
+      Data: 62|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 43|WeaponAnimationSettings, Assembly-CSharp
+      Data: 63|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -2839,13 +3283,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 20
+      Data: 40
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 9
+    - Name: weaponInfo
+      Entry: 7
+      Data: 64|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: M24
+    - Name: weaponCost
+      Entry: 3
+      Data: 2100
+    - Name: weaponIcon
+      Entry: 10
+      Data: 41
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 41
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2860,10 +3325,10 @@ MonoBehaviour:
       Data: 19
     - Name: $v
       Entry: 7
-      Data: 44|WeaponSettings, Assembly-CSharp
+      Data: 65|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 45|WeaponAnimationSettings, Assembly-CSharp
+      Data: 66|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -2971,13 +3436,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 21
+      Data: 42
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 11
+    - Name: weaponInfo
+      Entry: 7
+      Data: 67|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: Dragunov
+    - Name: weaponCost
+      Entry: 3
+      Data: 2000
+    - Name: weaponIcon
+      Entry: 10
+      Data: 43
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 43
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2992,10 +3478,10 @@ MonoBehaviour:
       Data: 21
     - Name: $v
       Entry: 7
-      Data: 46|WeaponSettings, Assembly-CSharp
+      Data: 68|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 47|WeaponAnimationSettings, Assembly-CSharp
+      Data: 69|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -3103,13 +3589,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 22
+      Data: 44
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 14
+    - Name: weaponInfo
+      Entry: 7
+      Data: 70|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: Barret M82
+    - Name: weaponCost
+      Entry: 3
+      Data: 2200
+    - Name: weaponIcon
+      Entry: 10
+      Data: 45
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 45
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -3124,10 +3631,10 @@ MonoBehaviour:
       Data: 18
     - Name: $v
       Entry: 7
-      Data: 48|WeaponSettings, Assembly-CSharp
+      Data: 71|WeaponSettings, Assembly-CSharp
     - Name: weaponAnimationSettings
       Entry: 7
-      Data: 49|WeaponAnimationSettings, Assembly-CSharp
+      Data: 72|WeaponAnimationSettings, Assembly-CSharp
     - Name: timeIdleAnimation
       Entry: 4
       Data: 3
@@ -3235,13 +3742,34 @@ MonoBehaviour:
       Data: 0.5
     - Name: weaponPrefab
       Entry: 10
-      Data: 23
+      Data: 46
     - Name: 
       Entry: 8
       Data: 
     - Name: "bullet\u0421aliber"
       Entry: 3
       Data: 13
+    - Name: weaponInfo
+      Entry: 7
+      Data: 73|WeaponInfo, Assembly-CSharp
+    - Name: weaponName
+      Entry: 1
+      Data: AWP
+    - Name: weaponCost
+      Entry: 3
+      Data: 1900
+    - Name: weaponIcon
+      Entry: 10
+      Data: 47
+    - Name: weaponMainIcon
+      Entry: 10
+      Data: 47
+    - Name: unlockLevel
+      Entry: 3
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -3256,11 +3784,11 @@ MonoBehaviour:
       Data: 
     - Name: bulletCaliberAndBullet
       Entry: 7
-      Data: "50|System.Collections.Generic.Dictionary`2[[Bullet\u0421aliber, Assembly-CSharp],[Bullet,
+      Data: "74|System.Collections.Generic.Dictionary`2[[Bullet\u0421aliber, Assembly-CSharp],[Bullet,
         Assembly-CSharp]], mscorlib"
     - Name: comparer
       Entry: 7
-      Data: "51|System.Collections.Generic.EnumEqualityComparer`1[[Bullet\u0421aliber,
+      Data: "75|System.Collections.Generic.EnumEqualityComparer`1[[Bullet\u0421aliber,
         Assembly-CSharp]], mscorlib"
     - Name: 
       Entry: 12
@@ -3282,7 +3810,7 @@ MonoBehaviour:
       Data: 8
     - Name: $v
       Entry: 10
-      Data: 24
+      Data: 48
     - Name: 
       Entry: 8
       Data: 
@@ -3294,7 +3822,7 @@ MonoBehaviour:
       Data: 0
     - Name: $v
       Entry: 10
-      Data: 25
+      Data: 49
     - Name: 
       Entry: 8
       Data: 
@@ -3306,7 +3834,7 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 10
-      Data: 26
+      Data: 50
     - Name: 
       Entry: 8
       Data: 
@@ -3318,7 +3846,7 @@ MonoBehaviour:
       Data: 1
     - Name: $v
       Entry: 10
-      Data: 27
+      Data: 51
     - Name: 
       Entry: 8
       Data: 
@@ -3330,7 +3858,7 @@ MonoBehaviour:
       Data: 3
     - Name: $v
       Entry: 10
-      Data: 28
+      Data: 52
     - Name: 
       Entry: 8
       Data: 
@@ -3342,7 +3870,7 @@ MonoBehaviour:
       Data: 7
     - Name: $v
       Entry: 10
-      Data: 29
+      Data: 53
     - Name: 
       Entry: 8
       Data: 
@@ -3354,7 +3882,7 @@ MonoBehaviour:
       Data: 9
     - Name: $v
       Entry: 10
-      Data: 30
+      Data: 54
     - Name: 
       Entry: 8
       Data: 
@@ -3366,7 +3894,7 @@ MonoBehaviour:
       Data: 4
     - Name: $v
       Entry: 10
-      Data: 31
+      Data: 55
     - Name: 
       Entry: 8
       Data: 
@@ -3378,7 +3906,7 @@ MonoBehaviour:
       Data: 6
     - Name: $v
       Entry: 10
-      Data: 32
+      Data: 56
     - Name: 
       Entry: 8
       Data: 
@@ -3390,7 +3918,7 @@ MonoBehaviour:
       Data: 5
     - Name: $v
       Entry: 10
-      Data: 33
+      Data: 57
     - Name: 
       Entry: 8
       Data: 
@@ -3402,7 +3930,7 @@ MonoBehaviour:
       Data: 12
     - Name: $v
       Entry: 10
-      Data: 34
+      Data: 58
     - Name: 
       Entry: 8
       Data: 
@@ -3414,7 +3942,7 @@ MonoBehaviour:
       Data: 10
     - Name: $v
       Entry: 10
-      Data: 35
+      Data: 59
     - Name: 
       Entry: 8
       Data: 
@@ -3426,7 +3954,7 @@ MonoBehaviour:
       Data: 11
     - Name: $v
       Entry: 10
-      Data: 36
+      Data: 60
     - Name: 
       Entry: 8
       Data: 
@@ -3438,7 +3966,7 @@ MonoBehaviour:
       Data: 13
     - Name: $v
       Entry: 10
-      Data: 37
+      Data: 61
     - Name: 
       Entry: 8
       Data: 
@@ -3450,7 +3978,7 @@ MonoBehaviour:
       Data: 14
     - Name: $v
       Entry: 10
-      Data: 38
+      Data: 62
     - Name: 
       Entry: 8
       Data: 
@@ -3460,3 +3988,4 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  weaponsListOrder: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000150000001600000017000000

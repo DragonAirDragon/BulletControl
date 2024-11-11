@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Levels
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 1e234897af348884489c28578e7b44ae, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 97bcc86c69434ce48a3954bf43b1bf68, type: 2}
+  - {fileID: 11400000, guid: f8a697c978cbaf04f98db43983879e48, type: 2}
+  - {fileID: 11400000, guid: b89e09d9a2d67874c88672fdb08ef1f7, type: 2}
+  - {fileID: 11400000, guid: 510c616ffdb66234fa062d24e2777224, type: 2}
+  - {fileID: 11400000, guid: 2e428b5af4ebaff4ab1c129afb7b439b, type: 2}
+  - {fileID: 11400000, guid: 5f98752894fd73647b8e31f3930f6e47, type: 2}
+  - {fileID: 11400000, guid: a7c040fb486786a43864a308463e6718, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds: []

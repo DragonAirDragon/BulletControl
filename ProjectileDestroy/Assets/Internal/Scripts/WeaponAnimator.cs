@@ -1,7 +1,9 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 using UnityEngine;
 
 public class WeaponAnimator : MonoBehaviour
@@ -55,7 +57,57 @@ public class WeaponAnimator : MonoBehaviour
     public TimeSettings timeSettings;
 
 
-
+    [Title("Audio")]
+    [SerializeField] private AudioClip shootAudio;
+    [SerializeField] private float delayShoot;
+    [SerializeField] private float shootPitch;
+    [SerializeField] private float delayPitch;
+    
+    [SerializeField] private AudioClip backReloadAudio;
+    [SerializeField] private float delayBackReload;
+    [SerializeField] private float backReloadPitch;
+    
+    [SerializeField] private AudioClip forwardReloadAudio;
+    [SerializeField] private float delayForwardReload;
+    
+    [SerializeField] private AudioClip[] casingAudioClips; // Изменено здесь
+    
+    [SerializeField] private AudioSource audioSourceShoot;
+    [SerializeField] private AudioSource audioSourceReload;
+    
+    
+   
+    
+    
+    
+    public async UniTask ShootAudioPlay()
+    {
+        if(delayShoot!=0f) await UniTask.Delay(TimeSpan.FromSeconds(delayShoot*timeSettings.timeDilationMultiply));
+        audioSourceShoot.PlayOneShot(shootAudio);
+        if(delayPitch!=0f) await UniTask.Delay(TimeSpan.FromSeconds(delayPitch*timeSettings.timeDilationMultiply));
+        audioSourceShoot.pitch = shootPitch;
+    }
+    
+    
+    public async UniTask BackReloadAudioPlay()
+    {
+        if(backReloadAudio==null) return;
+        
+        if(delayBackReload!=0f) await UniTask.Delay(TimeSpan.FromSeconds(delayBackReload*timeSettings.timeDilationMultiply));
+        audioSourceReload.pitch = backReloadPitch;
+        audioSourceReload.PlayOneShot(backReloadAudio);
+    }
+    
+    public async UniTask ForwardReloadAudioPlay()
+    {
+        if(forwardReloadAudio==null) return;
+        
+        if(delayForwardReload!=0f) await UniTask.Delay(TimeSpan.FromSeconds(delayForwardReload*timeSettings.timeDilationMultiply));
+        audioSourceReload.pitch = 1f;
+        
+        audioSourceReload.PlayOneShot(forwardReloadAudio);
+    }
+    
 
     public void PlayShootAnimation()
     {
@@ -71,21 +123,27 @@ public class WeaponAnimator : MonoBehaviour
     public void StartShootAnimation()
     {
         muzzleFlash.SetActive(true);
+        ShootAudioPlay().Forget();
+        BackReloadAudioPlay().Forget();
         foreach (var part in weaponParts)
         {
             FirstAnimatePart(part);
+            
         }
     }
     public void EndShootAnimation()
     {
         if (particleFire != null)
         {
+            
             particleFire.Play();
+            PlayRandomCasingAudio();
         }
         else
         {
             Debug.LogWarning("ParticleSystem is not assigned!");
         }
+        ForwardReloadAudioPlay().Forget();
         foreach (var part in weaponParts)
         {
             EndAnimatePart(part);
@@ -94,7 +152,19 @@ public class WeaponAnimator : MonoBehaviour
 
     }
 
-
+    private void PlayRandomCasingAudio()
+    {
+        if (casingAudioClips.Length > 0)
+        {
+            int randomIndex = UnityEngine.Random.Range(0, casingAudioClips.Length);
+            AudioClip randomClip = casingAudioClips[randomIndex];
+            audioSourceReload.PlayOneShot(randomClip);
+        }
+        else
+        {
+            Debug.LogWarning("Нет аудиоклипов в массиве casingAudioClips!");
+        }
+    }
     private void AnimatePart(WeaponPartAnimation part)
     {
         if (part.partSequence.IsActive())
