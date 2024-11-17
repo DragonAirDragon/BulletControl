@@ -3,6 +3,7 @@ using UnityEngine.Audio;
 using UnityEngine.Serialization;
 using VContainer;
 using VContainer.Unity;
+using YG;
 
 public class RootLifetimeScope : LifetimeScope
 {
@@ -10,7 +11,6 @@ public class RootLifetimeScope : LifetimeScope
     [SerializeField] private LevelSettings _levelSettings;
     [SerializeField] private SettingsView _settingsViewPrefab;
     [SerializeField] private AudioMixer _mixer;
-    [SerializeField] private Yandex _yandex;
     
     [FormerlySerializedAs("lifetimeScopePrefab")] public GamePlayTimeScope playTimeScopePrefab;
     protected override void Configure(IContainerBuilder builder)
@@ -20,9 +20,6 @@ public class RootLifetimeScope : LifetimeScope
         builder.RegisterInstance(_weaponAndBulletSettings.weaponsListOrder);
         builder.RegisterInstance(_levelSettings.numberAndLevelInfo);
         builder.Register<AudioService>(Lifetime.Singleton).WithParameter(_mixer);
-        
-        builder.RegisterComponentInNewPrefab(_yandex, Lifetime.Singleton)
-            .DontDestroyOnLoad();
         
         builder.RegisterComponentInNewPrefab(_settingsViewPrefab, Lifetime.Singleton)
             .DontDestroyOnLoad();

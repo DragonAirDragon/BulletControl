@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using VContainer;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
+using YG;
 
 public class MainMenuView : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class MainMenuView : MonoBehaviour
    [SerializeField] private BetterTextMeshProUGUI nameLevel;
    [SerializeField] private BetterTextMeshProUGUI descriptionLevel;
    [SerializeField] private TextMeshProUGUI[] numbersLevelPanel = new TextMeshProUGUI[3];
+   [SerializeField] private Button resetProgress;
    private LocalAndCloudDataService _localAndCloudDataService;
    
    [Inject]
@@ -32,7 +34,11 @@ public class MainMenuView : MonoBehaviour
    private void Start()
    {
       LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+      resetProgress.onClick.AddListener(YandexGame.ResetSaveProgress);
    }
+   
+   
+   
    void OnLocaleChanged(UnityEngine.Localization.Locale locale)
    {
       UpdateUI(_localAndCloudDataService.GetCurrentLevel(), _localAndCloudDataService.GetCurrentLevelInfo());
@@ -48,6 +54,7 @@ public class MainMenuView : MonoBehaviour
    private void OnDestroy()
    {
       LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+      resetProgress.onClick.RemoveListener(YandexGame.ResetSaveProgress);
    }
 
    public void UpdateUI(int i ,LevelInfo levelInfo)

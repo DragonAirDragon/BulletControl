@@ -29,6 +29,8 @@ public class LevelService
     // Refs destroyable objects
     private LevelObjects levelObjects;
 
+    public Bullet bullet;
+
 
     public (int currentOptionalObject, int maxOptionalObject) GetOptionalCount()
     {

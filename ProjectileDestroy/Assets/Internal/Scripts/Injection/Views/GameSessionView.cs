@@ -1,9 +1,11 @@
+using System;
 using TheraBytes.BetterUi;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using YG;
 
 public class GameSessionView : MonoBehaviour
 {
@@ -28,10 +30,9 @@ public class GameSessionView : MonoBehaviour
     
     public Button returnToMenuButton;
     public Button doubleRewardButton;
-    
-    
-    
-    
+
+
+   
     public void SetGameStageBullet()
     {
         bulletCountGameObject?.SetActive(false);
@@ -42,6 +43,12 @@ public class GameSessionView : MonoBehaviour
         bulletCountGameObject?.SetActive(true);
         bulletRicochetCountGameObject?.SetActive(false);
     }
+
+    public void DoubleRewardSubscribe()
+    {
+        YandexGame.RewVideoShow(0);
+    }
+    
 
     public void SetGameStageWin()
     {
@@ -101,9 +108,14 @@ public class GameSessionView : MonoBehaviour
             localAndCloudDataService.ChangeCurrentMoney(resultMoney);
             SceneManager.LoadScene("MainMenu");
         });
+        doubleRewardButton.onClick.AddListener(DoubleRewardSubscribe);
        
     }
-    
+
+    public void SetActiveDoubleRewardButton(bool value)
+    {
+        doubleRewardButton.interactable = value;
+    }
     
     
     

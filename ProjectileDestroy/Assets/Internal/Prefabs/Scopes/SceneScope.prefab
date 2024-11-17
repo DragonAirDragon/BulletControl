@@ -51,5 +51,26 @@ MonoBehaviour:
   settings: {fileID: 11400000, guid: c399d772be20e6b46b82042689b8608c, type: 2}
   weaponAndBulletSettings: {fileID: 11400000, guid: d1da9b1a211a0c24b85aeeb5270a6ed4,
     type: 2}
+  levelObjects:
+    requiredObjects:
+    - {fileID: 0}
+    optionalObjects: []
+    triggerObjects:
+    - {fileID: 0}
+  levelEconomyData:
+    nameLevel: Level1Name
+    requiredObjectString: Level1Req
+    optionalObjectString: 
+    triggerObjectString: Level1Trigger
+    baseLevelCost: 100
+    bestTime: 2
+    worstTime: 20
+    bestTimeCost: 200
+    worstTimeCost: 0
+    bestOptionalCost: 200
+    worstOptionalCost: 0
   player: {fileID: 0}
   cameraFollow: {fileID: 0}
+  triggeredObjectControllers:
+  - {fileID: 0}
+  gameSessionView: {fileID: 0}

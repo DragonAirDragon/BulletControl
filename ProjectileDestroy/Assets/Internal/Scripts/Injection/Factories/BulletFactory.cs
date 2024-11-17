@@ -47,7 +47,11 @@ public class BulletFactory
         OnBulletDestroyed.Invoke();
     }
 
-
+    public Bullet GetCurrentBullet()
+    {
+        return currentBullet;
+    }
+    
     public int GetCostForAllUsedBullets()
     {
         return usedBulletCost;

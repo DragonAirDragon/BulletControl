@@ -19,6 +19,8 @@ public class Bullet : MonoBehaviour
     public int bulletCost = 20;
     public int MaxBulletCost = 30;
     private GameSessionView gameSessionView;
+    private float currentSpeed = 2f;
+    
     
     public float Speed
     {
@@ -81,7 +83,7 @@ public class Bullet : MonoBehaviour
 
     [Title("Actions")]
     public Action OnBulletDestroyed;
-
+    
 
 
     [Inject]
@@ -92,6 +94,9 @@ public class Bullet : MonoBehaviour
         this.levelService.OnPaused += () => { SetPauseBullet(true); };
         this.levelService.OnUnpaused += () => { SetPauseBullet(false); };
         this.gameSessionView = gameSessionView;
+        
+        this.levelService.bullet = this;
+
     }
 
     void Start()
@@ -143,8 +148,7 @@ public class Bullet : MonoBehaviour
                     Destroy(hit.collider.gameObject);
                 }
             }
-
-            if (hit.collider.CompareTag("Map"))
+            else if (hit.collider.CompareTag("Map"))
             {
                 // Calculate reflection direction
                 Vector3 reflectionDirection = Vector3.Reflect(bulletTransform.forward, hit.normal);
@@ -154,15 +158,28 @@ public class Bullet : MonoBehaviour
                 gameSessionView.UpdateRicochetUI(countRicochet);
                 PlayRandomRicochetAudio();
             }
+            else if (hit.collider.CompareTag("FreeRicochet"))
+            {
+                // Calculate reflection direction
+                Vector3 reflectionDirection = Vector3.Reflect(bulletTransform.forward, hit.normal);
+                // Convert reflection direction to rotation
+                QuaternionToRotation(DirectionToRotation(reflectionDirection), out rotationX, out rotationY);
+                PlayRandomRicochetAudio();
+            }
         }
 
         bulletTransform.localRotation = Quaternion.Euler(rotationX, rotationY, 0f);
-        bulletTransform.position += bulletTransform.forward * (speed * Time.deltaTime);
+        bulletTransform.position += bulletTransform.forward * (currentSpeed * Time.deltaTime);
 
         if (countRicochet <= 0)
         {
-            Destroy(this.gameObject);
+            DestroyBullet();
         }
+    }
+
+    public void DestroyBullet()
+    {
+        Destroy(this.gameObject);
     }
 
 
@@ -199,5 +216,10 @@ public class Bullet : MonoBehaviour
         {
             Debug.LogWarning("Нет аудиоклипов в массиве ricochetAudioClips!");
         }
+    }
+
+    public void SetSpeed()
+    {
+        currentSpeed = speed;
     }
 }

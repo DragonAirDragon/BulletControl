@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DestroyTag
   - Map
+  - FreeRicochet
   layers:
   - Default
   - TransparentFX

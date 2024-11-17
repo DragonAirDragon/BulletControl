@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using VContainer;
+using YG;
 
 public class MainMenuNavigate : MonoBehaviour
 {
@@ -14,6 +16,11 @@ public class MainMenuNavigate : MonoBehaviour
     public void Construct(SettingsView settingsViewUI)
     {
         this.settingsViewUI = settingsViewUI;
+    }
+
+    private void Start()
+    {
+        if(YandexGame.savesData.showAd) YandexGame.FullscreenShow();
     }
 
     public void OpenSelectWeaponUI()

@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 using VContainer;
+using YG;
 
 public class DonatView : MonoBehaviour
 {
@@ -26,16 +27,23 @@ public class DonatView : MonoBehaviour
     }
     public void BuyMoney()
     {
-        // добавить хуету для яндекса
-        localAndCloudDataService.ChangeCurrentMoney(99999);
+        Debug.Log("Покупка денег");
+        YandexGame.BuyPayments("10");
     }
-
     public void BuyAdFree()
     {
-        localAndCloudDataService.SetAdActivity(false);
-        UpdateUI();
+        Debug.Log("Покупка рекламы");
+        YandexGame.BuyPayments("20");
     }
 
+ 
+    
+    
+    
+    
+   
+   
+    
     private void UpdateUI()
     {
         if (!localAndCloudDataService.GetAdActivity()) colorUIImageAnimation.SetBuyingAd();

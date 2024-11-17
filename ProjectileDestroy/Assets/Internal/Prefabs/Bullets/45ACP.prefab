@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 665eb4f58c69d2f4ca06aa0cec3b0b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 10.29
   MaxSpeed: 30
   maneuverability: 1
   MaxManeuverability: 30

@@ -87,6 +87,7 @@ public class SelectWeaponView : MonoBehaviour
    private void OnDestroy()
    {
       LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+      _localAndCloudDataService.OnDataUpdated -= UpdateAllUI;
    }
    void OnLocaleChanged(UnityEngine.Localization.Locale locale)
    {

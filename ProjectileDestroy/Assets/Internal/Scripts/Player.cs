@@ -153,18 +153,22 @@ public class Player : MonoBehaviour
 
         if (!activity)
         {
+            SetActivePlayer(false);
             rightHandAnimator.StartShootAnim();
             await UniTask.Delay(TimeSpan.FromSeconds(rightHandAnimator.weaponAnimationSettings.recoilDuration * timeSettings.timeDilationMultiply));
+            bulletFactory.GetCurrentBullet().SetSpeed();
+            
             if (cameraTransform != null) cameraTransform.gameObject.SetActive(activity);
             postProcessingEffectService.SetSpeedEffect(true);
         }
         else
         {
+            SetActivePlayer(true);
             if (cameraTransform != null) cameraTransform.gameObject.SetActive(activity);
             postProcessingEffectService.SetSpeedEffect(false);
             rightHandAnimator.EndShootAnim();
         }
-        SetActivePlayer(activity);
+        
     }
 
     private void SetActivePlayer(bool activityPlayer)

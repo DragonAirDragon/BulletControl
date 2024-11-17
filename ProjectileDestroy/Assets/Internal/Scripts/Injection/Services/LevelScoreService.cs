@@ -4,6 +4,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using VContainer.Unity;
+using YG;
 
 public class LevelScoreService : IStartable,IDisposable
 {
@@ -16,6 +17,7 @@ public class LevelScoreService : IStartable,IDisposable
     private bool _timerOn = false;
     private GameSessionView gameSessionView;
     private int result;
+    
     
     public LevelScoreService(LevelEconomyData levelEconomyData, LevelService levelService, BulletFactory bulletFactory,  GameSessionView gameSessionView,LocalAndCloudDataService localAndCloudDataService)
     {
@@ -49,6 +51,9 @@ public class LevelScoreService : IStartable,IDisposable
     void IStartable.Start()
     {
         Initialize();
+        YandexGame.GameplayStart();
+        YandexGame.RewardVideoEvent += DoubleRewardSuccess;
+        
     }
     private void Initialize()
     {
@@ -93,8 +98,8 @@ public class LevelScoreService : IStartable,IDisposable
     public void CalculateScore()
     {
         var optionalObject = levelService.GetOptionalObjectCounts();
-        var bullet_cost = bulletFactory.GetCostForAllUsedBullets();
-
+        var bullet_cost = Mathf.Clamp(bulletFactory.GetCostForAllUsedBullets(),0,levelEconomyData.bestBulletCost);
+        Debug.Log(bullet_cost);
         float optionalRatio = (optionalObject.maxOptional != 0) ?
             (float)optionalObject.currentOptional / optionalObject.maxOptional : 0f;
 
@@ -107,10 +112,11 @@ public class LevelScoreService : IStartable,IDisposable
         result = (int)(levelEconomyData.baseLevelCost + optional_cost + time_cost - bullet_cost);
         gameSessionView.SetGameStageWin();
         gameSessionView.UpdateWinUI(levelEconomyData.nameLevel, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
-        
+        levelService.bullet.DestroyBullet();
         Cursor.lockState = CursorLockMode.None;
         localAndCloudDataService.ChangeCurrentLevel(1);
         gameSessionView.ReturnToMenuBind(result,localAndCloudDataService);
+        YandexGame.GameplayStop();
         /*Debug.Log($"Победа\n" +
                   $"Основная награда за уровень {levelEconomyData.baseLevelCost}$ \n" +
                   $"Деньги за опциональные объекты {optional_cost}$ \n" +
@@ -118,9 +124,23 @@ public class LevelScoreService : IStartable,IDisposable
                   $"Траты на пули {bullet_cost}$ \n" +
                   $"Результат {result}$ \n");
         */
+        
     }
-    
+
+    private void DoubleRewardSuccess(int i)
+    {
+        if(i == 0)
+        {
+            result *= 2;
+            gameSessionView.SetActiveDoubleRewardButton(false);
+            gameSessionView.UpdateWinUI(levelEconomyData.nameLevel, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
+            gameSessionView.ReturnToMenuBind(result,localAndCloudDataService);
+        }
+    }
 }
+
+
+
 
 
 [Serializable]
@@ -150,6 +170,9 @@ public class LevelEconomyData
     private int bestOptionalCost;
     [SerializeField, BoxGroup("Optional Objects Cost Range")]
     private int worstOptionalCost;
+    
+    public int bestBulletCost;
+    
 
     [ShowInInspector, BoxGroup("Time Range")]
     public (int BestTime, int WorstTime) TimeRange

@@ -54,6 +54,5 @@ MonoBehaviour:
   _settingsViewPrefab: {fileID: 1697787040620341244, guid: afd10d928a9270d498c0bee5a07c145a,
     type: 3}
   _mixer: {fileID: 24100000, guid: cd205eea89153e046becd6e161f1a96d, type: 2}
-  _yandex: {fileID: 3489777198682709122, guid: a534f6fe574ce214cbaaf0dde74ecbd2, type: 3}
   playTimeScopePrefab: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
     type: 3}

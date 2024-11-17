@@ -2,20 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using YG;
 
 public class LocalAndCloudDataService
 {
-    //Changed Data
-    private ChangedData _changedData = new ChangedData();
-    
     // PermanentData
     private Dictionary<Weapon, WeaponSettings> weaponAndWeaponSettings;
     private List<Weapon> weaponsListOrder;
     private Dictionary<BulletСaliber, Bullet> bulletCaliberAndBullet;
     private Dictionary<int, LevelInfo> numberAndLevelInfo;
-    
-    //Service
-    private Yandex yandex;
     
     //Actions
     public event Action<int> OnMoneyChanged;
@@ -25,39 +20,38 @@ public class LocalAndCloudDataService
     
     
     //YandexService
-    public LocalAndCloudDataService(Dictionary<Weapon, WeaponSettings> weaponAndWeaponSettings, Dictionary<BulletСaliber, Bullet> bulletCaliberAndBullet,List<Weapon> weaponsListOrder ,Dictionary<int, LevelInfo> numberAndLevelInfo,Yandex yandex)
+    public LocalAndCloudDataService(Dictionary<Weapon, WeaponSettings> weaponAndWeaponSettings, Dictionary<BulletСaliber, Bullet> bulletCaliberAndBullet,List<Weapon> weaponsListOrder ,Dictionary<int, LevelInfo> numberAndLevelInfo)
     {
         this.weaponAndWeaponSettings = weaponAndWeaponSettings;
         this.bulletCaliberAndBullet = bulletCaliberAndBullet;
         this.weaponsListOrder = weaponsListOrder;
         this.numberAndLevelInfo = numberAndLevelInfo;
         
-        this.yandex = yandex;
-        this.yandex.OnDataLoaded += LoadData;
+        //this.yandex = yandex;
+        //this.yandex.OnDataLoaded += LoadData;
+        YandexGame.GetDataEvent += LoadData;
+        YandexGame.PurchaseSuccessEvent += SuccessPurchased;
     }
-
-    private void SaveOnCloudData()
+    
+    void SuccessPurchased(string id)
     {
-        yandex.SaveDataToYandex(_changedData);
-    }
-    private void LoadFromCloudData()
-    {
-        yandex.LoadDataFromYandex();
-    }
-
-    private void LoadData(ChangedData changedData)
-    {
-        if(changedData.purchasedWeapons != null && changedData.purchasedWeapons.Count > 0 && changedData.moneyCount != 0)
+        // Ваш код для обработки покупки. Например:
+        if (id == "10")
         {
-            _changedData = changedData;
-
-            Debug.Log("Основные данные: \n" + _changedData.moneyCount.ToString() + "  " +
-                      _changedData.currentLevel.ToString() + "  " + _changedData.equipmentWeapon.ToString() + "  " +
-                      _changedData.purchasedWeapons.ToString() + "  " + _changedData.showAd.ToString());
-            OnDataUpdated?.Invoke();
-            OnMoneyChanged?.Invoke(_changedData.moneyCount);
+            ChangeCurrentMoney(99999);
         }
-        
+        else if (id == "20")
+        {
+            SetAdActivity(false);
+            OnDataUpdated?.Invoke();
+        }
+        YandexGame.SaveProgress();
+    }
+    
+    private void LoadData()
+    {
+        OnDataUpdated?.Invoke();
+        OnMoneyChanged?.Invoke(YandexGame.savesData.moneyCount);
     }
     
 
@@ -65,14 +59,14 @@ public class LocalAndCloudDataService
     #region Money
     public int GetCurrentMoney()
     {
-        return _changedData.moneyCount;
+        return YandexGame.savesData.moneyCount;
     }
 
     public void ChangeCurrentMoney(int value)
     {
-        _changedData.moneyCount = Mathf.Clamp(_changedData.moneyCount + value, 0, 9999);
-        SaveOnCloudData();
-        OnMoneyChanged?.Invoke(_changedData.moneyCount); 
+        YandexGame.savesData.moneyCount = Mathf.Clamp(YandexGame.savesData.moneyCount + value, 0, 9999);
+        YandexGame.SaveProgress();
+        OnMoneyChanged?.Invoke(YandexGame.savesData.moneyCount); 
     }
 
     #endregion
@@ -82,12 +76,12 @@ public class LocalAndCloudDataService
     
     public Weapon GetEquipmentWeapon()
     {
-        return _changedData.equipmentWeapon;
+        return YandexGame.savesData.equipmentWeapon;
     }
 
     public void SetEquipmentWeapon(Weapon newWeapon)
     {
-        _changedData.equipmentWeapon = newWeapon;
+        YandexGame.savesData.equipmentWeapon = newWeapon;
     }
     //Weapon
     public WeaponInfo GetWeaponInfoByWeapon(Weapon weapon)
@@ -104,7 +98,7 @@ public class LocalAndCloudDataService
     
     public bool CheckPurchasedWeapon(Weapon weapon)
     {
-        if (_changedData.purchasedWeapons.Contains(weapon))
+        if (YandexGame.savesData.purchasedWeapons.Contains(weapon))
         {
             return true;
         }
@@ -117,7 +111,7 @@ public class LocalAndCloudDataService
 
     public void BuyWeapon(Weapon weapon)
     {
-        if (weaponAndWeaponSettings[weapon].weaponInfo.weaponCost > _changedData.moneyCount) return;
+        if (weaponAndWeaponSettings[weapon].weaponInfo.weaponCost > YandexGame.savesData.moneyCount) return;
         SetWeaponPurchasedStatus(weapon);
         ChangeCurrentMoney(-weaponAndWeaponSettings[weapon].weaponInfo.weaponCost);
     }
@@ -126,16 +120,16 @@ public class LocalAndCloudDataService
     
     public void SetWeaponPurchasedStatus(Weapon weapon)
     {
-        if (!_changedData.purchasedWeapons.Contains(weapon))
+        if (!YandexGame.savesData.purchasedWeapons.Contains(weapon))
         {
-            _changedData.purchasedWeapons.Add(weapon);
+            YandexGame.savesData.purchasedWeapons.Add(weapon);
         }
-        SaveOnCloudData();
+        YandexGame.SaveProgress();
     }
 
     public bool CheckLevelAndWeaponRequiredLevel(Weapon weapon)
     {
-        return weaponAndWeaponSettings[weapon].weaponInfo.unlockLevel <= _changedData.currentLevel;
+        return weaponAndWeaponSettings[weapon].weaponInfo.unlockLevel <= YandexGame.savesData.currentLevel;
     }
     
     public List<Weapon> GetWeaponOrder()
@@ -145,7 +139,7 @@ public class LocalAndCloudDataService
 
     public WeaponSettings GetCurrentWeaponSettings()
     {
-        return weaponAndWeaponSettings[_changedData.equipmentWeapon];
+        return weaponAndWeaponSettings[YandexGame.savesData.equipmentWeapon];
     }
 
     
@@ -156,13 +150,13 @@ public class LocalAndCloudDataService
     // Ad
     public void SetAdActivity(bool value)
     {
-        _changedData.showAd = value;
-        SaveOnCloudData();
+        YandexGame.savesData.showAd = value;
+        YandexGame.SaveProgress();
     }
 
     public bool GetAdActivity()
     {
-        return _changedData.showAd;
+        return YandexGame.savesData.showAd;
     }
     #endregion
     
@@ -170,17 +164,17 @@ public class LocalAndCloudDataService
     // Change Current Level
     public void ChangeCurrentLevel(int value)
     {
-        _changedData.currentLevel = Mathf.Clamp(value, 0, 50);
-        SaveOnCloudData();
+        YandexGame.savesData.currentLevel = Mathf.Clamp(value, 0, 50);
+        YandexGame.SaveProgress();
     }
     public int GetCurrentLevel()
     {
-        return _changedData.currentLevel;
+        return YandexGame.savesData.currentLevel;
     }
 
     public LevelInfo GetCurrentLevelInfo()
     {
-        return numberAndLevelInfo[_changedData.currentLevel];
+        return numberAndLevelInfo[YandexGame.savesData.currentLevel];
     }
     
     #endregion
