@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 6414190346360418690}
-  - component: {fileID: 2141800648180860604}
   - component: {fileID: 8836862191593592631}
+  - component: {fileID: 3484200951623025139}
   m_Layer: 0
   m_Name: Vehicle_Car_color02
   m_TagString: Map
@@ -98,8 +98,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447cf81bd06af284781dfd4985756c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScannedMeshesList: []
-  modeOfMeshesScanning: 0
+  currentScannedMeshesList:
+  - originalGameObject: {fileID: 0}
+    originalSkinnedMeshRenderer: {fileID: 0}
+    originalMeshFilter: {fileID: 0}
+    originalMeshRenderer: {fileID: 0}
+    allMeshLods:
+    - {fileID: 4300000, guid: 49fee4c5907e33545a3b2db2e9d66675, type: 3}
+    - {fileID: 4300000, guid: c93d904b6fc44b044814c54f7aa50fca, type: 2}
+    - {fileID: 4300000, guid: 8866db1ff0b38cd4c90c2a7bdf1b9347, type: 2}
+    - {fileID: 4300000, guid: bd46215f574aa9745939db93e559ffb6, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    allMeshLodsPaths:
+    - Assets/External/Models/Environment/OtherVisual/Cars/Vehicle_Car.fbx
+    - Assets/MT Assets/_AssetsData/Meshes/LODs_1/LOD1_638681257216490313.asset
+    - Assets/MT Assets/_AssetsData/Meshes/LODs_2/LOD2_638681257216490313.asset
+    - Assets/MT Assets/_AssetsData/Meshes/LODs_3/LOD3_638681257216490313.asset
+    - 
+    - 
+    - 
+    - 
+    - 
+    canChangeMaterialsOnThisMeshLods: 0
+    allMeshLodsMaterials:
+    - materialArray:
+      - {fileID: 2100000, guid: 444598fdbae3357408ac7daa0fd9eabe, type: 2}
+    - materialArray:
+      - {fileID: 2100000, guid: 444598fdbae3357408ac7daa0fd9eabe, type: 2}
+    - materialArray:
+      - {fileID: 2100000, guid: 444598fdbae3357408ac7daa0fd9eabe, type: 2}
+    - materialArray:
+      - {fileID: 2100000, guid: 444598fdbae3357408ac7daa0fd9eabe, type: 2}
+    - materialArray: []
+    - materialArray: []
+    - materialArray: []
+    - materialArray: []
+    - materialArray: []
+    originalMeshLodsManager: {fileID: 0}
+    beforeCullingData_lastMeshOfThis: {fileID: 0}
+    beforeCullingData_isForcedToRenderizationOff: 0
+  modeOfMeshesScanning: 1
   scanInactiveGameObjects: 0
   gameObjectsToIgnore: []
   levelsOfDetailToGenerate: 3
@@ -161,7 +203,29 @@ MonoBehaviour:
   last_minDistanceOfViewForCull: 270
   setupRunned: 1
   isLodSimulationEnabledInThisSceneForEditorSceneViewMode: 1
---- !u!114 &2141800648180860604
+--- !u!64 &8836862191593592631
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 49fee4c5907e33545a3b2db2e9d66675, type: 3}
+--- !u!114 &3484200951623025139
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,25 +249,3 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
---- !u!64 &8836862191593592631
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 49fee4c5907e33545a3b2db2e9d66675, type: 3}
