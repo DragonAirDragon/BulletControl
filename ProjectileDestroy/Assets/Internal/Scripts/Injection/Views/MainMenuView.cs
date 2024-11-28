@@ -64,9 +64,9 @@ public class MainMenuView : MonoBehaviour
       
       
       
-      var localizedStringNameLevel = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("Levels", levelInfo.levelNameKey);
+      var localizedStringNameLevel = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("Levels", "Level" + (i+1).ToString()+ "Name");
       
-      var localizedStringDescriptionLevel = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("Levels", levelInfo.descriptionKey);
+      var localizedStringDescriptionLevel = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("Levels", "Level" + (i+1).ToString()+ "Description");
       
       
       
@@ -78,7 +78,7 @@ public class MainMenuView : MonoBehaviour
          }
          else
          {
-            Debug.LogError($"Не удалось загрузить локализованную строку для ключа: {levelInfo.levelNameKey}");
+            Debug.LogError($"Не удалось загрузить локализованную строку для ключа: {"Level" + (i+1).ToString()+ "Name"}");
          }
       };
       
@@ -90,7 +90,7 @@ public class MainMenuView : MonoBehaviour
          }
          else
          {
-            Debug.LogError($"Не удалось загрузить локализованную строку для ключа: {levelInfo.descriptionKey}");
+            Debug.LogError($"Не удалось загрузить локализованную строку для ключа: {"Level" + (i+1).ToString()+ "Description"}");
          }
       };
       

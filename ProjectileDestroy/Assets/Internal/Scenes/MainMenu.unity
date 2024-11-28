@@ -14742,7 +14742,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.15
+  m_fontSize: 31.15
   m_fontSizeBase: 54.33
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -16159,7 +16159,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.1
+  m_fontSize: 27.2
   m_fontSizeBase: 32.41
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -16543,7 +16543,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 4494143166888880824, guid: cd205eea89153e046becd6e161f1a96d,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 97d55c23c385a7344979a588c2682e2c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f8ce54823f8fbc5418d51e0a2c990f71, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -16729,7 +16729,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.15
+  m_fontSize: 31.15
   m_fontSizeBase: 54.33
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -17293,12 +17293,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.219597
+  m_fontSize: 19.328493
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 29.219597
+  m_fontSizeMax: 19.328493
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -18978,7 +18978,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48.15
+  m_fontSize: 31.15
   m_fontSizeBase: 54.33
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -19823,12 +19823,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31
+  m_fontSize: 20.943216
   m_fontSizeBase: 31
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 31.660635
+  m_fontSizeMax: 20.943216
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512

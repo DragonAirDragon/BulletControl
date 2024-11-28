@@ -162,9 +162,10 @@ public class LocalAndCloudDataService
     
     #region Level
     // Change Current Level
-    public void ChangeCurrentLevel(int value)
+    
+    public void NextLevel()
     {
-        YandexGame.savesData.currentLevel = Mathf.Clamp(value, 0, 50);
+        YandexGame.savesData.currentLevel = Mathf.Clamp(YandexGame.savesData.currentLevel+1, 0, 44);
         YandexGame.SaveProgress();
     }
     public int GetCurrentLevel()

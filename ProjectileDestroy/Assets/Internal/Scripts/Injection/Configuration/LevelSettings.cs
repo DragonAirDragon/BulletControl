@@ -8,10 +8,7 @@ using UnityEngine.Serialization;
 [Serializable]
 public class LevelInfo
 {
-    public string descriptionKey;
-    public string levelNameKey;
     public Sprite levelSplashImage;
-    public string sceneName;
 }
 
 [CreateAssetMenu(fileName = "LevelSettings", menuName = "MyGame/LevelSettings")]

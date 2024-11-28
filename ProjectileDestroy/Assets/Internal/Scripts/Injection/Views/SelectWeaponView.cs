@@ -62,7 +62,7 @@ public class SelectWeaponView : MonoBehaviour
 
    public void LoadLevel()
    {
-      SceneManager.LoadScene(_localAndCloudDataService.GetCurrentLevelInfo().sceneName);
+      SceneManager.LoadScene("Level" + (_localAndCloudDataService.GetCurrentLevel()+1).ToString() + "A");
       
    }
 

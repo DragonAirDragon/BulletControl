@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3224277018948751427}
   - component: {fileID: 3211172073112915096}
   - component: {fileID: 8151259218669807162}
+  - component: {fileID: 713643710946788679}
   m_Layer: 0
   m_Name: Glass
   m_TagString: DestroyTag
@@ -192,6 +193,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Force: 100
   Radius: 1
+--- !u!114 &713643710946788679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636742865481761307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f56ca841e3d10d4c9d4db8fb109e326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2346812094581262423
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +220,7 @@ GameObject:
   - component: {fileID: 2259486396107420278}
   - component: {fileID: 7085831896960293157}
   - component: {fileID: 2385235697462384045}
+  - component: {fileID: 3284306261876526609}
   m_Layer: 0
   m_Name: Glass (5)
   m_TagString: DestroyTag
@@ -384,6 +398,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Force: 100
   Radius: 1
+--- !u!114 &3284306261876526609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2346812094581262423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f56ca841e3d10d4c9d4db8fb109e326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3646632325180539037
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,6 +425,7 @@ GameObject:
   - component: {fileID: 6796892641909416335}
   - component: {fileID: 8775184779242590198}
   - component: {fileID: 1185556257012833530}
+  - component: {fileID: 2658099225302552999}
   m_Layer: 0
   m_Name: Glass
   m_TagString: DestroyTag
@@ -576,6 +603,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Force: 100
   Radius: 1
+--- !u!114 &2658099225302552999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3646632325180539037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f56ca841e3d10d4c9d4db8fb109e326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5150566721452178257
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,6 +630,7 @@ GameObject:
   - component: {fileID: 5469914975350473292}
   - component: {fileID: 5437004251675787667}
   - component: {fileID: 8382247034580389152}
+  - component: {fileID: 5074826747838241795}
   m_Layer: 0
   m_Name: Glass (1)
   m_TagString: DestroyTag
@@ -768,6 +808,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Force: 100
   Radius: 1
+--- !u!114 &5074826747838241795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5150566721452178257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f56ca841e3d10d4c9d4db8fb109e326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5990785901851959474
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,6 +835,7 @@ GameObject:
   - component: {fileID: 6210738107358381877}
   - component: {fileID: 1421489189270786137}
   - component: {fileID: 3684286091280949840}
+  - component: {fileID: 3515536373057959267}
   m_Layer: 0
   m_Name: Glass
   m_TagString: DestroyTag
@@ -960,6 +1013,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Force: 100
   Radius: 1
+--- !u!114 &3515536373057959267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5990785901851959474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f56ca841e3d10d4c9d4db8fb109e326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8580708433013131392
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,6 +1040,7 @@ GameObject:
   - component: {fileID: 4059891427237486398}
   - component: {fileID: 4815714179009759920}
   - component: {fileID: 8534144450664834037}
+  - component: {fileID: 9216192885212591620}
   m_Layer: 0
   m_Name: Glass (3)
   m_TagString: DestroyTag
@@ -1152,6 +1218,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Force: 100
   Radius: 1
+--- !u!114 &9216192885212591620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8580708433013131392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f56ca841e3d10d4c9d4db8fb109e326, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8899663901474071322
 GameObject:
   m_ObjectHideFlags: 0

@@ -47,11 +47,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13193614188544
-    m_Localized: jihozlash
+    m_Localized: 'tanlash
+
+'
     m_Metadata:
       m_Items: []
   - m_Id: 13259087273984
-    m_Localized: jihozlangan
+    m_Localized: tanlangan
     m_Metadata:
       m_Items: []
   references:

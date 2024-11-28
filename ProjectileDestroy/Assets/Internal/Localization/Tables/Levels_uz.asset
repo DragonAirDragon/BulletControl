@@ -30,19 +30,656 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 837999910912
-    m_Localized: 1-daraja
+    m_Localized: 2-daraja
     m_Metadata:
       m_Items: []
   - m_Id: 867154518016
-    m_Localized: N
-    m_Metadata:
-      m_Items: []
-  - m_Id: 655321194496
-    m_Localized: "Eshikni ochish uchun shishani yo\u2018q qiling"
+    m_Localized: 2-darajadagi 3 nishonni urish uchun qaytish va manevrlikdan foydalaning
     m_Metadata:
       m_Items: []
   - m_Id: 346788192256
     m_Localized: "Shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6834090220978176
+    m_Localized: "3 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 607317385216
+    m_Localized: Qo'shimcha nishonni yo'q qilish (shisha)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6915910581092352
+    m_Localized: 3-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6916050821840896
+    m_Localized: "3-darajadagi 3 asosiy va 1 qo\u2018shimcha nishonni urish uchun
+      qaytish va manevrlikdan foydalaning"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6916206610874368
+    m_Localized: "3 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6916327339720704
+    m_Localized: "Qo\u2018shimcha shishani uring"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6916454754287616
+    m_Localized: 4-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6916716583714816
+    m_Localized: "4-darajadagi 3 asosiy va 1 qo\u2018shimcha nishonni urish uchun
+      qaytish va manevrlikdan foydalaning\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6916932472930304
+    m_Localized: "3 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6917071497330688
+    m_Localized: "Qo\u2018shimcha shishani uring"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6917235045826560
+    m_Localized: 5-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6925846857908224
+    m_Localized: "5-darajadagi 3 asosiy va 1 qo\u2018shimcha nishonni urish uchun
+      qaytish va manevrlikdan foydalaning\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6926032153870336
+    m_Localized: "3 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6926380633423872
+    m_Localized: "Qo\u2018shimcha shishani uring"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6926580861108224
+    m_Localized: 6-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6926734552989696
+    m_Localized: "6-darajadagi 1 asosiy va 3 qo\u2018shimcha nishonni urish uchun
+      qaytish va manevrlikdan foydalaning"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6926935065886720
+    m_Localized: "Shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6927057296293888
+    m_Localized: "3 ta qo\u2018shimcha shishani uring"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6927220219838464
+    m_Localized: 7-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6927339098996736
+    m_Localized: "7-darajadagi 1 asosiy va 4 qo\u2018shimcha nishonni urish uchun
+      qaytish va manevrlikdan foydalaning\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6927585988313088
+    m_Localized: "Shishani yo\u2018q qiling\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6928267193614336
+    m_Localized: "4 ta qo\u2018shimcha shishani uring"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6928405995716608
+    m_Localized: 8-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6928426375839744
+    m_Localized: "8-darajadagi 3 asosiy va 1 qo\u2018shimcha nishonni urish uchun
+      qaytish va manevrlikdan foydalaning"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6928457061367808
+    m_Localized: "3 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6928497179885568
+    m_Localized: "Qo\u2018shimcha shishani uring"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6928915083558912
+    m_Localized: 9-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6928917939879936
+    m_Localized: "9-darajadagi 3 asosiy va 1 qo\u2018shimcha nishonni urish uchun
+      qaytish va manevrlikdan foydalaning"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6928920565514240
+    m_Localized: "3 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6929006188036096
+    m_Localized: "Qo\u2018shimcha shishani uring"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6930737873551360
+    m_Localized: 10-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6930740645986304
+    m_Localized: "10-darajadagi 3 asosiy va 1 qo\u2018shimcha nishonni urish uchun
+      qaytish va manevrlikdan foydalaning"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6930743246454784
+    m_Localized: "3 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6930839052746752
+    m_Localized: "Qo\u2018shimcha shishani uring"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6931486435180544
+    m_Localized: 11-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6931540998881280
+    m_Localized: 11-darajadagi 2 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6931543112810496
+    m_Localized: "Shishani va noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6932119527620608
+    m_Localized: 12-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6932356107337728
+    m_Localized: 12-darajadagi 2 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6932430430404608
+    m_Localized: "2 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6932813622018048
+    m_Localized: 13-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6933050843463680
+    m_Localized: '13-darajadagi 2 nishonni urish uchun qaytish va manevrlikdan foydalaning
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6933091633070080
+    m_Localized: "Shishani va noutbukni yo\u2018q qiling\r\n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6934063025487872
+    m_Localized: 14-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6934227014385664
+    m_Localized: 14-darajadagi 2 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6934392215437312
+    m_Localized: "Shishani va noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6934511828598784
+    m_Localized: 15-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6934534918242304
+    m_Localized: 15-darajadagi 3 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6934595446243328
+    m_Localized: "Shishani va 2 ta noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6935134770823168
+    m_Localized: 16-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6935138226929664
+    m_Localized: 16-darajadagi 3 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6935140642848768
+    m_Localized: "Shishani va 2 ta noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6936203773083648
+    m_Localized: 17-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6936207917056000
+    m_Localized: 17-darajadagi 4 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6936210697879552
+    m_Localized: "2 ta shishani va 2 ta noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6936631160078336
+    m_Localized: 18-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6936824580407296
+    m_Localized: 18-darajadagi 4 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6936909619920896
+    m_Localized: "2 ta shishani va 2 ta noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6937190512459776
+    m_Localized: 19-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6937225367126016
+    m_Localized: 19-darajadagi 3 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6937284590698496
+    m_Localized: "Shishani va 2 ta noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6937758312169472
+    m_Localized: 20-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6937761285931008
+    m_Localized: 20-darajadagi 3 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6937765819973632
+    m_Localized: "Shishani va 2 ta noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6938870742253568
+    m_Localized: 21-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6938995657015296
+    m_Localized: "21-darajadagi akkumulyatorni uring, keyin asosiy maqsadni yo\u2018q
+      qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6939015248609280
+    m_Localized: "Noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6940505996525568
+    m_Localized: "Akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6940647931772928
+    m_Localized: 22-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6940790252896256
+    m_Localized: "22-darajadagi 2 ta akkumulyatorni uring, keyin asosiy maqsadni
+      yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6940815519383552
+    m_Localized: "Noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6940841993830400
+    m_Localized: "2 ta akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6941355561189376
+    m_Localized: 23-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6941359524806656
+    m_Localized: "23-darajadagi akkumulyatorni uring, keyin asosiy maqsadni yo\u2018q
+      qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6941361626152960
+    m_Localized: "Noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6941675502698496
+    m_Localized: "Akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6943117563133952
+    m_Localized: 24-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6943162861617152
+    m_Localized: "24-darajadagi 3 ta akkumulyatorni uring, keyin asosiy maqsadni
+      yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6943185775099904
+    m_Localized: "Noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6943205224087552
+    m_Localized: "3 ta akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6943669890056192
+    m_Localized: 25-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6943672419221504
+    m_Localized: "25-darajadagi 3 ta akkumulyatorni uring, keyin asosiy maqsadni
+      yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6943674541539328
+    m_Localized: "Noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6946003009404928
+    m_Localized: "3 ta akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6946110375198720
+    m_Localized: 26-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6946115169288192
+    m_Localized: "26-darajadagi akkumulyatorni uring, keyin asosiy maqsadni yo\u2018q
+      qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6946116935090176
+    m_Localized: "Noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6946134928654336
+    m_Localized: "Akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6951536642752512
+    m_Localized: 27-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6951539511656448
+    m_Localized: "27-darajadagi 3 ta akkumulyatorni uring, keyin asosiy maqsadni
+      yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6951541906604032
+    m_Localized: "Noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6951546398703616
+    m_Localized: "3 ta akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6952657486610432
+    m_Localized: 28-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6952659466321920
+    m_Localized: "28-darajadagi 3 ta akkumulyatorni uring, keyin asosiy maqsadni
+      yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6952661127266304
+    m_Localized: "Noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6952665548062720
+    m_Localized: "3 ta akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6953199633956864
+    m_Localized: 29-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6953201743691776
+    m_Localized: "29-darajadagi akkumulyatorni uring, keyin asosiy maqsadni yo\u2018q
+      qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6953203811483648
+    m_Localized: "Noutbukni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6953205958967296
+    m_Localized: "Akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6953664891322368
+    m_Localized: 30-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6953813491318784
+    m_Localized: 30-darajadagi 2 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6953815986929664
+    m_Localized: "2 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6953819057160192
+    m_Localized: 31-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6954395513913344
+    m_Localized: 31-darajadagi 2 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6954397590093824
+    m_Localized: "2 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6954992946380800
+    m_Localized: 32-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6954994938675200
+    m_Localized: 32-darajadagi 4 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6954996909998080
+    m_Localized: "4 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6955000693260288
+    m_Localized: 33-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6955786730995712
+    m_Localized: 33-darajadagi 5 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6955789046251520
+    m_Localized: "5 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6956151622860800
+    m_Localized: 34-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6956153527074816
+    m_Localized: 34-darajadagi 6 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6956155678752768
+    m_Localized: "6 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6957858335490048
+    m_Localized: 35-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6957865348366336
+    m_Localized: "35-darajadagi akkumulyatorni uring, keyin asosiy maqsadlarni yo\u2018q
+      qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6958422360326144
+    m_Localized: "2 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6958469311365120
+    m_Localized: "Akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6958712320950272
+    m_Localized: 36-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6958714929807360
+    m_Localized: "36-darajadagi akkumulyatorni uring, keyin asosiy maqsadlarni yo\u2018q
+      qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6958717890985984
+    m_Localized: "3 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6958831309160448
+    m_Localized: "Akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6959345786683392
+    m_Localized: 37-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6959348106133504
+    m_Localized: "37-darajadagi akkumulyatorni uring, keyin asosiy maqsadlarni yo\u2018q
+      qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6959350815653888
+    m_Localized: "3 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6959521037287424
+    m_Localized: "Akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6960050387812352
+    m_Localized: 38-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6960052661125120
+    m_Localized: "38-darajadagi akkumulyatorni uring, keyin asosiy maqsadlarni yo\u2018q
+      qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6960054854746112
+    m_Localized: "3 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6960056922537984
+    m_Localized: "Akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6960730817167360
+    m_Localized: 39-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6960733086285824
+    m_Localized: "39-darajadagi akkumulyatorni uring, keyin asosiy maqsadlarni yo\u2018q
+      qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6960735015665664
+    m_Localized: "5 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6960737364475904
+    m_Localized: "Akkumulyatorni yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6961288261140480
+    m_Localized: 40-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6961290660282368
+    m_Localized: 40-darajadagi 1 nishonni urish kerak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6961292728074240
+    m_Localized: "Shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6961294766505984
+    m_Localized: 41-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6961707351801856
+    m_Localized: 41-darajadagi 1 nishonni urish uchun qaytish va manevrlikdan foydalaning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6961709201489920
+    m_Localized: "Shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6961715190956032
+    m_Localized: 42-darajali
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6962152904327168
+    m_Localized: 42-darajada sakrash va manevr yordamida 1 maqsadni urishingiz kerak.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6962155047616512
+    m_Localized: "Shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6962159850094592
+    m_Localized: 43-daraja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6964150663905280
+    m_Localized: 43-darajada sakrash va manevr yordamida 2 maqsadni urishingiz kerak.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6964152794611712
+    m_Localized: "2 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6964426703634432
+    m_Localized: 44-daraja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6964563035291648
+    m_Localized: 44-darajada sakrash va manevr yordamida 2 maqsadni urishingiz kerak.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6964571738472448
+    m_Localized: "2 ta shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6964857215385600
+    m_Localized: 45-daraja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6964859346092032
+    m_Localized: "45-darajada sakrash yordamida akkumulyatorni urib, keyin asosiy
+      maqsadni yo\u2018q qiling."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6964861803954176
+    m_Localized: "Shishani yo\u2018q qiling"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6964949842395136
+    m_Localized: "Akkumulyatorni yo\u2018q qiling"
     m_Metadata:
       m_Items: []
   references:

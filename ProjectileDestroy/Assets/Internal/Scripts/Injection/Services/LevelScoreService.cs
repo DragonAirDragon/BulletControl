@@ -34,17 +34,17 @@ public class LevelScoreService : IStartable,IDisposable
         this.levelService.OnRequiredObjectsDestroyed += () =>
         {
             this.gameSessionView.allMainTargetsCompleted = true;
-            this.gameSessionView.UpdateLevelInfo(levelEconomyData.nameLevel,levelEconomyData.requiredObjectString,levelEconomyData.optionalObjectString,levelEconomyData.triggerObjectString);
+            this.gameSessionView.UpdateLevelInfo(levelEconomyData.levelNumber,levelEconomyData.optTargetsExist,levelEconomyData.trgTargetsExist);
         };
         this.levelService.OnOptionalObjectsDestroyed += (() =>
         {
             this.gameSessionView.allOptionalTargetsCompleted = true;
-            this.gameSessionView.UpdateLevelInfo(levelEconomyData.nameLevel,levelEconomyData.requiredObjectString,levelEconomyData.optionalObjectString,levelEconomyData.triggerObjectString);
+            this.gameSessionView.UpdateLevelInfo(levelEconomyData.levelNumber,levelEconomyData.optTargetsExist,levelEconomyData.trgTargetsExist);
         });
         this.levelService.OnTriggerObjectsDestroyed += () =>
         {
             this.gameSessionView.allTriggerTargetsCompleted = true;
-            this.gameSessionView.UpdateLevelInfo(levelEconomyData.nameLevel,levelEconomyData.requiredObjectString,levelEconomyData.optionalObjectString,levelEconomyData.triggerObjectString);
+            this.gameSessionView.UpdateLevelInfo(levelEconomyData.levelNumber,levelEconomyData.optTargetsExist,levelEconomyData.trgTargetsExist);
         };
     }
 
@@ -61,13 +61,13 @@ public class LevelScoreService : IStartable,IDisposable
         _timerOn = true;
         //Debug.Log("Timer started.");
         UpdateTimer().Forget();
-        gameSessionView.UpdateLevelInfo(levelEconomyData.nameLevel,levelEconomyData.requiredObjectString,levelEconomyData.optionalObjectString,levelEconomyData.triggerObjectString);
+        gameSessionView.UpdateLevelInfo(levelEconomyData.levelNumber,levelEconomyData.optTargetsExist,levelEconomyData.trgTargetsExist);
         LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
     }
     void OnLocaleChanged(UnityEngine.Localization.Locale locale)
     {
-        gameSessionView.UpdateLevelInfo(levelEconomyData.nameLevel,levelEconomyData.requiredObjectString,levelEconomyData.optionalObjectString,levelEconomyData.triggerObjectString);
-        gameSessionView.UpdateWinUI(levelEconomyData.nameLevel, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
+        gameSessionView.UpdateLevelInfo(levelEconomyData.levelNumber,levelEconomyData.optTargetsExist,levelEconomyData.trgTargetsExist);
+        gameSessionView.UpdateWinUI(levelEconomyData.levelNumber, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
     }
 
     public void Dispose()
@@ -111,10 +111,10 @@ public class LevelScoreService : IStartable,IDisposable
 
         result = (int)(levelEconomyData.baseLevelCost + optional_cost + time_cost - bullet_cost);
         gameSessionView.SetGameStageWin();
-        gameSessionView.UpdateWinUI(levelEconomyData.nameLevel, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
+        gameSessionView.UpdateWinUI(levelEconomyData.levelNumber, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
         levelService.bullet.DestroyBullet();
         Cursor.lockState = CursorLockMode.None;
-        localAndCloudDataService.ChangeCurrentLevel(1);
+        localAndCloudDataService.NextLevel();
         gameSessionView.ReturnToMenuBind(result,localAndCloudDataService);
         YandexGame.GameplayStop();
         /*Debug.Log($"Победа\n" +
@@ -133,7 +133,7 @@ public class LevelScoreService : IStartable,IDisposable
         {
             result *= 2;
             gameSessionView.SetActiveDoubleRewardButton(false);
-            gameSessionView.UpdateWinUI(levelEconomyData.nameLevel, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
+            gameSessionView.UpdateWinUI(levelEconomyData.levelNumber, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
             gameSessionView.ReturnToMenuBind(result,localAndCloudDataService);
         }
     }
@@ -146,11 +146,9 @@ public class LevelScoreService : IStartable,IDisposable
 [Serializable]
 public class LevelEconomyData
 {
-    public string nameLevel;
-
-    public string requiredObjectString;
-    public string optionalObjectString;
-    public string triggerObjectString;
+    public int levelNumber;
+    public bool optTargetsExist;
+    public bool trgTargetsExist;
     
     
     [SerializeField, BoxGroup("Base Cost")]

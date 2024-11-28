@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5795888428814299755}
   - component: {fileID: 6284846405262073165}
   - component: {fileID: 2037744863256288587}
+  - component: {fileID: 8602241666097842878}
   m_Layer: 0
   m_Name: Glass
   m_TagString: DestroyTag
@@ -216,6 +217,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 034bc47afcbf5e141a58d5c20b7808e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8602241666097842878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4033969519657575291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f56ca841e3d10d4c9d4db8fb109e326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8311956433366821688

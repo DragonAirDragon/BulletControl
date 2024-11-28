@@ -55,9 +55,9 @@ public class GameSessionView : MonoBehaviour
         levelWinWindow.SetActive(true);
     }
 
-    public void UpdateWinUI(string levelName, int subSubTargets, int subMainTargetsMax, float time, float reward)
+    public void UpdateWinUI(int levelNumber, int subSubTargets, int subMainTargetsMax, float time, float reward)
     {
-        levelNameTextInWinWindow.text = LocalizationSettings.StringDatabase.GetLocalizedString("Levels", levelName);
+        levelNameTextInWinWindow.text = LocalizationSettings.StringDatabase.GetLocalizedString("Levels", "Level" + levelNumber.ToString() + "Name");
         subMainTargetsText.text = subSubTargets.ToString() + "/" + subMainTargetsMax.ToString();
         timeText.text = time.ToString() + " sec";
         rewardText.text = reward.ToString() + "$";
@@ -73,10 +73,14 @@ public class GameSessionView : MonoBehaviour
         bulletCountText.text = newValueBullets.ToString();
     }
 
-    public void UpdateLevelInfo(string levelName,string mainTarget="",string optTargets="",string triggerTargets="")
+    public void UpdateLevelInfo(int levelNumber, bool optTargetsExist,  bool trgTargetsExist  /*string mainTarget="",string optTargets="",string triggerTargets=""*/)
     {
-        levelNameText.text = LocalizationSettings.StringDatabase.GetLocalizedString("Levels", levelName);
+        
+        levelNameText.text = LocalizationSettings.StringDatabase.GetLocalizedString("Levels", "Level" + levelNumber.ToString() + "Name");
         string resultTextDescription="";
+        string mainTarget;
+        
+        mainTarget = "Level" + levelNumber + "Req";
         
         if(allMainTargetsCompleted)
         {
@@ -87,12 +91,16 @@ public class GameSessionView : MonoBehaviour
             resultTextDescription = "- " + LocalizationSettings.StringDatabase.GetLocalizedString("Levels", mainTarget) + "\n";
         }
         
-        if(optTargets!="")
+        
+        
+        if(optTargetsExist)
         {
+            string optTargets = "Level" + levelNumber + "Opt";
             resultTextDescription += allOptionalTargetsCompleted ? "<s>" + "- " + LocalizationSettings.StringDatabase.GetLocalizedString("Levels", optTargets) + "\n" + "</s>" : "- " + LocalizationSettings.StringDatabase.GetLocalizedString("Levels", optTargets) + "\n";
         }
-        if(triggerTargets!="")
+        if(trgTargetsExist)
         {
+            string triggerTargets = "Level" + levelNumber + "Trg";
             resultTextDescription += allTriggerTargetsCompleted ? "<s>" + "- " + LocalizationSettings.StringDatabase.GetLocalizedString("Levels", triggerTargets) + "\n" + "</s>" : "- " + LocalizationSettings.StringDatabase.GetLocalizedString("Levels", triggerTargets) + "\n";
         }
         
