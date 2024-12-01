@@ -2,7 +2,7 @@ using System;
 using TheraBytes.BetterUi;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Localization.Settings;
+
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using YG;
@@ -57,7 +57,9 @@ public class GameSessionView : MonoBehaviour
 
     public void UpdateWinUI(int levelNumber, int subSubTargets, int subMainTargetsMax, float time, float reward)
     {
-        levelNameTextInWinWindow.text = LocalizationSettings.StringDatabase.GetLocalizedString("Levels", "Level" + levelNumber.ToString() + "Name");
+        levelNameTextInWinWindow.text = I2.Loc.LocalizationManager.GetTranslation("Level" + levelNumber.ToString() + "Name");
+        
+        
         subMainTargetsText.text = subSubTargets.ToString() + "/" + subMainTargetsMax.ToString();
         timeText.text = time.ToString() + " sec";
         rewardText.text = reward.ToString() + "$";
@@ -73,10 +75,10 @@ public class GameSessionView : MonoBehaviour
         bulletCountText.text = newValueBullets.ToString();
     }
 
-    public void UpdateLevelInfo(int levelNumber, bool optTargetsExist,  bool trgTargetsExist  /*string mainTarget="",string optTargets="",string triggerTargets=""*/)
+    public void UpdateLevelInfo(int levelNumber, bool optTargetsExist,  bool trgTargetsExist )
     {
         
-        levelNameText.text = LocalizationSettings.StringDatabase.GetLocalizedString("Levels", "Level" + levelNumber.ToString() + "Name");
+        levelNameText.text = I2.Loc.LocalizationManager.GetTranslation("Level" + levelNumber.ToString() + "Name");
         string resultTextDescription="";
         string mainTarget;
         
@@ -84,11 +86,11 @@ public class GameSessionView : MonoBehaviour
         
         if(allMainTargetsCompleted)
         {
-            resultTextDescription = "<s>" + "- " + LocalizationSettings.StringDatabase.GetLocalizedString("Levels", mainTarget) + "</s>" + "\n";
+            resultTextDescription = "<s>" + "- " + I2.Loc.LocalizationManager.GetTranslation(mainTarget) + "</s>" + "\n";
         }
         else
         {
-            resultTextDescription = "- " + LocalizationSettings.StringDatabase.GetLocalizedString("Levels", mainTarget) + "\n";
+            resultTextDescription = "- " + I2.Loc.LocalizationManager.GetTranslation(mainTarget) + "\n";
         }
         
         
@@ -96,12 +98,13 @@ public class GameSessionView : MonoBehaviour
         if(optTargetsExist)
         {
             string optTargets = "Level" + levelNumber + "Opt";
-            resultTextDescription += allOptionalTargetsCompleted ? "<s>" + "- " + LocalizationSettings.StringDatabase.GetLocalizedString("Levels", optTargets) + "\n" + "</s>" : "- " + LocalizationSettings.StringDatabase.GetLocalizedString("Levels", optTargets) + "\n";
+            resultTextDescription += allOptionalTargetsCompleted ? "<s>" + "- " + I2.Loc.LocalizationManager.GetTranslation(optTargets) + "\n" + "</s>" : "- " + I2.Loc.LocalizationManager.GetTranslation(optTargets) + "\n";
         }
+        
         if(trgTargetsExist)
         {
             string triggerTargets = "Level" + levelNumber + "Trg";
-            resultTextDescription += allTriggerTargetsCompleted ? "<s>" + "- " + LocalizationSettings.StringDatabase.GetLocalizedString("Levels", triggerTargets) + "\n" + "</s>" : "- " + LocalizationSettings.StringDatabase.GetLocalizedString("Levels", triggerTargets) + "\n";
+            resultTextDescription += allTriggerTargetsCompleted ? "<s>" + "- " + I2.Loc.LocalizationManager.GetTranslation(triggerTargets) + "\n" + "</s>" : "- " + I2.Loc.LocalizationManager.GetTranslation(triggerTargets) + "\n";
         }
         
         levelDescriptionText.text = resultTextDescription; 

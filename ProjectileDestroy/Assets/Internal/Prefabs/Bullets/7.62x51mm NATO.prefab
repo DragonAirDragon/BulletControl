@@ -140,7 +140,7 @@ MonoBehaviour:
   MinManeuverability: 1
   countRicochet: 6
   MaxCountRicochet: 10
-  MinCountRicochet: 1
+  MinCountRicochet: 2
   distanceRayForContact: 1
   bulletCost: 18
   MaxBulletCost: 30

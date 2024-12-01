@@ -1,12 +1,11 @@
-using System;
+
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using VContainer;
-using UnityEngine.Localization;
-using UnityEngine.Localization.Settings;
+
 
 public class SelectWeaponView : MonoBehaviour
 {
@@ -80,20 +79,21 @@ public class SelectWeaponView : MonoBehaviour
 
    private void Start()
    {
-      LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+      //LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
       _localAndCloudDataService.OnDataUpdated += UpdateAllUI;
    }
 
    private void OnDestroy()
    {
-      LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+      //LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
       _localAndCloudDataService.OnDataUpdated -= UpdateAllUI;
    }
+   /*
    void OnLocaleChanged(UnityEngine.Localization.Locale locale)
    {
       UpdateWeaponInfoPanelAndImage();
    }
-
+   */
    public void UpdateWeaponInfoPanelAndImage()
    {
       WeaponInfo weaponInfo = _localAndCloudDataService.GetWeaponInfoByWeapon(selectedWeapon);
@@ -120,7 +120,8 @@ public class SelectWeaponView : MonoBehaviour
      {
         actionButton.interactable = true;
         actionButton.colors = actionButtonBuyingColor;
-        actionButtonText.text = LocalizationSettings.StringDatabase.GetLocalizedString("SelectWeapon", "selectWeaponBuy") + "\n" + weaponInfo.weaponCost+"$";
+        
+        actionButtonText.text = I2.Loc.LocalizationManager.GetTranslation("selectWeaponBuy") + "\n" + weaponInfo.weaponCost+"$";
         actionButton.onClick.RemoveAllListeners();
         actionButton.onClick.AddListener(() =>
         {
@@ -135,7 +136,8 @@ public class SelectWeaponView : MonoBehaviour
      {
         actionButton.interactable = true;
         actionButton.colors = actionButtonEquippingColor;
-        actionButtonText.text = LocalizationSettings.StringDatabase.GetLocalizedString("SelectWeapon", "selectWeaponEquip");
+        
+        actionButtonText.text = I2.Loc.LocalizationManager.GetTranslation("selectWeaponEquip");
         actionButton.onClick.RemoveAllListeners();
         actionButton.onClick.AddListener(() =>
         {
@@ -150,7 +152,8 @@ public class SelectWeaponView : MonoBehaviour
      {
         actionButton.interactable = false;
         actionButton.colors = actionButtonEquippingColor;
-        actionButtonText.text = LocalizationSettings.StringDatabase.GetLocalizedString("SelectWeapon", "selectWeaponEquipped");
+       
+        actionButtonText.text =  I2.Loc.LocalizationManager.GetTranslation("selectWeaponEquipped");
         actionButton.onClick.RemoveAllListeners();
      }
      

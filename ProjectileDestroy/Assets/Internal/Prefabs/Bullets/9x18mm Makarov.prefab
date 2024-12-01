@@ -137,11 +137,14 @@ MonoBehaviour:
   MinSpeed: 5
   maneuverability: 1
   MaxManeuverability: 2
-  countRicochet: 1
+  MinManeuverability: 1
+  countRicochet: 2
   MaxCountRicochet: 10
+  MinCountRicochet: 2
   distanceRayForContact: 1
   bulletCost: 5
   MaxBulletCost: 30
+  MinBulletCost: 5
   ricochetAudioSource: {fileID: 3603757930474406800}
   ricochetAudioClips:
   - {fileID: 8300000, guid: 9989938bdafeb90459bce66606eb36dc, type: 3}

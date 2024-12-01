@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 8636440030967651767}
   - component: {fileID: 3297290410881482929}
   - component: {fileID: 935754944768687079}
-  - component: {fileID: 531650509652314814}
+  - component: {fileID: 1690438201890447875}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -194,7 +194,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: SETTINGS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ebda50151121a34fa269ef6420a1d75, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 84f3e7dbc89142f4d81de0fd6b38c18d, type: 2}
   m_sharedMaterial: {fileID: -4767806088373937582, guid: 4ebda50151121a34fa269ef6420a1d75,
     type: 2}
   m_fontSharedMaterials: []
@@ -259,10 +259,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0.000091552734}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &531650509652314814
+--- !u!114 &1690438201890447875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -271,37 +271,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1229126777664231366}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:db5f625b5604b5f4c9af90ae135adfba
-    m_TableEntryReference:
-      m_KeyId: 7355752448
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
+  mTerm: settingsTitle
+  mTermSecondary: 
+  PrimaryTermModifier: 0
+  SecondaryTermModifier: 0
+  TermPrefix: 
+  TermSuffix: 
+  LocalizeOnAwake: 1
+  IgnoreRTL: 0
+  MaxCharactersInRTL: 0
+  IgnoreNumbersInRTL: 1
+  CorrectAlignmentForRTL: 1
+  AddSpacesToJoinedLanguages: 0
+  AllowLocalizedParameters: 1
+  AllowParameters: 1
+  TranslatedObjects: []
+  LocalizeEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 935754944768687079}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
+      m_Calls: []
+  AlwaysForceLocalize: 0
+  LocalizeCallBack:
+    Target: {fileID: 0}
+    MethodName: 
+  mGUI_ShowReferences: 0
+  mGUI_ShowTems: 1
+  mGUI_ShowCallback: 0
+  mLocalizeTarget: {fileID: 0}
+  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!1 &2392197767160674917
 GameObject:
   m_ObjectHideFlags: 0

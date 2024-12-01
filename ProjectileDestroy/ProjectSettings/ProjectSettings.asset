@@ -816,23 +816,23 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: DOTWEEN;URP_OUTLINE
-    EmbeddedLinux: DOTWEEN;URP_OUTLINE
+    Android: DOTWEEN;URP_OUTLINE;TextMeshPro
+    EmbeddedLinux: DOTWEEN;URP_OUTLINE;TextMeshPro
     GameCoreScarlett: DOTWEEN;URP_OUTLINE
-    GameCoreXboxOne: DOTWEEN;URP_OUTLINE
+    GameCoreXboxOne: DOTWEEN;URP_OUTLINE;TextMeshPro
     LinuxHeadlessSimulation: DOTWEEN;URP_OUTLINE
-    Nintendo Switch: DOTWEEN;URP_OUTLINE
-    PS4: DOTWEEN;URP_OUTLINE
-    PS5: DOTWEEN;URP_OUTLINE
-    QNX: DOTWEEN;URP_OUTLINE
-    Stadia: DOTWEEN;URP_OUTLINE
-    Standalone: DOTWEEN;URP_OUTLINE
-    VisionOS: DOTWEEN;URP_OUTLINE
-    WebGL: ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_INSPECTOR_3_2;ODIN_INSPECTOR_3_3;DOTWEEN;YG_PLUGIN_YANDEX_GAME;PWB_URP;URP_OUTLINE
+    Nintendo Switch: DOTWEEN;URP_OUTLINE;TextMeshPro
+    PS4: DOTWEEN;URP_OUTLINE;TextMeshPro
+    PS5: DOTWEEN;URP_OUTLINE;TextMeshPro
+    QNX: DOTWEEN;URP_OUTLINE;TextMeshPro
+    Stadia: DOTWEEN;URP_OUTLINE;TextMeshPro
+    Standalone: DOTWEEN;URP_OUTLINE;TextMeshPro
+    VisionOS: DOTWEEN;URP_OUTLINE;TextMeshPro
+    WebGL: ODIN_INSPECTOR;ODIN_INSPECTOR_3;ODIN_INSPECTOR_3_1;ODIN_INSPECTOR_3_2;ODIN_INSPECTOR_3_3;DOTWEEN;YG_PLUGIN_YANDEX_GAME;PWB_URP;URP_OUTLINE;TextMeshPro
     Windows Store Apps: DOTWEEN;URP_OUTLINE
-    XboxOne: DOTWEEN;URP_OUTLINE
-    iPhone: DOTWEEN;URP_OUTLINE
-    tvOS: DOTWEEN;URP_OUTLINE
+    XboxOne: DOTWEEN;URP_OUTLINE;TextMeshPro
+    iPhone: DOTWEEN;URP_OUTLINE;TextMeshPro
+    tvOS: DOTWEEN;URP_OUTLINE;TextMeshPro
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

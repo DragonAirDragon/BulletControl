@@ -2,7 +2,6 @@ using DG.Tweening;
 using TheraBytes.BetterUi;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Localization.Settings;
 using YG;
 using Sequence = DG.Tweening.Sequence;
 
@@ -32,12 +31,12 @@ public class ColorUIImageAnimation : MonoBehaviour
    }
    void Start()
    {
-      LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+      //LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
    }
    
    void OnDestroy()
    {
-      LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+      //LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
    }
    public void StartAnimation()
    {
@@ -121,15 +120,17 @@ public class ColorUIImageAnimation : MonoBehaviour
    
    
    
-
+   /*
    void OnLocaleChanged(UnityEngine.Localization.Locale locale)
    {
       UpdateText();
    }
-   
+   */
    public void UpdateText()
    {
-      text.text = !buyedAd ? YandexGame.purchases[0].price : LocalizationSettings.StringDatabase.GetLocalizedString("Donat", "donatePurchased");
+      text.text = !buyedAd ? YandexGame.purchases[0].price : I2.Loc.LocalizationManager.GetTranslation("donatePurchased");
+      
+      
    }
    
 }

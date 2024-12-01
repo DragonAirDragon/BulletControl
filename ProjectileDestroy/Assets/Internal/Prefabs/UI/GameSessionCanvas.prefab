@@ -5479,6 +5479,7 @@ GameObject:
   - component: {fileID: 5420664112024614472}
   - component: {fileID: 4727648940370080830}
   - component: {fileID: 6496826216101981502}
+  - component: {fileID: 8549401490812302961}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -5603,6 +5604,45 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8549401490812302961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589483474607017594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mTerm: settingsTitle
+  mTermSecondary: 
+  PrimaryTermModifier: 0
+  SecondaryTermModifier: 0
+  TermPrefix: 
+  TermSuffix: 
+  LocalizeOnAwake: 1
+  IgnoreRTL: 0
+  MaxCharactersInRTL: 0
+  IgnoreNumbersInRTL: 1
+  CorrectAlignmentForRTL: 1
+  AddSpacesToJoinedLanguages: 0
+  AllowLocalizedParameters: 1
+  AllowParameters: 1
+  TranslatedObjects: []
+  LocalizeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  AlwaysForceLocalize: 0
+  LocalizeCallBack:
+    Target: {fileID: 0}
+    MethodName: 
+  mGUI_ShowReferences: 0
+  mGUI_ShowTems: 1
+  mGUI_ShowCallback: 0
+  mLocalizeTarget: {fileID: 0}
+  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!1 &717130768093809187
 GameObject:
   m_ObjectHideFlags: 0
@@ -5801,7 +5841,7 @@ GameObject:
   - component: {fileID: 4720730344550476298}
   - component: {fileID: 4743968456795934339}
   - component: {fileID: 2169322865345299604}
-  - component: {fileID: 5638261837308053371}
+  - component: {fileID: 1782577673324175188}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -5856,7 +5896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0412\u0440\u0435\u043C\u044F\n\n\n\n\n"
+  m_text: "\u0423\u0430\u049B\u044B\u0442"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ebda50151121a34fa269ef6420a1d75, type: 2}
   m_sharedMaterial: {fileID: -4767806088373937582, guid: 4ebda50151121a34fa269ef6420a1d75,
@@ -5884,12 +5924,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23
+  m_fontSize: 47.9
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 19.101631
+  m_fontSizeMax: 49.00181
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -6010,7 +6050,7 @@ MonoBehaviour:
         Impact: 1
   customMaxFontSizers:
     items: []
---- !u!114 &5638261837308053371
+--- !u!114 &1782577673324175188
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6019,37 +6059,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 1634395328578484766}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:7362bb97f00f1714ba8d8a5b36bba751
-    m_TableEntryReference:
-      m_KeyId: 16545472512
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
+  mTerm: winTimes
+  mTermSecondary: 
+  PrimaryTermModifier: 0
+  SecondaryTermModifier: 0
+  TermPrefix: 
+  TermSuffix: 
+  LocalizeOnAwake: 1
+  IgnoreRTL: 0
+  MaxCharactersInRTL: 0
+  IgnoreNumbersInRTL: 1
+  CorrectAlignmentForRTL: 1
+  AddSpacesToJoinedLanguages: 0
+  AllowLocalizedParameters: 1
+  AllowParameters: 1
+  TranslatedObjects: []
+  LocalizeEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2169322865345299604}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
+      m_Calls: []
+  AlwaysForceLocalize: 0
+  LocalizeCallBack:
+    Target: {fileID: 0}
+    MethodName: 
+  mGUI_ShowReferences: 0
+  mGUI_ShowTems: 1
+  mGUI_ShowCallback: 0
+  mLocalizeTarget: {fileID: 0}
+  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!1 &2123077390761996293
 GameObject:
   m_ObjectHideFlags: 0
@@ -6123,7 +6162,7 @@ RectTransform:
   m_AnchorMin: {x: 0.8810414, y: 0.01886952}
   m_AnchorMax: {x: 0.9999826, y: 1.0161736}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 3.325373}
+  m_SizeDelta: {x: 0, y: 6.918269}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2894486641345009553
 MonoBehaviour:
@@ -6514,7 +6553,7 @@ GameObject:
   - component: {fileID: 4657045071189342385}
   - component: {fileID: 2342710692434987214}
   - component: {fileID: 2548729461866168283}
-  - component: {fileID: 113079856346008228}
+  - component: {fileID: 7046378989085885499}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -6569,7 +6608,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041D\u0435\u0442 \u0441\u043F\u0430\u0441\u0438\u0431\u043E"
+  m_text: "\u0416\u0430\u043B\u0493\u0430\u0441\u0442\u044B\u0440\u0443"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ebda50151121a34fa269ef6420a1d75, type: 2}
   m_sharedMaterial: {fileID: -4767806088373937582, guid: 4ebda50151121a34fa269ef6420a1d75,
@@ -6597,12 +6636,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23
+  m_fontSize: 47.9
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 19.101631
+  m_fontSizeMax: 49.00181
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -6723,7 +6762,7 @@ MonoBehaviour:
         Impact: 1
   customMaxFontSizers:
     items: []
---- !u!114 &113079856346008228
+--- !u!114 &7046378989085885499
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6732,37 +6771,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 2688302377410397790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:7362bb97f00f1714ba8d8a5b36bba751
-    m_TableEntryReference:
-      m_KeyId: 197319974912
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
+  mTerm: winNoThanks
+  mTermSecondary: 
+  PrimaryTermModifier: 0
+  SecondaryTermModifier: 0
+  TermPrefix: 
+  TermSuffix: 
+  LocalizeOnAwake: 1
+  IgnoreRTL: 0
+  MaxCharactersInRTL: 0
+  IgnoreNumbersInRTL: 1
+  CorrectAlignmentForRTL: 1
+  AddSpacesToJoinedLanguages: 0
+  AllowLocalizedParameters: 1
+  AllowParameters: 1
+  TranslatedObjects: []
+  LocalizeEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2548729461866168283}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
+      m_Calls: []
+  AlwaysForceLocalize: 0
+  LocalizeCallBack:
+    Target: {fileID: 0}
+    MethodName: 
+  mGUI_ShowReferences: 0
+  mGUI_ShowTems: 1
+  mGUI_ShowCallback: 0
+  mLocalizeTarget: {fileID: 0}
+  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!1 &2688362177770104591
 GameObject:
   m_ObjectHideFlags: 0
@@ -7359,12 +7397,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.54809
+  m_fontSize: 49.00181
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 19.101631
+  m_fontSizeMax: 49.00181
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -7496,7 +7534,7 @@ GameObject:
   - component: {fileID: 1209174273086130203}
   - component: {fileID: 5829614422075094512}
   - component: {fileID: 820398238716126590}
-  - component: {fileID: 7802596803807590078}
+  - component: {fileID: 4818519739027097720}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -7551,7 +7589,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041E\u0441\u043D\u043E\u0432\u043D\u044B\u0435 \u0446\u0435\u043B\u0438\n\n\n\n\n"
+  m_text: "\u041D\u0435\u0433\u0456\u0437\u0433\u0456 \u043C\u0430\u049B\u0441\u0430\u0442\u0442\u0430\u0440"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ebda50151121a34fa269ef6420a1d75, type: 2}
   m_sharedMaterial: {fileID: -4767806088373937582, guid: 4ebda50151121a34fa269ef6420a1d75,
@@ -7579,12 +7617,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21.6
+  m_fontSize: 39.2
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 19.101631
+  m_fontSizeMax: 49.00181
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -7705,7 +7743,7 @@ MonoBehaviour:
         Impact: 1
   customMaxFontSizers:
     items: []
---- !u!114 &7802596803807590078
+--- !u!114 &4818519739027097720
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7714,37 +7752,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 4135546866732648474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:7362bb97f00f1714ba8d8a5b36bba751
-    m_TableEntryReference:
-      m_KeyId: 13215195136
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
+  mTerm: winMainTargets
+  mTermSecondary: 
+  PrimaryTermModifier: 0
+  SecondaryTermModifier: 0
+  TermPrefix: 
+  TermSuffix: 
+  LocalizeOnAwake: 1
+  IgnoreRTL: 0
+  MaxCharactersInRTL: 0
+  IgnoreNumbersInRTL: 1
+  CorrectAlignmentForRTL: 1
+  AddSpacesToJoinedLanguages: 0
+  AllowLocalizedParameters: 1
+  AllowParameters: 1
+  TranslatedObjects: []
+  LocalizeEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 820398238716126590}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
+      m_Calls: []
+  AlwaysForceLocalize: 0
+  LocalizeCallBack:
+    Target: {fileID: 0}
+    MethodName: 
+  mGUI_ShowReferences: 0
+  mGUI_ShowTems: 1
+  mGUI_ShowCallback: 0
+  mLocalizeTarget: {fileID: 0}
+  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!1 &4232621601137937267
 GameObject:
   m_ObjectHideFlags: 0
@@ -8246,12 +8283,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 19.101631
+  m_fontSize: 49.00181
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 19.101631
+  m_fontSizeMax: 49.00181
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -8556,12 +8593,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.3
+  m_fontSize: 48.45
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 19.101631
+  m_fontSizeMax: 49.00181
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -8837,7 +8874,7 @@ GameObject:
   - component: {fileID: 4638566398195694600}
   - component: {fileID: 2194228230761403902}
   - component: {fileID: 8192752254897014470}
-  - component: {fileID: 2747634646983082699}
+  - component: {fileID: 7570681339503379701}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -8892,8 +8929,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435
-    \u0446\u0435\u043B\u0438\n\n\n\n\n"
+  m_text: "\u049A\u043E\u0441\u044B\u043C\u0448\u0430 \u043C\u0430\u049B\u0441\u0430\u0442\u0442\u0430\u0440"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4ebda50151121a34fa269ef6420a1d75, type: 2}
   m_sharedMaterial: {fileID: -4767806088373937582, guid: 4ebda50151121a34fa269ef6420a1d75,
@@ -8921,12 +8957,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23
+  m_fontSize: 47.9
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 19.101631
+  m_fontSizeMax: 49.00181
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -9047,7 +9083,7 @@ MonoBehaviour:
         Impact: 1
   customMaxFontSizers:
     items: []
---- !u!114 &2747634646983082699
+--- !u!114 &7570681339503379701
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9056,37 +9092,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 5406958330392501742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:7362bb97f00f1714ba8d8a5b36bba751
-    m_TableEntryReference:
-      m_KeyId: 1689284239360
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
+  mTerm: winOptTargets
+  mTermSecondary: 
+  PrimaryTermModifier: 0
+  SecondaryTermModifier: 0
+  TermPrefix: 
+  TermSuffix: 
+  LocalizeOnAwake: 1
+  IgnoreRTL: 0
+  MaxCharactersInRTL: 0
+  IgnoreNumbersInRTL: 1
+  CorrectAlignmentForRTL: 1
+  AddSpacesToJoinedLanguages: 0
+  AllowLocalizedParameters: 1
+  AllowParameters: 1
+  TranslatedObjects: []
+  LocalizeEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8192752254897014470}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
+      m_Calls: []
+  AlwaysForceLocalize: 0
+  LocalizeCallBack:
+    Target: {fileID: 0}
+    MethodName: 
+  mGUI_ShowReferences: 0
+  mGUI_ShowTems: 1
+  mGUI_ShowCallback: 0
+  mLocalizeTarget: {fileID: 0}
+  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!1 &5465004675346069752
 GameObject:
   m_ObjectHideFlags: 0
@@ -9266,8 +9301,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0423\u0440\u043E\u0432\u0435\u043D\u044C 1"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ebda50151121a34fa269ef6420a1d75, type: 2}
-  m_sharedMaterial: {fileID: -4767806088373937582, guid: 4ebda50151121a34fa269ef6420a1d75,
+  m_fontAsset: {fileID: 11400000, guid: 84f3e7dbc89142f4d81de0fd6b38c18d, type: 2}
+  m_sharedMaterial: {fileID: 5658610998311468998, guid: 84f3e7dbc89142f4d81de0fd6b38c18d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -9292,7 +9327,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.4
+  m_fontSize: 60.55
   m_fontSizeBase: 31
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9487,7 +9522,7 @@ GameObject:
   - component: {fileID: 133525361333376378}
   - component: {fileID: 8446427995527228699}
   - component: {fileID: 1503309412074088406}
-  - component: {fileID: 5845358655473214508}
+  - component: {fileID: 5020667759835194683}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -9542,10 +9577,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0417\u0410\u0412\u0415\u0420\u0428\u0415\u041D "
+  m_text: "\u0410\u044F\u049B\u0442\u0430\u043B\u0434\u044B"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4ebda50151121a34fa269ef6420a1d75, type: 2}
-  m_sharedMaterial: {fileID: -4767806088373937582, guid: 4ebda50151121a34fa269ef6420a1d75,
+  m_fontAsset: {fileID: 11400000, guid: 84f3e7dbc89142f4d81de0fd6b38c18d, type: 2}
+  m_sharedMaterial: {fileID: 5658610998311468998, guid: 84f3e7dbc89142f4d81de0fd6b38c18d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -9570,7 +9605,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.4
+  m_fontSize: 71.2
   m_fontSizeBase: 31
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9612,7 +9647,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5845358655473214508
+--- !u!114 &5020667759835194683
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9621,37 +9656,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 6218963983052272229}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Script: {fileID: 11500000, guid: 344445a89b4f74a0e9a0a766903df87e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:7362bb97f00f1714ba8d8a5b36bba751
-    m_TableEntryReference:
-      m_KeyId: 8848924672
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
+  mTerm: winTitle
+  mTermSecondary: 
+  PrimaryTermModifier: 0
+  SecondaryTermModifier: 0
+  TermPrefix: 
+  TermSuffix: 
+  LocalizeOnAwake: 1
+  IgnoreRTL: 0
+  MaxCharactersInRTL: 0
+  IgnoreNumbersInRTL: 1
+  CorrectAlignmentForRTL: 1
+  AddSpacesToJoinedLanguages: 0
+  AllowLocalizedParameters: 1
+  AllowParameters: 1
+  TranslatedObjects: []
+  LocalizeEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1503309412074088406}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
+      m_Calls: []
+  AlwaysForceLocalize: 0
+  LocalizeCallBack:
+    Target: {fileID: 0}
+    MethodName: 
+  mGUI_ShowReferences: 0
+  mGUI_ShowTems: 1
+  mGUI_ShowCallback: 0
+  mLocalizeTarget: {fileID: 0}
+  mLocalizeTargetName: I2.Loc.LocalizeTarget_TextMeshPro_UGUI
 --- !u!1 &6249178477744031035
 GameObject:
   m_ObjectHideFlags: 0
@@ -9895,7 +9929,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.7
+  m_fontSize: 40.35
   m_fontSizeBase: 31
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10030,12 +10064,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.54809
+  m_fontSize: 49.00181
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 19.101631
+  m_fontSizeMax: 49.00181
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -10537,12 +10571,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22.05
+  m_fontSize: 45.95
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 19.101631
+  m_fontSizeMax: 49.00181
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -11375,7 +11409,7 @@ RectTransform:
   m_AnchorMin: {x: 0.32517123, y: 0.24727666}
   m_AnchorMax: {x: 0.6748267, y: 0.75272495}
   m_AnchoredPosition: {x: 0.07373047, y: 0}
-  m_SizeDelta: {x: 0.052703857, y: -0.0234285}
+  m_SizeDelta: {x: 0.052703857, y: -0.095006675}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7386457419838008574
 CanvasRenderer:
@@ -12169,7 +12203,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 26.85
+  m_fontSize: 68.95
   m_fontSizeBase: 32.41
   m_fontWeight: 400
   m_enableAutoSizing: 1

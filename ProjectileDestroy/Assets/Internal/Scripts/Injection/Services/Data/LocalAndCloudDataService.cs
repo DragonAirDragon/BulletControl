@@ -31,7 +31,13 @@ public class LocalAndCloudDataService
         YandexGame.GetDataEvent += LoadData;
         YandexGame.PurchaseSuccessEvent += SuccessPurchased;
         YandexGame.ConsumePurchases();
+        
+        
     }
+
+
+
+   
     
     void SuccessPurchased(string id)
     {
@@ -55,6 +61,7 @@ public class LocalAndCloudDataService
     {
         OnDataUpdated?.Invoke();
         OnMoneyChanged?.Invoke(YandexGame.savesData.moneyCount);
+        YandexGame.StickyAdActivity(YandexGame.savesData.showAd);
     }
     
 
@@ -151,14 +158,16 @@ public class LocalAndCloudDataService
 
     #region Ad
     // Ad
-    public void SetAdActivity(bool value)
+    private void SetAdActivity(bool value)
     {
         YandexGame.savesData.showAd = value;
+        YandexGame.StickyAdActivity(YandexGame.savesData.showAd);
         YandexGame.SaveProgress();
     }
 
     public bool GetAdActivity()
     {
+        
         return YandexGame.savesData.showAd;
     }
     #endregion

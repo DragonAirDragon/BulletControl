@@ -1,15 +1,16 @@
 {
-    "idSave": 505,
+    "idSave": 648,
     "isFirstSession": false,
-    "language": "ru",
+    "language": "en",
     "promptDone": false,
-    "moneyCount": 0,
+    "moneyCount": 99699,
     "purchasedWeapons": [
-        2
+        2,
+        1
     ],
-    "showAd": true,
-    "currentLevel": 0,
+    "showAd": false,
+    "currentLevel": 4,
     "equipmentWeapon": 2,
-    "masterVolume": 0.4444444477558136,
-    "musicVolume": 0.1111111119389534
+    "masterVolume": 0.5,
+    "musicVolume": 0.5
 }

@@ -2,7 +2,7 @@ using System;
 using Cysharp.Threading.Tasks;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Localization.Settings;
+
 using VContainer.Unity;
 using YG;
 
@@ -62,17 +62,21 @@ public class LevelScoreService : IStartable,IDisposable
         //Debug.Log("Timer started.");
         UpdateTimer().Forget();
         gameSessionView.UpdateLevelInfo(levelEconomyData.levelNumber,levelEconomyData.optTargetsExist,levelEconomyData.trgTargetsExist);
-        LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+        //LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+       
     }
+    
+    /*
     void OnLocaleChanged(UnityEngine.Localization.Locale locale)
     {
         gameSessionView.UpdateLevelInfo(levelEconomyData.levelNumber,levelEconomyData.optTargetsExist,levelEconomyData.trgTargetsExist);
         gameSessionView.UpdateWinUI(levelEconomyData.levelNumber, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
     }
+    */
 
     public void Dispose()
     {
-        LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+        //LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
         
     }
 

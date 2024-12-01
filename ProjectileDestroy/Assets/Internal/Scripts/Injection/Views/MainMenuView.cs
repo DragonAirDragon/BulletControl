@@ -5,8 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using VContainer;
-using UnityEngine.Localization;
-using UnityEngine.Localization.Settings;
+
 using YG;
 
 public class MainMenuView : MonoBehaviour
@@ -33,17 +32,17 @@ public class MainMenuView : MonoBehaviour
 
    private void Start()
    {
-      LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+      //LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
       resetProgress.onClick.AddListener(YandexGame.ResetSaveProgress);
    }
    
    
-   
+   /*
    void OnLocaleChanged(UnityEngine.Localization.Locale locale)
    {
       UpdateUI(_localAndCloudDataService.GetCurrentLevel(), _localAndCloudDataService.GetCurrentLevelInfo());
    }
-
+   */
    private void OnEnable()
    {
       UpdateUI(_localAndCloudDataService.GetCurrentLevel(), _localAndCloudDataService.GetCurrentLevelInfo());
@@ -53,7 +52,7 @@ public class MainMenuView : MonoBehaviour
 
    private void OnDestroy()
    {
-      LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
+      //LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
       resetProgress.onClick.RemoveListener(YandexGame.ResetSaveProgress);
    }
 
@@ -64,35 +63,9 @@ public class MainMenuView : MonoBehaviour
       
       
       
-      var localizedStringNameLevel = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("Levels", "Level" + (i+1).ToString()+ "Name");
+      nameLevel.text = I2.Loc.LocalizationManager.GetTranslation("Level" + (i+1).ToString()+ "Name");
       
-      var localizedStringDescriptionLevel = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("Levels", "Level" + (i+1).ToString()+ "Description");
-      
-      
-      
-      localizedStringNameLevel.Completed += handle =>
-      {
-         if (handle.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
-         {
-            nameLevel.text = handle.Result;
-         }
-         else
-         {
-            Debug.LogError($"Не удалось загрузить локализованную строку для ключа: {"Level" + (i+1).ToString()+ "Name"}");
-         }
-      };
-      
-      localizedStringDescriptionLevel.Completed += handle =>
-      {
-         if (handle.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
-         {
-            descriptionLevel.text = handle.Result;
-         }
-         else
-         {
-            Debug.LogError($"Не удалось загрузить локализованную строку для ключа: {"Level" + (i+1).ToString()+ "Description"}");
-         }
-      };
+      descriptionLevel.text = I2.Loc.LocalizationManager.GetTranslation("Level" + (i+1).ToString()+ "Description");
       
       SetCurrentNumbersLevelPanel(i);
       
