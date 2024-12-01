@@ -38,6 +38,13 @@ MonoBehaviour:
     - Locale-uk
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b1aa8b97e3957a240af31b7c04a6e2f0
+    m_Address: Tutorial_uk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uk
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c29009831e05fbb4fa37a2c3140f80c8
     m_Address: Donat_uk
     m_ReadOnly: 1

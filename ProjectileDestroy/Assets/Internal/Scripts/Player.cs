@@ -20,6 +20,10 @@ public class Player : MonoBehaviour
     bool playerPhase = true;
     bool playerActive = true;
     bool pausePlayer = false;
+    
+    public LayerMask aimMask;
+    
+    [SerializeField] private GameObject crosshair;
 
     
     private WeaponSettings weaponSettings;
@@ -110,8 +114,7 @@ public class Player : MonoBehaviour
         // Переменная для хранения информации о попадании
         RaycastHit hit;
 
-        // Проверяем попадание луча
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity))
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity,aimMask))
         {
             // Вычисляем направление от объекта к точке попадания
             Vector3 direction = (hit.point - rightHandAnimator.firePoint.position).normalized;
@@ -174,6 +177,7 @@ public class Player : MonoBehaviour
     private void SetActivePlayer(bool activityPlayer)
     {
         playerPhase = activityPlayer;
+        crosshair?.SetActive(activityPlayer);
     }
     private void SetAllActivityPlayer(bool activityPlayer)
     {

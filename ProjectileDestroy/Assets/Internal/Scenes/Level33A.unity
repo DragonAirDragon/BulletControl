@@ -1844,7 +1844,7 @@ PrefabInstance:
     - target: {fileID: 3300000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: 49fee4c5907e33545a3b2db2e9d66675, type: 3}
+      objectReference: {fileID: 4300000, guid: 8998cd4f43e5233408e2bc9767e8c82c, type: 2}
     - target: {fileID: 6414190346360418690, guid: 81835658bbd378143a0f525b8552f557,
         type: 3}
       propertyPath: modeOfMeshesScanning
@@ -2210,7 +2210,7 @@ PrefabInstance:
     - target: {fileID: 3300000, guid: 81c050d9e127fdd45af1f6b8da476b2b, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: 6780ac7fd67c9ab43aebe63ff3fb60aa, type: 3}
+      objectReference: {fileID: 4300000, guid: 710700f10b3b65541a94c335fcbc7998, type: 2}
     - target: {fileID: 3744606835566526795, guid: 81c050d9e127fdd45af1f6b8da476b2b,
         type: 3}
       propertyPath: modeOfMeshesScanning
@@ -2420,7 +2420,7 @@ PrefabInstance:
     - target: {fileID: 3300000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: c89ff10cad1be9a4e83cf49bf466e148, type: 3}
+      objectReference: {fileID: 4300000, guid: a17b89d91c9e6a642945916a2b5187bf, type: 2}
     - target: {fileID: 1926822333446503682, guid: 1af0a2c8773f85c40bdb120f32cd8a8a,
         type: 3}
       propertyPath: modeOfMeshesScanning
@@ -3919,6 +3919,10 @@ MonoBehaviour:
   rotationY: 0
   cameraTransform: {fileID: 2063667649}
   firePoint: {fileID: 0}
+  aimMask:
+    serializedVersion: 2
+    m_Bits: 1
+  crosshair: {fileID: 186862863}
   rightHandAnimator: {fileID: 930845899}
 --- !u!4 &1180604923 stripped
 Transform:
@@ -6364,7 +6368,7 @@ PrefabInstance:
     - target: {fileID: 3300000, guid: 979de0ac65f6d2b48a89e9088986637f, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: af2166692e99625489131a7bf2114bd6, type: 3}
+      objectReference: {fileID: 4300000, guid: f58cd64a95534a5438484ccd11011f55, type: 2}
     - target: {fileID: 968404765101794581, guid: 979de0ac65f6d2b48a89e9088986637f,
         type: 3}
       propertyPath: customCameraForSimulationOfLods
@@ -6684,17 +6688,42 @@ PrefabInstance:
       objectReference: {fileID: 272807535}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
+      propertyPath: levelEconomyData.bestTime
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.worstTime
+      value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
       propertyPath: levelEconomyData.levelNumber
       value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
+      propertyPath: levelEconomyData.bestTimeCost
+      value: 430
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.baseLevelCost
+      value: 530
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
       propertyPath: levelEconomyData.bestBulletCost
-      value: 80
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
       propertyPath: levelEconomyData.optTargetsExist
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.bestOptionalCost
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,

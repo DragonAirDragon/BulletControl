@@ -38,6 +38,13 @@ MonoBehaviour:
     - Locale-kk
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ab61ae3520c5f324ca4027f106328086
+    m_Address: Tutorial_kk
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-kk
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b89e09d9a2d67874c88672fdb08ef1f7
     m_Address: Levels_kk
     m_ReadOnly: 1

@@ -23,10 +23,10 @@ public class SelectWeaponView : MonoBehaviour
    [SerializeField] private TextMeshProUGUI ricochetsPropertyValue;
    [SerializeField] private Image ricochetsPropertyBar;
    
-   [SerializeField] private TextMeshProUGUI maneuverabilityPropertyValue;
+   
    [SerializeField] private Image maneuverabilityPropertyBar;
    
-   [SerializeField] private TextMeshProUGUI speedPropertyValue;
+ 
    [SerializeField] private Image speedPropertyBar;
    
    [SerializeField] private TextMeshProUGUI costBulletPropertyValue;
@@ -101,14 +101,17 @@ public class SelectWeaponView : MonoBehaviour
       splashImage.sprite = weaponInfo.weaponMainIcon;
       weaponName.text = weaponInfo.weaponName;
       ricochetsPropertyValue.text = bullet.CountRicochet.ToString();
-      maneuverabilityPropertyValue.text = bullet.Maneuverability.ToString();
-      speedPropertyValue.text = bullet.Speed.ToString();
+      
+      float speedTime = (bullet.Speed - bullet.MinSpeed) / (bullet.MaxSpeed - bullet.MinSpeed);
+      
+     
       costBulletPropertyValue.text = bullet.bulletCost.ToString();
       
-      ricochetsPropertyBar.fillAmount = bullet.CountRicochet / bullet.MaxCountRicochet;
-      maneuverabilityPropertyBar.fillAmount = bullet.Maneuverability / bullet.MaxManeuverability;
-      speedPropertyBar.fillAmount =  bullet.Speed/ bullet.MaxSpeed;
-      costBulletPropertyBar.fillAmount = bullet.BulletCost/bullet.MaxBulletCost;
+      
+      ricochetsPropertyBar.fillAmount = (bullet.CountRicochet - bullet.MinCountRicochet) / (bullet.MaxCountRicochet - bullet.MinCountRicochet);
+      maneuverabilityPropertyBar.fillAmount = (bullet.Maneuverability-bullet.MinManeuverability) / (bullet.MaxManeuverability-bullet.MinManeuverability);
+      speedPropertyBar.fillAmount = speedTime;
+      costBulletPropertyBar.fillAmount = (bullet.BulletCost - bullet.MinBulletCost)/ (bullet.MaxBulletCost-bullet.MinBulletCost);
       
      // weaponInfo.weaponCost
      

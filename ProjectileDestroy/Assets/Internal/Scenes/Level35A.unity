@@ -662,7 +662,7 @@ PrefabInstance:
     - target: {fileID: 3300000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: ca65f40fba8c4d146800611d34e2e114, type: 3}
+      objectReference: {fileID: 4300000, guid: 11e8febf69b750d42866b138b73cd34b, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1902,6 +1902,10 @@ MonoBehaviour:
   rotationY: 0
   cameraTransform: {fileID: 2063667649}
   firePoint: {fileID: 0}
+  aimMask:
+    serializedVersion: 2
+    m_Bits: 1
+  crosshair: {fileID: 186862863}
   rightHandAnimator: {fileID: 930845899}
 --- !u!1 &1183784088
 GameObject:
@@ -3309,13 +3313,33 @@ PrefabInstance:
       objectReference: {fileID: 272807535}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
+      propertyPath: levelEconomyData.bestTime
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.worstTime
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
       propertyPath: levelEconomyData.levelNumber
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
+      propertyPath: levelEconomyData.bestTimeCost
+      value: 460
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.baseLevelCost
+      value: 560
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
       propertyPath: levelEconomyData.bestBulletCost
-      value: 80
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
@@ -3326,6 +3350,11 @@ PrefabInstance:
         type: 3}
       propertyPath: levelEconomyData.trgTargetsExist
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.bestOptionalCost
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}

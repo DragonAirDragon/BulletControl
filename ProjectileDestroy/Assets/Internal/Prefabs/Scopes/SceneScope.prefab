@@ -58,18 +58,17 @@ MonoBehaviour:
     triggerObjects:
     - {fileID: 0}
   levelEconomyData:
-    nameLevel: Level1Name
     levelNumber: 1
     optTargetsExist: 1
     trgTargetsExist: 0
-    baseLevelCost: 100
-    bestTime: 2
-    worstTime: 20
-    bestTimeCost: 200
+    baseLevelCost: 50
+    bestTime: 25
+    worstTime: 60
+    bestTimeCost: 40
     worstTimeCost: 0
-    bestOptionalCost: 200
+    bestOptionalCost: 25
     worstOptionalCost: 0
-    bestBulletCost: 0
+    bestBulletCost: 15
   player: {fileID: 0}
   cameraFollow: {fileID: 0}
   triggeredObjectControllers:

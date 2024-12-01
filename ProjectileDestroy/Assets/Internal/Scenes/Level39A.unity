@@ -631,7 +631,7 @@ PrefabInstance:
     - target: {fileID: 3300000, guid: 9b25e71fd5b7ac6469539d930c6dc2e6, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: e27fca78fe9f936418ad2ba454f64c4f, type: 2}
+      objectReference: {fileID: 4300000, guid: 11e8febf69b750d42866b138b73cd34b, type: 2}
     - target: {fileID: 4977031424342384434, guid: 9b25e71fd5b7ac6469539d930c6dc2e6,
         type: 3}
       propertyPath: customCameraForSimulationOfLods
@@ -2251,7 +2251,7 @@ PrefabInstance:
     - target: {fileID: 3300000, guid: 81835658bbd378143a0f525b8552f557, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: 1114f3d6820810e46b0923fd83ed98b2, type: 2}
+      objectReference: {fileID: 4300000, guid: 8998cd4f43e5233408e2bc9767e8c82c, type: 2}
     - target: {fileID: 6414190346360418690, guid: 81835658bbd378143a0f525b8552f557,
         type: 3}
       propertyPath: modeOfMeshesScanning
@@ -2827,7 +2827,7 @@ PrefabInstance:
     - target: {fileID: 3300000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: 9aa6f3f07a2d30746bb9cbafb519ccbf, type: 2}
+      objectReference: {fileID: 4300000, guid: a17b89d91c9e6a642945916a2b5187bf, type: 2}
     - target: {fileID: 1926822333446503682, guid: 1af0a2c8773f85c40bdb120f32cd8a8a,
         type: 3}
       propertyPath: modeOfMeshesScanning
@@ -4336,6 +4336,10 @@ MonoBehaviour:
   rotationY: 0
   cameraTransform: {fileID: 2063667649}
   firePoint: {fileID: 0}
+  aimMask:
+    serializedVersion: 2
+    m_Bits: 1
+  crosshair: {fileID: 186862863}
   rightHandAnimator: {fileID: 930845899}
 --- !u!4 &1180604923 stripped
 Transform:
@@ -7154,13 +7158,33 @@ PrefabInstance:
       objectReference: {fileID: 272807535}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
+      propertyPath: levelEconomyData.bestTime
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.worstTime
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
       propertyPath: levelEconomyData.levelNumber
       value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
+      propertyPath: levelEconomyData.bestTimeCost
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.baseLevelCost
+      value: 620
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
       propertyPath: levelEconomyData.bestBulletCost
-      value: 80
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
@@ -7171,6 +7195,11 @@ PrefabInstance:
         type: 3}
       propertyPath: levelEconomyData.trgTargetsExist
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.bestOptionalCost
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}

@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using YG;
 
@@ -31,6 +30,7 @@ public class LocalAndCloudDataService
         //this.yandex.OnDataLoaded += LoadData;
         YandexGame.GetDataEvent += LoadData;
         YandexGame.PurchaseSuccessEvent += SuccessPurchased;
+        YandexGame.ConsumePurchases();
     }
     
     void SuccessPurchased(string id)
@@ -48,6 +48,9 @@ public class LocalAndCloudDataService
         YandexGame.SaveProgress();
     }
     
+    
+    
+    
     private void LoadData()
     {
         OnDataUpdated?.Invoke();
@@ -64,7 +67,7 @@ public class LocalAndCloudDataService
 
     public void ChangeCurrentMoney(int value)
     {
-        YandexGame.savesData.moneyCount = Mathf.Clamp(YandexGame.savesData.moneyCount + value, 0, 9999);
+        YandexGame.savesData.moneyCount = Mathf.Clamp(YandexGame.savesData.moneyCount + value, 0, 99999);
         YandexGame.SaveProgress();
         OnMoneyChanged?.Invoke(YandexGame.savesData.moneyCount); 
     }
@@ -165,6 +168,12 @@ public class LocalAndCloudDataService
     
     public void NextLevel()
     {
+        if (YandexGame.savesData.currentLevel == 44)
+        {
+            YandexGame.savesData.currentLevel=0;
+            YandexGame.SaveProgress();
+            return;
+        }
         YandexGame.savesData.currentLevel = Mathf.Clamp(YandexGame.savesData.currentLevel+1, 0, 44);
         YandexGame.SaveProgress();
     }

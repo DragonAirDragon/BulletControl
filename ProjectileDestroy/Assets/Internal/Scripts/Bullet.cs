@@ -8,16 +8,21 @@ public class Bullet : MonoBehaviour
 {
     [Title("Main Gameplay Params (Основные геймплей параметры)")]
     [Space]
-    [SerializeField,PropertyRange(0, "MaxSpeed")] private float speed = 3f;
-    public float MaxSpeed = 30f;
-    [SerializeField,PropertyRange(0, "MaxManeuverability")] private float maneuverability = 1f;
+    [SerializeField,PropertyRange("MinSpeed", "MaxSpeed")] private float speed = 3f;
+    public float MaxSpeed = 10.5f;
+    public float MinSpeed = 5f;
+    
+    [SerializeField,PropertyRange("MinManeuverability", "MaxManeuverability")] private float maneuverability = 1f;
     public float MaxManeuverability = 30f;
-    [SerializeField,PropertyRange(0, "MaxCountRicochet")] private int countRicochet = 3;
-    public float MaxCountRicochet = 30f;
+    public float MinManeuverability = 1f;
+    [SerializeField,PropertyRange("MinCountRicochet", "MaxCountRicochet")] private int countRicochet = 3;
+    public int MaxCountRicochet = 10;
+    public int MinCountRicochet = 1;
     [SerializeField] private float distanceRayForContact = 1f;
-    [SerializeField,PropertyRange(0, "MaxBulletCost")]
+    [SerializeField,PropertyRange("MinBulletCost", "MaxBulletCost")]
     public int bulletCost = 20;
     public int MaxBulletCost = 30;
+    public int MinBulletCost = 5;
     private GameSessionView gameSessionView;
     private float currentSpeed = 2f;
     

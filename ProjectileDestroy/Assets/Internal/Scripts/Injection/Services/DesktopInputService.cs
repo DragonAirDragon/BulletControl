@@ -43,6 +43,6 @@ public class DesktopInputService : IInputService
 
     public bool GetPause()
     {
-        return Input.GetKeyDown(KeyCode.Escape);
+        return Input.GetKeyDown(KeyCode.P);
     }
 }

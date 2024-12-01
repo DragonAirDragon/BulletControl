@@ -2199,6 +2199,10 @@ MonoBehaviour:
   rotationY: 0
   cameraTransform: {fileID: 2063667649}
   firePoint: {fileID: 0}
+  aimMask:
+    serializedVersion: 2
+    m_Bits: 1
+  crosshair: {fileID: 186862863}
   rightHandAnimator: {fileID: 930845899}
 --- !u!1 &1183784088
 GameObject:
@@ -3619,8 +3623,28 @@ PrefabInstance:
       objectReference: {fileID: 272807535}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
+      propertyPath: levelEconomyData.bestTime
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.worstTime
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
       propertyPath: levelEconomyData.levelNumber
       value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.bestTimeCost
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.baseLevelCost
+      value: 680
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
@@ -3630,6 +3654,11 @@ PrefabInstance:
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
       propertyPath: levelEconomyData.optTargetsExist
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.bestOptionalCost
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
@@ -5847,7 +5876,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5

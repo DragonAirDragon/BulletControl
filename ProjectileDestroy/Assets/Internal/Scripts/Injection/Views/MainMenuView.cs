@@ -100,8 +100,8 @@ public class MainMenuView : MonoBehaviour
 
    private void SetCurrentNumbersLevelPanel(int currentLevelNumber)
    {
-      numbersLevelPanel[0].text = currentLevelNumber.ToString();
-      numbersLevelPanel[1].text = (currentLevelNumber+1).ToString();
-      numbersLevelPanel[2].text = (currentLevelNumber+2).ToString();
+      numbersLevelPanel[0].text = (currentLevelNumber+1).ToString();
+      numbersLevelPanel[1].text = (currentLevelNumber+2).ToString();
+      numbersLevelPanel[2].text = (currentLevelNumber+3).ToString();
    }
 }

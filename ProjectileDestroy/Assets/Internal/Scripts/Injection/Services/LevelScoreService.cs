@@ -82,9 +82,31 @@ public class LevelScoreService : IStartable,IDisposable
         while (_timerOn)
         {
             await UniTask.Delay(TimeSpan.FromSeconds(1));
-            _time += 1f;
+
+            // Получаем текущую пулю
+            var currentBullet = bulletFactory.GetCurrentBullet();
+
+            // Вычисляем приращение времени
+            // Увеличиваем _time на вычисленное значение
+            _time += CalculateTimeIncrement(currentBullet);
+
         }
     }
+    
+    
+    private float CalculateTimeIncrement(Bullet bullet)
+    {
+        if (bullet == null)
+        {
+            return 1f;
+        }
+        // Нормализуем текущую скорость в диапазоне от 0 до 1
+        float normalizedSpeed = (bullet.Speed - bullet.MinSpeed) / (bullet.MaxSpeed - bullet.MinSpeed);
+
+        // Вычисляем приращение времени в зависимости от нормализованной скорости
+        return 0.5f + (normalizedSpeed * 0.5f);
+    }
+    
 
     private void Pause()
     {
@@ -99,32 +121,41 @@ public class LevelScoreService : IStartable,IDisposable
     {
         var optionalObject = levelService.GetOptionalObjectCounts();
         var bullet_cost = Mathf.Clamp(bulletFactory.GetCostForAllUsedBullets(),0,levelEconomyData.bestBulletCost);
-        Debug.Log(bullet_cost);
+      
         float optionalRatio = (optionalObject.maxOptional != 0) ?
             (float)optionalObject.currentOptional / optionalObject.maxOptional : 0f;
 
         float optional_cost = Mathf.Lerp(levelEconomyData.OptionalObjectsCostRange.WorstCost,
             levelEconomyData.OptionalObjectsCostRange.BestCost, optionalRatio);
 
-        float time_cost = Mathf.Lerp(levelEconomyData.TimeCostRange.WorstCost, levelEconomyData.TimeCostRange.BestCost,
-                1 - (Mathf.Clamp(_time, levelEconomyData.TimeRange.BestTime, levelEconomyData.TimeRange.WorstTime) / levelEconomyData.TimeRange.WorstTime));
+        float time_cost;
+        if (_time <= levelEconomyData.TimeRange.BestTime)
+        {
+            time_cost = levelEconomyData.TimeCostRange.BestCost;
+        }
+        else
+        {
+            time_cost = Mathf.Lerp(levelEconomyData.TimeCostRange.BestCost, levelEconomyData.TimeCostRange.WorstCost,
+                (_time - levelEconomyData.TimeRange.BestTime) / (levelEconomyData.TimeRange.WorstTime - levelEconomyData.TimeRange.BestTime));
+        }
 
         result = (int)(levelEconomyData.baseLevelCost + optional_cost + time_cost - bullet_cost);
         gameSessionView.SetGameStageWin();
-        gameSessionView.UpdateWinUI(levelEconomyData.levelNumber, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
+        gameSessionView.UpdateWinUI(levelEconomyData.levelNumber, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, (int)_time,result);
         levelService.bullet.DestroyBullet();
         Cursor.lockState = CursorLockMode.None;
         localAndCloudDataService.NextLevel();
         gameSessionView.ReturnToMenuBind(result,localAndCloudDataService);
         YandexGame.GameplayStop();
+        
         /*Debug.Log($"Победа\n" +
                   $"Основная награда за уровень {levelEconomyData.baseLevelCost}$ \n" +
                   $"Деньги за опциональные объекты {optional_cost}$ \n" +
                   $"Деньги за время {time_cost}$ \n" +
                   $"Траты на пули {bullet_cost}$ \n" +
                   $"Результат {result}$ \n");
+    
         */
-        
     }
 
     private void DoubleRewardSuccess(int i)
@@ -133,7 +164,7 @@ public class LevelScoreService : IStartable,IDisposable
         {
             result *= 2;
             gameSessionView.SetActiveDoubleRewardButton(false);
-            gameSessionView.UpdateWinUI(levelEconomyData.levelNumber, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, _time,result);
+            gameSessionView.UpdateWinUI(levelEconomyData.levelNumber, levelService.GetOptionalCount().currentOptionalObject,levelService.GetOptionalCount().maxOptionalObject, (int)_time,result);
             gameSessionView.ReturnToMenuBind(result,localAndCloudDataService);
         }
     }

@@ -45,6 +45,13 @@ MonoBehaviour:
     - Locale-uz
     - Preload
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ae9bb20ed2e879243bf4b9581cd619a5
+    m_Address: Tutorial_uz
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-uz
+    - Preload
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e0ee489dfbe5a5745863e4984a1d07f3
     m_Address: Settings_uz
     m_ReadOnly: 1

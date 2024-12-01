@@ -3,6 +3,7 @@ using TheraBytes.BetterUi;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
+using YG;
 using Sequence = DG.Tweening.Sequence;
 
 public class ColorUIImageAnimation : MonoBehaviour
@@ -109,6 +110,17 @@ public class ColorUIImageAnimation : MonoBehaviour
       buyAdFree.color = buyedColor;
       StartAnimation();
    }
+   
+   public void SetUnbuyingAd()
+   {
+      StopAnimation();
+      buyedAd = false;
+      UpdateText();
+      StartAnimation();
+   }
+   
+   
+   
 
    void OnLocaleChanged(UnityEngine.Localization.Locale locale)
    {
@@ -117,9 +129,7 @@ public class ColorUIImageAnimation : MonoBehaviour
    
    public void UpdateText()
    {
-      if(!buyedAd) return;
-      text.text = LocalizationSettings.StringDatabase.GetLocalizedString("Donat", "donatePurchased");;
-  
+      text.text = !buyedAd ? YandexGame.purchases[0].price : LocalizationSettings.StringDatabase.GetLocalizedString("Donat", "donatePurchased");
    }
    
 }

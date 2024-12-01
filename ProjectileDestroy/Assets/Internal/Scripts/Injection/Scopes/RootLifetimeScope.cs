@@ -12,6 +12,7 @@ public class RootLifetimeScope : LifetimeScope
     [SerializeField] private SettingsView _settingsViewPrefab;
     [SerializeField] private AudioMixer _mixer;
     
+    
     [FormerlySerializedAs("lifetimeScopePrefab")] public GamePlayTimeScope playTimeScopePrefab;
     protected override void Configure(IContainerBuilder builder)
     {

@@ -238,7 +238,7 @@ MonoBehaviour:
       Data: Berreta
     - Name: weaponCost
       Entry: 3
-      Data: 600
+      Data: 200
     - Name: weaponIcon
       Entry: 10
       Data: 1
@@ -391,7 +391,7 @@ MonoBehaviour:
       Data: AK 47
     - Name: weaponCost
       Entry: 3
-      Data: 1300
+      Data: 1700
     - Name: weaponIcon
       Entry: 10
       Data: 3
@@ -544,7 +544,7 @@ MonoBehaviour:
       Data: Colt Python
     - Name: weaponCost
       Entry: 3
-      Data: 100
+      Data: 500
     - Name: weaponIcon
       Entry: 10
       Data: 5
@@ -697,7 +697,7 @@ MonoBehaviour:
       Data: Colt1911
     - Name: weaponCost
       Entry: 3
-      Data: 500
+      Data: 400
     - Name: weaponIcon
       Entry: 10
       Data: 7
@@ -850,7 +850,7 @@ MonoBehaviour:
       Data: Glock
     - Name: weaponCost
       Entry: 3
-      Data: 200
+      Data: 300
     - Name: weaponIcon
       Entry: 10
       Data: 9
@@ -1003,7 +1003,7 @@ MonoBehaviour:
       Data: Tec9
     - Name: weaponCost
       Entry: 3
-      Data: 300
+      Data: 100
     - Name: weaponIcon
       Entry: 10
       Data: 11
@@ -1156,7 +1156,7 @@ MonoBehaviour:
       Data: DE
     - Name: weaponCost
       Entry: 3
-      Data: 400
+      Data: 600
     - Name: weaponIcon
       Entry: 10
       Data: 13
@@ -1309,7 +1309,7 @@ MonoBehaviour:
       Data: AUG
     - Name: weaponCost
       Entry: 3
-      Data: 1400
+      Data: 1600
     - Name: weaponIcon
       Entry: 10
       Data: 15
@@ -1615,7 +1615,7 @@ MonoBehaviour:
       Data: M4 A4
     - Name: weaponCost
       Entry: 3
-      Data: 1600
+      Data: 1400
     - Name: weaponIcon
       Entry: 10
       Data: 19
@@ -1768,7 +1768,7 @@ MonoBehaviour:
       Data: M16
     - Name: weaponCost
       Entry: 3
-      Data: 1700
+      Data: 1300
     - Name: weaponIcon
       Entry: 10
       Data: 21
@@ -2074,7 +2074,7 @@ MonoBehaviour:
       Data: Bizon
     - Name: weaponCost
       Entry: 3
-      Data: 1100
+      Data: 800
     - Name: weaponIcon
       Entry: 10
       Data: 25
@@ -2380,7 +2380,7 @@ MonoBehaviour:
       Data: MP5
     - Name: weaponCost
       Entry: 3
-      Data: 800
+      Data: 1000
     - Name: weaponIcon
       Entry: 10
       Data: 29
@@ -2533,7 +2533,7 @@ MonoBehaviour:
       Data: MP7
     - Name: weaponCost
       Entry: 3
-      Data: 900
+      Data: 1100
     - Name: weaponIcon
       Entry: 10
       Data: 31
@@ -2686,7 +2686,7 @@ MonoBehaviour:
       Data: P90
     - Name: weaponCost
       Entry: 3
-      Data: 1000
+      Data: 1200
     - Name: weaponIcon
       Entry: 10
       Data: 33
@@ -2839,7 +2839,7 @@ MonoBehaviour:
       Data: UMP
     - Name: weaponCost
       Entry: 3
-      Data: 1200
+      Data: 900
     - Name: weaponIcon
       Entry: 10
       Data: 35
@@ -2992,7 +2992,7 @@ MonoBehaviour:
       Data: Winchester
     - Name: weaponCost
       Entry: 3
-      Data: 2300
+      Data: 1900
     - Name: weaponIcon
       Entry: 10
       Data: 37
@@ -3145,7 +3145,7 @@ MonoBehaviour:
       Data: VSSVintorez
     - Name: weaponCost
       Entry: 3
-      Data: 2400
+      Data: 2000
     - Name: weaponIcon
       Entry: 10
       Data: 39
@@ -3451,7 +3451,7 @@ MonoBehaviour:
       Data: Dragunov
     - Name: weaponCost
       Entry: 3
-      Data: 2000
+      Data: 2200
     - Name: weaponIcon
       Entry: 10
       Data: 43
@@ -3604,7 +3604,7 @@ MonoBehaviour:
       Data: Barret M82
     - Name: weaponCost
       Entry: 3
-      Data: 2200
+      Data: 2400
     - Name: weaponIcon
       Entry: 10
       Data: 45
@@ -3757,7 +3757,7 @@ MonoBehaviour:
       Data: AWP
     - Name: weaponCost
       Entry: 3
-      Data: 1900
+      Data: 2300
     - Name: weaponIcon
       Entry: 10
       Data: 47
@@ -3988,4 +3988,4 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  weaponsListOrder: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000150000001600000017000000
+  weaponsListOrder: 020000000500000001000000040000000000000003000000060000000a0000000b000000070000000800000009000000100000000f0000000e0000000d0000000c00000011000000160000001700000014000000130000001200000015000000

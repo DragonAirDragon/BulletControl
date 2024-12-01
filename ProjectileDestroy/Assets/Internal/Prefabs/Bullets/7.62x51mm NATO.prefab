@@ -132,15 +132,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 665eb4f58c69d2f4ca06aa0cec3b0b8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  MaxSpeed: 30
-  maneuverability: 1
-  MaxManeuverability: 30
-  countRicochet: 3
-  MaxCountRicochet: 30
+  speed: 7.3
+  MaxSpeed: 10.3
+  MinSpeed: 5
+  maneuverability: 1.5
+  MaxManeuverability: 2
+  MinManeuverability: 1
+  countRicochet: 6
+  MaxCountRicochet: 10
+  MinCountRicochet: 1
   distanceRayForContact: 1
-  bulletCost: 20
+  bulletCost: 18
   MaxBulletCost: 30
+  MinBulletCost: 5
   ricochetAudioSource: {fileID: 3453366513639707833}
   ricochetAudioClips:
   - {fileID: 8300000, guid: 9989938bdafeb90459bce66606eb36dc, type: 3}

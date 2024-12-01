@@ -18,13 +18,20 @@ public class RotateAndPulseUIImage : MonoBehaviour
     {
         initialScale = transform.localScale;
         StartAnimation();
+        //Debug.Log("Анимация круговая началась");
     }
+
     private void OnDisable()
     {
         StopAnimation();
+        //Debug.Log("Анимация круговая окончилась");
     }
+
     public void StartAnimation()
     {
+        // Останавливаем текущие твины, если они еще активны
+        StopAnimation();
+
         // Запускаем анимацию вращения и пульсации
         StartRotationAndPulsingScale();
     }
@@ -32,9 +39,16 @@ public class RotateAndPulseUIImage : MonoBehaviour
     public void StopAnimation()
     {
         // Останавливаем анимацию вращения и пульсации
-        rotationTween.Kill();
-        scaleTween.Kill();
+        if (rotationTween != null && rotationTween.IsActive())
+        {
+            rotationTween.Kill();
+        }
+        if (scaleTween != null && scaleTween.IsActive())
+        {
+            scaleTween.Kill();
+        }
         transform.localScale = initialScale;
+        transform.rotation = Quaternion.identity;
     }
 
     void StartRotationAndPulsingScale()
@@ -43,11 +57,8 @@ public class RotateAndPulseUIImage : MonoBehaviour
             .SetEase(Ease.Linear)
             .SetLoops(-1, LoopType.Restart);
 
-
         scaleTween = transform.DOScale(initialScale * (1 + scaleFactor), pulseDuration)
             .SetEase(Ease.InOutSine)
             .SetLoops(-1, LoopType.Yoyo);
     }
-
-
 }

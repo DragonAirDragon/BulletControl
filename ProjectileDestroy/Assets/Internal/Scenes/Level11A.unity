@@ -2763,6 +2763,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1612532200}
     m_Modifications:
+    - target: {fileID: 4033969519657575291, guid: e1caa9bfff343f54d8848f6447febafe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8311956433366821688, guid: e1caa9bfff343f54d8848f6447febafe,
         type: 3}
       propertyPath: m_Name
@@ -3379,6 +3384,10 @@ MonoBehaviour:
   rotationY: 0
   cameraTransform: {fileID: 2063667649}
   firePoint: {fileID: 0}
+  aimMask:
+    serializedVersion: 2
+    m_Bits: 1
+  crosshair: {fileID: 186862863}
   rightHandAnimator: {fileID: 930845899}
 --- !u!1001 &1169329335
 PrefabInstance:
@@ -3494,11 +3503,11 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3977679024901598717, guid: 9fad9f0296e65ab4eb6614046ec7d73c,
         type: 3}
-      insertIndex: -1
+      insertIndex: 8
       addedObject: {fileID: 1169329341}
     - targetCorrespondingSourceObject: {fileID: 3977679024901598717, guid: 9fad9f0296e65ab4eb6614046ec7d73c,
         type: 3}
-      insertIndex: -1
+      insertIndex: 9
       addedObject: {fileID: 1169329340}
   m_SourcePrefab: {fileID: 100100000, guid: 9fad9f0296e65ab4eb6614046ec7d73c, type: 3}
 --- !u!4 &1169329336 stripped
@@ -4203,6 +4212,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2059068335}
     m_Modifications:
+    - target: {fileID: 4033969519657575291, guid: e1caa9bfff343f54d8848f6447febafe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8311956433366821688, guid: e1caa9bfff343f54d8848f6447febafe,
         type: 3}
       propertyPath: m_Name
@@ -5373,12 +5387,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
+      propertyPath: levelEconomyData.bestTimeCost
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.baseLevelCost
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
       propertyPath: levelEconomyData.bestBulletCost
-      value: 80
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
         type: 3}
       propertyPath: levelEconomyData.optTargetsExist
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
+        type: 3}
+      propertyPath: levelEconomyData.bestOptionalCost
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2623046417084829757, guid: 66d78e796c31faf4cbc5c7529877b1b1,
@@ -6053,6 +6082,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1612532200}
     m_Modifications:
+    - target: {fileID: 4033969519657575291, guid: e1caa9bfff343f54d8848f6447febafe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8311956433366821688, guid: e1caa9bfff343f54d8848f6447febafe,
         type: 3}
       propertyPath: m_Name
@@ -6238,7 +6272,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5

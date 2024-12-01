@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Tutorial_tr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: tr
+  m_SharedData: {fileID: 11400000, guid: 70ca8a7b31a3cda46a22078600313dd8, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 18639224832
+    m_Localized: "Oyun Kurallar\u0131: T\u0131rmanma say\u0131s\u0131 s\u0131n\u0131rl\u0131d\u0131r;
+      Her kur\u015Fun para de\u011Ferinde; Ana hedefler <color=yellow>sar\u0131</color>
+      ile vurgulan\u0131r; Ek hedefler - <color=blue>mavi</color>; \xDCcretsiz t\u0131rman\u0131labilen
+      nesneler - <color=grey>g\xFCm\xFC\u015F</color> renkte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45478576128
+    m_Localized: "Oyun Kontrolleri: Sol mouse d\xFC\u011Fmesi - ate\u015F et; Sa\u011F
+      mouse d\xFC\u011Fmesi - ni\u015Fan al; WASD tu\u015Flar\u0131 (veya ok tu\u015Flar\u0131)
+      - mermiyi kontrol etmek i\xE7in; P tu\u015Fu - oyunu duraklatmak ve devam ettirmek
+      i\xE7in. <- \u015Eimdi d\xF6n ve pencerede ate\u015F et ->"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68945707008
+    m_Localized: "Belirli bir tetikleyiciyi (kap\u0131 veya kapak) etkinle\u015Ftiren
+      hedefler <color=red>k\u0131rm\u0131z\u0131</color> ile vurgulan\u0131r"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
