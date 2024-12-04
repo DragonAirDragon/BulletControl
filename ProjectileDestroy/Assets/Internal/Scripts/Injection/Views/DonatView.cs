@@ -36,7 +36,7 @@ public class DonatView : MonoBehaviour
     }
     public void BuyAdFree()
     {
-        Debug.Log("Покупка рекламы");
+        //Debug.Log("Покупка рекламы");
         YandexGame.BuyPayments("20");
     }
     

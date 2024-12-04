@@ -25,7 +25,7 @@ public class Bullet : MonoBehaviour
     public int MinBulletCost = 5;
     private GameSessionView gameSessionView;
     private float currentSpeed = 2f;
-    
+    private int roundingPrecision = 10;
     
     public float Speed
     {
@@ -159,6 +159,13 @@ public class Bullet : MonoBehaviour
                 Vector3 reflectionDirection = Vector3.Reflect(bulletTransform.forward, hit.normal);
                 // Convert reflection direction to rotation
                 QuaternionToRotation(DirectionToRotation(reflectionDirection), out rotationX, out rotationY);
+                //.Log("До округления: Угол X" + rotationX + " Y" + rotationY);
+                rotationX = RoundToNearest(rotationX);
+                rotationY = RoundToNearest(rotationY);
+                //Debug.Log("После округления: Угол X" + rotationX + " Y" + rotationY);
+
+                bulletTransform.position = hit.point;
+                
                 countRicochet--;
                 gameSessionView.UpdateRicochetUI(countRicochet);
                 PlayRandomRicochetAudio();
@@ -169,10 +176,19 @@ public class Bullet : MonoBehaviour
                 Vector3 reflectionDirection = Vector3.Reflect(bulletTransform.forward, hit.normal);
                 // Convert reflection direction to rotation
                 QuaternionToRotation(DirectionToRotation(reflectionDirection), out rotationX, out rotationY);
+                //Debug.Log("До округления: Угол X" + rotationX + " Y" + rotationY);
+                rotationX = RoundToNearest(rotationX);
+                rotationY = RoundToNearest(rotationY);
+                //Debug.Log("После округления: Угол X" + rotationX + " Y" + rotationY);
+                
+                
+                bulletTransform.position = hit.point;
                 PlayRandomRicochetAudio();
             }
         }
-
+      
+        
+        
         bulletTransform.localRotation = Quaternion.Euler(rotationX, rotationY, 0f);
         bulletTransform.position += bulletTransform.forward * (currentSpeed * Time.deltaTime);
 
@@ -226,5 +242,14 @@ public class Bullet : MonoBehaviour
     public void SetSpeed()
     {
         currentSpeed = speed;
+    }
+    
+    private float RoundToNearest(float value)
+    {
+        if (roundingPrecision <= 0)
+        {
+            return value;
+        }
+        return Mathf.Round(value / roundingPrecision) * roundingPrecision;
     }
 }

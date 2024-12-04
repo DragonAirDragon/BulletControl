@@ -118,13 +118,13 @@ public class Player : MonoBehaviour
         {
             // Вычисляем направление от объекта к точке попадания
             Vector3 direction = (hit.point - rightHandAnimator.firePoint.position).normalized;
-            //Debug.Log("попадание");
+            
             // Поворачиваем объект в сторону точки попадания
             return Quaternion.LookRotation(direction);
         }
         else
         {
-            //Debug.Log("непопадание");
+            
             // Если луч не попадает, вычисляем точку на расстоянии maxDistance по направлению луча
             Vector3 endPoint = ray.origin + ray.direction * 10f;
             Vector3 direction = (endPoint - rightHandAnimator.firePoint.position).normalized;

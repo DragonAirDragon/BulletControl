@@ -663,7 +663,7 @@ PrefabInstance:
     - target: {fileID: 6916752540546452622, guid: db0e750aa55194444bacce14f7bb44e5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.37499985
       objectReference: {fileID: 0}
     - target: {fileID: 6916752540546452622, guid: db0e750aa55194444bacce14f7bb44e5,
         type: 3}
@@ -1046,7 +1046,7 @@ PrefabInstance:
     - target: {fileID: 6916752540546452622, guid: db0e750aa55194444bacce14f7bb44e5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.39166665
       objectReference: {fileID: 0}
     - target: {fileID: 6916752540546452622, guid: db0e750aa55194444bacce14f7bb44e5,
         type: 3}
@@ -2212,6 +2212,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall3_C10_06 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 9064933708342539506, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9064933708342962386, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2367,7 +2372,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.3779845, y: 5.6000004, z: 1.2629337}
+  m_LocalPosition: {x: 1.9779844, y: 5.6000004, z: 1.2629337}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2508,12 +2513,12 @@ PrefabInstance:
     - target: {fileID: 6152344033092562327, guid: de78b1bd9412bb548bdd3b2131242944,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.10555595
+      value: -0.22352335
       objectReference: {fileID: 0}
     - target: {fileID: 6152344033092562327, guid: de78b1bd9412bb548bdd3b2131242944,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.60555553
+      value: -0.47350714
       objectReference: {fileID: 0}
     - target: {fileID: 6152344033092562327, guid: de78b1bd9412bb548bdd3b2131242944,
         type: 3}
@@ -2940,6 +2945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall3_C10_06 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064933708342539506, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9064933708342962386, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
         type: 3}
@@ -7083,6 +7093,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall3_C10_06 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9064933708342539506, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9064933708342962386, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -7674,6 +7689,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall3_C10_06 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064933708342539506, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9064933708342962386, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
         type: 3}
@@ -8429,7 +8449,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -9386,7 +9406,7 @@ Transform:
   m_GameObject: {fileID: 1249835248}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.6, y: 2.6000001, z: 9.99}
+  m_LocalPosition: {x: -7, y: 2.6000001, z: 9.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9405,6 +9425,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall3_C10_06 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064933708342539506, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9064933708342962386, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
         type: 3}
@@ -9901,6 +9926,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall3_C10_06 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 9064933708342539506, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9064933708342962386, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -10321,6 +10351,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall3_C10_06 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064933708342539506, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9064933708342962386, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
         type: 3}
@@ -11014,6 +11049,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall3_C10_06 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064933708342539506, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9064933708342962386, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
         type: 3}
@@ -11829,6 +11869,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall3_C10_06 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9064933708342539506, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9064933708342962386, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -12165,6 +12210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall3_C10_06 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064933708342539506, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9064933708342962386, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
         type: 3}
@@ -12624,12 +12674,12 @@ PrefabInstance:
     - target: {fileID: 1246548561241469842, guid: 749606efb2f427440b96ff419ca24d0f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.077778
+      value: -3.6830215
       objectReference: {fileID: 0}
     - target: {fileID: 1246548561241469842, guid: 749606efb2f427440b96ff419ca24d0f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6385747
+      value: 1.0008665
       objectReference: {fileID: 0}
     - target: {fileID: 1246548561241469842, guid: 749606efb2f427440b96ff419ca24d0f,
         type: 3}
@@ -14795,12 +14845,12 @@ PrefabInstance:
     - target: {fileID: 6916752540546452622, guid: db0e750aa55194444bacce14f7bb44e5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2036417
+      value: -3.0196435
       objectReference: {fileID: 0}
     - target: {fileID: 6916752540546452622, guid: db0e750aa55194444bacce14f7bb44e5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7325
+      value: 0.35283723
       objectReference: {fileID: 0}
     - target: {fileID: 6916752540546452622, guid: db0e750aa55194444bacce14f7bb44e5,
         type: 3}
@@ -15314,7 +15364,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4300000, guid: 4a767b4248577ba42a13196265073b16, type: 2}
+      objectReference: {fileID: 4300000, guid: aba149b4932ed2d458dd1ea281ba4414, type: 2}
     - target: {fileID: 4990132469601448775, guid: 6f791d6e37b135e428949aebd9bdb5ac,
         type: 3}
       propertyPath: m_Mesh
@@ -15529,12 +15579,12 @@ PrefabInstance:
     - target: {fileID: 8381269264866566890, guid: 6f791d6e37b135e428949aebd9bdb5ac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -158.09047
+      value: -157.7172
       objectReference: {fileID: 0}
     - target: {fileID: 8381269264866566890, guid: 6f791d6e37b135e428949aebd9bdb5ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 20.02
+      value: 18.592537
       objectReference: {fileID: 0}
     - target: {fileID: 8381269264866566890, guid: 6f791d6e37b135e428949aebd9bdb5ac,
         type: 3}
@@ -15865,7 +15915,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -16466,6 +16516,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall3_C10_06 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9064933708342539506, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9064933708342962386, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -16538,6 +16593,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wall3_C10_06 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064933708342539506, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9064933708342962386, guid: 9faf50d97cfbe174d8cfb5e68c480a12,
         type: 3}

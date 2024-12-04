@@ -61,7 +61,7 @@ namespace I2.Loc
                 if (!string.IsNullOrEmpty(parameter))
                     newText = newText.Replace(parameter, testNumber.ToString());
 
-                //Debug.Log("Translate: " + newText);
+                
 
                 AddQuery(newText, LanguageCodeFrom, LanguageCodeTo, dict);
             }

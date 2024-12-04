@@ -28,7 +28,7 @@ public class PauseService : ITickable,IDisposable
     private void Pause()
     {
         isPaused = !isPaused;
-        //Debug.Log("Pause: " + isPaused);
+        
         if (isPaused)
         {
             levelService.Pause();

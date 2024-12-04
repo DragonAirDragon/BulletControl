@@ -74,7 +74,7 @@ public class LocalAndCloudDataService
 
     public void ChangeCurrentMoney(int value)
     {
-        YandexGame.savesData.moneyCount = Mathf.Clamp(YandexGame.savesData.moneyCount + value, 0, 99999);
+        YandexGame.savesData.moneyCount = Mathf.Max(YandexGame.savesData.moneyCount + value, 0);
         YandexGame.SaveProgress();
         OnMoneyChanged?.Invoke(YandexGame.savesData.moneyCount); 
     }

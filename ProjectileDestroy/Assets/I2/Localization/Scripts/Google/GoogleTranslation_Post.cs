@@ -110,7 +110,7 @@ namespace I2.Loc
 
         public static string ParseTranslationResult( string html, TranslationDictionary requests )
 		{
-			//Debug.Log(html);
+			
 			// Handle google restricting the webservice to run
 			if (html.StartsWith("<!DOCTYPE html>") || html.StartsWith("<HTML>"))
             {

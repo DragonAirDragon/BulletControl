@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 903964274907512802}
   - component: {fileID: 4261633550988505159}
   - component: {fileID: 2071843206665766029}
-  - component: {fileID: 8005511384705093563}
   - component: {fileID: 8756915248965177421}
   - component: {fileID: 2556024361455710782}
+  - component: {fileID: 4124815654231087829}
   m_Layer: 0
   m_Name: Light_01
   m_TagString: FreeRicochet
@@ -88,28 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8005511384705093563
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558541029589984600}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5670158612910379366, guid: 2f5beca9cf4db3f40a9a63bd1eac6374, type: 3}
 --- !u!114 &8756915248965177421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +104,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -142,7 +120,7 @@ MonoBehaviour:
     cutoutTextureName: 
     DilateRenderingMode: 0
     cutoutTextureIndex: 0
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -158,7 +136,7 @@ MonoBehaviour:
     cutoutTextureName: 
     DilateRenderingMode: 0
     cutoutTextureIndex: 0
-  - IsVisible: 1
+  - IsVisible: 0
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -211,6 +189,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034bc47afcbf5e141a58d5c20b7808e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &4124815654231087829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558541029589984600}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2958537, y: 0.31075817, z: 1.2991046}
+  m_Center: {x: -0.000000033113693, y: -0.15537909, z: 0.0016064777}
 --- !u!1001 &2746630985258033318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -301,10 +300,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 41ee1731e546eda4e9ac4d6def423a22,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3681677194994270451}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 41ee1731e546eda4e9ac4d6def423a22,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 722269714264189519}
   m_SourcePrefab: {fileID: 100100000, guid: 41ee1731e546eda4e9ac4d6def423a22, type: 3}
 --- !u!4 &2420481567561320269 stripped
@@ -319,28 +314,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2746630985258033318}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &3681677194994270451
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3088510045335313911}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -7221849738023552711, guid: 41ee1731e546eda4e9ac4d6def423a22, type: 3}
 --- !u!114 &722269714264189519
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2717,7 +2717,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u049B\u0430\u0440\u0443\u0434\u044B \u0442\u0430\u04A3\u0434\u0430\u04A3\u044B\u0437"
+  m_text: "\u0432\u044B\u0431\u0435\u0440\u044B \u0437\u0431\u0440\u043E\u044E"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84f3e7dbc89142f4d81de0fd6b38c18d, type: 2}
   m_sharedMaterial: {fileID: 5658610998311468998, guid: 84f3e7dbc89142f4d81de0fd6b38c18d,
@@ -3448,7 +3448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ad free
+  m_text: "\u0431\u0435\u0437 \u0440\u044D\u043A\u043B\u0430\u043C\u044B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84f3e7dbc89142f4d81de0fd6b38c18d, type: 2}
   m_sharedMaterial: {fileID: -4767806088373937582, guid: 4ebda50151121a34fa269ef6420a1d75,
@@ -5618,7 +5618,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u043E\u0439\u043D\u0430\u0443"
+  m_text: "\u0433\u0443\u043B\u044F\u0446\u044C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84f3e7dbc89142f4d81de0fd6b38c18d, type: 2}
   m_sharedMaterial: {fileID: 5658610998311468998, guid: 84f3e7dbc89142f4d81de0fd6b38c18d,
@@ -9513,7 +9513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: shop
+  m_text: "\u043A\u0440\u0430\u043C\u0430"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84f3e7dbc89142f4d81de0fd6b38c18d, type: 2}
   m_sharedMaterial: {fileID: -4767806088373937582, guid: 4ebda50151121a34fa269ef6420a1d75,
@@ -9688,7 +9688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0423\u0430\u049B\u044B\u0442 \u04E9\u0442\u0443\u0456"
+  m_text: "\u0426\u044F\u0447\u044D\u043D\u043D\u0435 \u0447\u0430\u0441\u0443"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84f3e7dbc89142f4d81de0fd6b38c18d, type: 2}
   m_sharedMaterial: {fileID: 5658610998311468998, guid: 84f3e7dbc89142f4d81de0fd6b38c18d,
@@ -11084,18 +11084,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858592229}
   m_CullTransparentMesh: 1
---- !u!114 &905760040 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8559558658830267405, guid: caf9732433f4dc044845763962493607,
-    type: 3}
-  m_PrefabInstance: {fileID: 1860763294}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f3217292ce1e774a97a4ebed7332552, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &932581822
 GameObject:
   m_ObjectHideFlags: 0
@@ -12133,7 +12121,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0420\u0438\u043A\u043E\u0448\u0435\u0442\u0442\u0435\u0440"
+  m_text: "\u0420\u044B\u043A\u0430\u0448\u044D\u0442\u044B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84f3e7dbc89142f4d81de0fd6b38c18d, type: 2}
   m_sharedMaterial: {fileID: 5658610998311468998, guid: 84f3e7dbc89142f4d81de0fd6b38c18d,
@@ -14672,7 +14660,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.45
+  m_fontSize: 35.5
   m_fontSizeBase: 54.33
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -16106,12 +16094,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36.45
+  m_fontSize: 30.75
   m_fontSizeBase: 32.41
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 1
-  m_fontSizeMax: 80
+  m_fontSizeMin: 0
+  m_fontSizeMax: 1111.72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -16547,7 +16535,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.45
+  m_fontSize: 35.5
   m_fontSizeBase: 54.33
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -16895,7 +16883,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041C\u0430\u043D\u0435\u0432\u0440\u043B\u0456\u043A"
+  m_text: "\u041C\u0430\u043D\u0435\u045E\u0440\u0430\u043D\u0430\u0441\u0446\u044C"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84f3e7dbc89142f4d81de0fd6b38c18d, type: 2}
   m_sharedMaterial: {fileID: 5658610998311468998, guid: 84f3e7dbc89142f4d81de0fd6b38c18d,
@@ -17110,12 +17098,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.99818
+  m_fontSize: 21.869324
   m_fontSizeBase: 33
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 25.99818
+  m_fontSizeMax: 21.869324
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
@@ -18795,7 +18783,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.45
+  m_fontSize: 35.5
   m_fontSizeBase: 54.33
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -19294,7 +19282,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041E\u049B\u0442\u044B\u04A3 \u0411\u0430\u0493\u0430\u0441\u044B"
+  m_text: "\u0426\u0430\u043D\u0430 \u041A\u0443\u043B\u0456"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 84f3e7dbc89142f4d81de0fd6b38c18d, type: 2}
   m_sharedMaterial: {fileID: 5658610998311468998, guid: 84f3e7dbc89142f4d81de0fd6b38c18d,
@@ -19639,12 +19627,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.170095
+  m_fontSize: 23.696312
   m_fontSizeBase: 31
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 0
-  m_fontSizeMax: 28.170095
+  m_fontSizeMax: 23.696312
   m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -20299,76 +20287,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: RejectedAuthorization.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: ResolvedAuthorization.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: RejectedAuthorization.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: ResolvedAuthorization.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: RejectedAuthorization.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 905760040}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: ResolvedAuthorization.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 905760040}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: RejectedAuthorization.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: ResolvedAuthorization.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: RejectedAuthorization.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ForgetLocalize
-      objectReference: {fileID: 0}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: ResolvedAuthorization.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ForgetLocalize
-      objectReference: {fileID: 0}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: RejectedAuthorization.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LanguageSetter, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: ResolvedAuthorization.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LanguageSetter, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: RejectedAuthorization.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607,
-        type: 3}
-      propertyPath: ResolvedAuthorization.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 2211564899198745197, guid: caf9732433f4dc044845763962493607,
         type: 3}
       propertyPath: m_Name

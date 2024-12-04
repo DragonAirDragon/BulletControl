@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 6414190346360418690}
-  - component: {fileID: 8836862191593592631}
   - component: {fileID: 3484200951623025139}
+  - component: {fileID: 6095434108640154506}
   m_Layer: 0
   m_Name: Vehicle_Car_color02
   m_TagString: Map
@@ -203,28 +203,6 @@ MonoBehaviour:
   last_minDistanceOfViewForCull: 270
   setupRunned: 1
   isLodSimulationEnabledInThisSceneForEditorSceneViewMode: 1
---- !u!64 &8836862191593592631
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100000}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 49fee4c5907e33545a3b2db2e9d66675, type: 3}
 --- !u!114 &3484200951623025139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,3 +227,24 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+--- !u!65 &6095434108640154506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.5275803, y: 2.1952403, z: 6.3205423}
+  m_Center: {x: -0.0029667118, y: 1.0939842, z: -0.19415568}
